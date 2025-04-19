@@ -1,0 +1,738 @@
+tanggal,keterangan,user_id,deskripsi_pekerjaan,divisi_id,jenis_pekerjaan_id,lokasi_id,foto_before,foto_after,tanggal_selesai,lead_time
+2024-08-01,Internal,1.0,Atap gudang bumbu dan gudang tepung mentah bocor,1,1,1.0,,,2024-08-19,18
+2024-08-02,Internal,2.0,Lampu gudang Blast mati,2,2,2.0,,,2024-08-20,18
+2024-08-09,External,3.0,3 Timbangan merk sojikyo error,2,2,2.0,,,2024-08-21,12
+2024-08-09,Internal,4.0,Laptop Staf Stokis Keyboard Error dan Lemot,3,3,3.0,,,2024-08-22,13
+2024-08-10,Internal,1.0,Slot mesin tepung 50kg patah,1,4,1.0,,,2024-08-23,13
+2024-08-10,Internal,2.0,Lampu di area loading mati,2,2,2.0,,,2024-08-24,14
+2024-08-10,Internal,1.0,Pipa Vacum Thumbler terlepas dari mesin vacum,2,4,2.0,,,2024-08-12,2
+2024-08-13,Internal,4.0,CCTV Gudang Cibereum Lama Lost Koneksi HP,1,2,1.0,,,2024-08-14,1
+2024-08-18,Internal,5.0," Pak minta tolong di bantu , Untuk pemasangan Terminal Listrik di Ruang miting Kemitraan ",4,5,4.0,,,2024-10-29,72
+2024-08-19,Internal,1.0,Mesin Jahit Tepung Trouble,1,4,1.0,,,2024-08-24,5
+2024-08-19,Internal,2.0,Rel gerbang depan gudang produksi amblas,1,1,1.0,,,2024-08-24,5
+2024-08-19,Internal,2.0,"Pemasangan CCTV (buat dudukan CCTV diatas, diruangan finance TSP)",5,2,3.0,,,2024-08-20,1
+2024-08-19,Internal,5.0,Pemasangan stop kontak disetiap meja karyawan Div.Finance,5,1,3.0,,,2024-09-02,14
+2024-08-19,Internal,1.0,Rel gerbang gudang tempat penyimpanan tepung mentah bengkok,1,1,1.0,,,2024-08-19,0
+2024-08-19,Internal,4.0, Printer Ruangan Event Promosi tidak berfungsi,6,2,3.0,,,2024-08-20,1
+2024-08-19,Internal,2.0,Kipas Angin tembok rusak,1,2,1.0,,,,-
+2024-08-19,Internal,1.0,Blower gudang tidak berfungsi,1,2,1.0,,,2024-09-17,29
+2024-08-19,Internal,1.0,stop kontak terbakar,1,2,1.0,,,2024-08-22,3
+2024-08-19,Internal,2.0,Tembok berlubang,1,1,1.0,,,2024-09-17,29
+2024-08-19,Internal,2.0,"Mesin produksi kapasitas 50 kg, trouble di bagian pully/panbelt",1,4,1.0,,,2024-08-28,9
+2024-08-19,Internal,1.0,Bearing mesin parting rusak,2,4,5.0,,,2024-08-20,1
+2024-08-19,Internal,2.0,2 unit exsos di dalam gudang produksi tidak menyala/Mati,1,2,1.0,,,2024-09-17,29
+2024-08-19,Internal,5.0,Tidak ada nya exsos di kamar mandi,4,2,3.0,,,2024-08-26,7
+2024-08-19,Internal,5.0,Pemasangan gorden ruko kemitraan,4,1,3.0,,,2024-08-21,2
+2024-08-19,Internal,5.0,Pemasangan lampu area tangga ruko kemitraan,4,2,3.0,,,2024-08-22,3
+2024-08-19,Internal,4.0,Kerusakan charger laptop,7,3,6.0,,,2024-08-28,9
+2024-08-19,Internal,4.0,Wifi office depan kembali mengalami eror tidak ada data internet,1,3,1.0,,,2024-08-20,1
+2024-08-19,External,3.0,Distokis lama pekanbaru Daya listrik belom diturun kan,3,2,7.0,,,2024-08-26,7
+2024-08-19,External,3.0,Perbaikan bangunan bekas stokis pekanbaru,3,1,7.0,,,2024-08-26,7
+2024-08-20,Internal,1.0,pipa air samping office belakang Cibereum mengalami kebocoran,1,1,1.0,,,2024-08-20,0
+2024-08-20,Internal,1.0,Pintu Office HO macet,8,1,5.0,,,2024-08-20,0
+2024-08-20,Internal,4.0,Pemasangan router wifi di depan ruang Asset,9,3,3.0,,,2024-08-21,1
+2024-08-21,Internal,1.0,"Trouble Mesin Marinasi 50 kg, slot kunci patah",1,4,1.0,,,2024-08-22,1
+2024-08-22,Internal,1.0,"Trouble Mesin Marinasi 100 kg, puly bagian bawah lepas",1,4,1.0,,,2024-08-22,0
+2024-08-22,Internal,1.0," Engsel pada CS lama mengalami kendor pada baut, pada saat menutup mengalami macet",1,1,1.0,,,2024-08-22,0
+2024-08-22,Internal,1.0,Meminta jadwal plester pada area tersebut ,1,1,1.0,,,2024-08-31,9
+2024-08-22,Internal,1.0,Meminta jadwal plester pada area tersebut ,1,1,1.0,,,2024-08-24,2
+2024-08-22,Internal,2.0,Lampu PJU di area sekitar HO tiang rusak dan lampu mati,9,2,5.0,,,2024-09-06,15
+2024-08-22,Internal,1.0, renovasi / perbaikan rumah sinbad 2,9,1,8.0,,,2024-08-26,4
+2024-08-22,Internal,2.0,renovasi / perbaikan troli kebutuhan buat bongkar muat barang,8,1,5.0,,,2024-08-27,5
+2024-08-22,Internal,2.0," Colokan ke Mesin Absen IPB 1 rusak, setelah kemarin mati listrik",5,2,9.0,,,2024-08-23,1
+2024-08-23,Internal,1.0,AC pada ruang meeting Cibereum 1 tidak dingin,1,2,1.0,,,2024-08-26,3
+2024-08-23,Internal,5.0,AC mengalami bocor,4,2,3.0,,,2024-08-26,3
+2024-08-27,Internal,1.0,Tembok dan tiang pintu gerbang rusak ( tempat penyimpanan tepung dan bumbu ) tertabrak oleh mobil,1,1,1.0,,,2024-09-16,20
+2024-08-27,External,3.0,Freezer stokis pekanbaru tidak normal,3,2,7.0,,,,#NUM!
+2024-08-27,Internal,5.0,Pemasangan kontak ruang HRD,10,5,3.0,,,2024-08-27,0
+2024-08-29,Internal,2.0,Pemasangan gagang pintu ruang manager logistik Cibereum 1,1,1,1.0,,,2024-08-30,1
+2024-08-29,External,3.0,meteran diruangan finance TSP keluar api dan asap,5,2,3.0,,,,#NUM!
+2024-08-29,Internal,5.0,Membuat slot kunci gudang OB TSP,9,1,3.0,,,2024-08-29,0
+2024-08-30,Internal,4.0,"Laptop office gudang Cibereum, loading sangat lama lemot",1,3,1.0,,,2024-08-30,0
+2024-08-30,Internal,2.0,Mohon untuk pengangkatan puing dan Kaca di gedung kemitraan,4,6,3.0,,,2024-08-31,1
+2024-08-31,Internal,1.0,kayu² bekas pengecoran dari pak edi minta di rapikan jangan di simpan di sini,9,6,5.0,,,2024-09-01,1
+2024-09-02,Internal,5.0,ruangan Event Promosi dan Media apa bisa disediakan rak sendal atau sepatu sesuai dengan kebutuhan kami,7,6,3.0,,,2024-09-02,0
+2024-09-02,Internal,5.0,Minta tolong untuk pelepasan bangku² lipat yang ada di ruang kemitraan,4,1,3.0,,,2024-09-03,1
+2024-09-02,Internal,5.0,"ruangan sales d TSP Ruko depan, bagian atap ini apa bisa ditutup agar bisa terlihat lebih rapih",11,1,3.0,,,2024-09-11,9
+2024-09-02,Internal,4.0, jaringan wifi d TSP Ruko mengalami gangguan dan terputus,11,3,3.0,,,2024-09-02,0
+2024-09-02,Internal,5.0,Untuk area dapur dan kamar mandi ruko TSP ini apa bisa d tutup,11,1,3.0,,,2024-09-15,13
+2024-09-02,Internal,1.0,plafon lantai 2 Stokis cibinong copot,3,1,10.0,,,,#NUM!
+2024-09-02,Internal,1.0,Area gudang kering (Bumbu marinasi) H.O ada kebocoran dr atas atap menjalar ke dinding,2,1,5.0,,,2024-09-05,3
+2024-09-02,Internal,1.0,Terjadi kebocoran di gudang tempat penyimpanan tepung mentah dan plastik,1,1,1.0,,,2024-09-10,8
+2024-09-03,Internal,1.0,"mesin jahit Tidak menyala sama sekali, minta tolong perbaikannya",1,2,1.0,,,2024-09-03,0
+2024-09-03,Internal,2.0,*  Mohon dibantu pemasangan banner di bawah ac ruangan Finance TSP,5,6,3.0,,,2024-09-04,1
+2024-09-03,Internal,1.0,"mesin marinasi kapasitas 50 kg, kapasitor terbakar",1,4,1.0,,,2024-09-04,1
+2024-09-04,Internal,2.0,Merapihkan Instalasi Listrik,12,5,3.0,,,2024-09-04,0
+2024-09-04,Internal,2.0,2 unit AC  Ruangan Stokis di TSP tidak dingin,3,2,3.0,,,2024-09-05,1
+2024-09-05,Internal,1.0,"Mesin marinasi kapasitas 100 kg,cakram otomatis lepas",1,4,1.0,,,2024-09-06,1
+2024-09-05,Internal,1.0,"Mesin marinasi kapasitas 50 kg, mengeluarkan suara bising di bagian dinamo",1,4,1.0,,,2024-09-06,1
+2024-09-05,Internal,4.0,Beberapa CCTV mati dan tidak merekam aktivitas area gudang cibereum,1,3,11.0,,,2024-09-05,0
+2024-09-05,Internal,4.0,wifi gudang cibereum kurang koneksi ( lemot ) ,1,3,1.0,,,2024-09-05,0
+2024-09-05,Internal,5.0,kamar mandi Tengah kantor TSP amblas lantainya pak,9,1,3.0,,,2024-09-06,1
+2024-09-05,Internal,5.0,Minta tolong dipasangkan Banner dan stikcer untuk kantor kemitraan TSP,4,1,3.0,,,2024-09-06,1
+2024-09-06,Internal,2.0," Coran gerbang besi nya sudah terlihat, minta di bantu perbaiki pak",9,1,3.0,,,2024-09-07,1
+2024-09-06,Internal,2.0,"gerbang utama TSP lis nya ada yg copot pak, minta di perbaiki",9,1,3.0,,,2024-09-28,22
+2024-09-08,External,3.0,"COOLSTORAGE lama kurang dingin angka suhu turun , berbeda dengan CS baru",1,4,11.0,,,2024-09-16,8
+2024-09-09,Internal,5.0,minta tolong untuk pasang Whitebord di dua titik ini pak. Untuk pemasangan nya di ruang Brand Media,7,1,3.0,,,2024-09-18,9
+2024-09-09,Internal,1.0,minta tolong untuk di cek stokis bogor keluhan ruko area basahan sejak tadi pagi listrik suka ngejepret,3,2,12.0,,,2024-09-09,0
+2024-09-09,Internal,5.0,"Afwan, minta tolong untuk pasang Whitebord di ruang Event ya pak",6,1,3.0,,,2024-09-18,9
+2024-09-09,Internal,5.0,Dapur bocor sehingga lantai sangat licin dan freezer pun kehujanan (resiko rusak). Minta bantuannya untuk dilakukan pengecekan,13,1,3.0,,,2024-09-15,6
+2024-09-10,Internal,1.0,minta tolong untuk di cek stokis Bekasi freezer tidak dingin,3,2,3.0,,,2024-09-16,6
+2024-09-11,Internal,3.0," freezer yg tidak terpakai distokis meruyung, menghalangi tim saat operasional, dan saat turun ayam dimalam hari, dan turun keringan tepung dihari ahad",3,6,13.0,,,2024-09-13,2
+2024-09-11,Internal,1.0,"kran kamar mandi dibelakang gudang cibereum bocor, perlu di ganti krannya",1,1,1.0,,,2024-09-14,3
+2024-09-11,Internal,5.0,Plafon bocor di ruang brand-Media ( air netes setiap 9 detik ),7,1,3.0,,,2024-09-20,9
+2024-09-12,Internal,5.0,Minta di bantu Instalasi colokan Listrik di ruangan admin Stokis TSP,3,5,3.0,,,2024-09-13,1
+2024-09-12,Internal,5.0,"Minta tolong d cek terkait jaringan wifi d tsp depan pada ruangan sales, sering mengalami gangguan",4,3,3.0,,,2024-09-12,0
+2024-09-13,Internal,5.0,Gypsum Partisi ruang admin lt.2 terbuka,14,1,3.0,,,2024-09-14,1
+2024-09-14,External,3.0,"Mesin pompa air bocor, dan terus mengalir. Membuat area gudang tepung jadi ber-air dan lembab, risiko tepung kutuan",3,4,7.0,,,2024-09-16,2
+2024-09-14,Internal,3.0, timbangan produksi tepung eror minta di bantu perbaikannya,1,2,1.0,,,2024-09-18,4
+2024-09-14,Internal,3.0,Timbangan tidak bisa menyala sama sekali,1,2,1.0,,,2024-09-18,4
+2024-09-17,Internal,5.0,"Kaki freezer tim event patah, mau minta tolong dicekin",15,2,3.0,,,2024-09-17,0
+2024-09-17,Internal,5.0,Bocor lumayan deras di gudang event,15,1,3.0,,,2024-09-28,11
+2024-09-17,Internal,1.0,Mesin jahit tidak bisa di gunakan macet,1,4,1.0,,,2024-09-17,0
+2024-09-19,Internal,1.0,Minta tolong bantu di kuras khawatir potensi DBD dan jadi sarang nyamuk,1,6,1.0,,,2024-09-19,0
+2024-09-20,Internal,4.0,Dibantu untuk pengecekan Laptop Pak Wildan (Div.Finance) sering nyetrum dan loading parah (lola),5,3,9.0,,,2024-09-20,0
+2024-09-20,Internal,1.0,Pemasangan dudukan untuk proyektor di ruang meeting kecil cibereum,1,1,1.0,,,2024-09-25,5
+2024-09-20,Internal,6.0,Pembuatan jalur pembuangan toilet,1,1,1.0,,,2024-10-19,29
+2024-09-20,Internal,1.0,penggantian mesin dan pully,1,4,1.0,,,2024-10-20,30
+2024-09-20,Internal,1.0,Pipa pembuangan  exsos mengalami kerusakan Mohon di bantu untuk perbaikan nya (Logistik),2,1,1.0,,,2024-10-28,38
+2024-09-23,Internal,5.0,Kran di kamar mandi dan kran yang di dapur (wastapel) belum terpasang(kantor finance),5,1,14.0,,,2024-09-23,0
+2024-09-23,Internal,1.0,Mesin kapasitas 100 kg gir as nya lepas minta tolong di bantu perbaiki nya,1,4,1.0,,,2024-09-23,0
+2024-09-24,Internal,1.0,pemasangan baru kipas angin di gudang ciberum,2,2,1.0,,,2024-10-29,35
+2024-09-25,Internal,1.0,-  Freezer 1 Bagian mesin sebelah kanan bunyi saat di nyalakan,3,2,12.0,,,2024-09-27,2
+2024-09-25,Internal,1.0,"- Freezer 2 Kendala seal pintu tidak rapat saat di tutup, pendingin tidak maksimal saat di gunakan(indikator suhu mentok di -6°) serta di bagian dalam alumunium foilnya ada rembesan air",3,2,12.0,,,2024-09-27,2
+2024-09-25,Internal,2.0,"ada puing"" dibelakang pos/samping kantor direksi TSP minta tolong dijadwalkan pak untuk di angkut",9,6,3.0,,,2024-10-05,10
+2024-09-26,Internal,1.0,"- Ada 6 titik penerangan yang lampunya meledak, redup dan mati
+- 2 titik di kamar mandi office dan belakang
+- 2 titik di dalam ruang office
+- 2 titik di tempat penyimpanan area gudang tepung
+- Minta di bantu untuk penerangannya pak",1,5,1.0,,,2024-09-30,4
+2024-09-26,Internal,1.0,"- Ada 6 titik penerangan yang lampunya meledak, redup dan mati
+- 2 titik di kamar mandi office dan belakang
+- 2 titik di dalam ruang office
+- 2 titik di tempat penyimpanan area gudang tepung
+- Minta di bantu untuk penerangannya pak",1,5,1.0,,,2024-09-30,4
+2024-09-27,Internal,2.0,"AC gudang cibereum bocor, netes",1,2,1.0,,,2024-09-28,1
+2024-09-27,Internal,3.0,Bocor area parkiran motor di TSP,9,1,3.0,,,2024-10-05,8
+2024-09-28,Internal,5.0, tiang balon patah lagi.,6,1,3.0,,,2024-10-07,9
+2024-09-29,Internal,2.0,"Bismillah, mesin kapasitas 100 kg trabel di bagian cakram nya",2,4,3.0,,,2024-10-29,30
+2024-09-30,Internal,4.0, Internet tidak terkoneksi. Mohon bantuannya,9,2,3.0,,,2024-10-01,1
+2024-09-30,Internal,5.0,Cctv BRP belum bisa diakses & 1 cctv belum terpasang,5,2,14.0,,,2024-10-01,1
+2024-10-01,Internal,5.0,"stand tv gak bisa di diangkat, kayanya nyangkut di pipa nya, syukron pak.",6,1,3.0,,,2024-10-01,0
+2024-10-01,Internal,1.0,Mesin Marinasi produksi tepung ( 100 kg ) tidak bisa memutar. Mohon untuk segera di cek,1,4,1.0,,,2024-10-01,0
+2024-10-02,Internal,1.0, Pintu gudang bahan baku kering perlu perbaikan (lepas dari rel & tidak bisa dikunci),1,1,1.0,,,2024-10-03,1
+2024-10-03,Internal,4.0,penggantian laptop baru ,1,2,1.0,,,2024-10-24,21
+2024-10-03,Internal,4.0,penggantian laptop baru ,1,2,1.0,,,2024-10-24,21
+2024-10-04,Internal,5.0,Area parkiran banjir karna saluran air yg di depan gerbang  mampet yg baru di cor. Jadi air masuk ke area parkir,2,1,5.0,,,2024-10-05,1
+2024-10-07,Internal,2.0,trobel mesin kapasitas 100kg gir as tidak muter tolong pak untuk perbaikannya,1,1,1.0,,,2024-10-09,2
+2024-10-07,Internal,3.0,kendala 1 freezer stokis bekasi uk 1200lt tercium bau sangit di bagian mesin,3,2,15.0,,,2024-10-13,6
+2024-10-08,Internal,4.0,"Body laptop bagian engsel patah, sehingga bagian engsel monitor lepas",13,2,3.0,,,2024-10-09,1
+2024-10-08,Internal,1.0,"Office depan Cibereum, banjir air masuk, tolong bantu tinggikan tanggul nya pak , dan talang airnya copot ",1,1,1.0,,,2024-10-10,2
+2024-10-08,Internal,3.0,"- 1 titik Connector yg menyambung ke DVR rusak (perlu ganti connector)
+- 2 titik kamera korslet, perlu ganti kamera baru  (indoor & outdoor)
+- Hardisk perlu ganti baru untuk bisa simpan & tracking data..
+- Tetap bisa menyala untuk dipantau secara real-time tanpa hardisk
+",3,2,16.0,,,2024-10-13,5
+2024-10-08,Internal,7.0,"Atap Fiber rusak dan lapuk , dan penggantian atap fiber baru",1,1,11.0,,,2024-10-23,15
+2024-10-10,Internal,2.0,pengisian preon ac di kemitraan ,4,7,4.0,,,2024-10-22,12
+2024-10-14,Internal,6.0,pemasangan slot dan gembok,9,1,3.0,,,2024-10-21,7
+2024-10-15,Internal,4.0,Mesin finger print tidak terisi baterainya. Bantu dicek,5,2,14.0,,,2024-10-15,0
+2024-10-16,Internal,1,"kursi patah, solusinya pengajuan baru atau bisa diperbaiki?",16,1,3.0,,,2024-10-16,0
+2024-10-17,Internal,2.0,"WiFi office depan error, kmren sempat di perbaiki pak Irawan dan bagus, skrng kembali eror tolong bantu di cek ",1,2,1.0,,,2024-10-17,0
+2024-10-17,Internal,2.0,"Bismillah, trobel mesin kapasitas 100 kg, spiral plat tengah nya lepas mohon untuk perbaikan nya pak",1,4,1.0,,,2024-10-17,0
+2024-10-17,Internal,2.0,pengantian outdoor ac di ruang expedisi HO,8,7,5.0,,,2024-10-20,3
+2024-10-17,Internal,4.0, penggantian router,13,3,3.0,,,2024-10-29,12
+2024-10-18,Internal,4.0,"Afwan Pak, Minta tolong dicek printer di ruangan Marketing, hasil nya warna nya kurang bagus.",13,2,3.0,,,2024-10-18,0
+2024-10-18,Internal,3.0,"Stokis Citayam info MCB nya ngjepret terus, konslet spertnya, saat ini 3 freezer mati",3,5,17.0,,,2024-10-18,0
+2024-10-18,Internal,4.0,"Printer eror, tidak bisa melakukan cetak",13,2,3.0,,,2024-10-18,0
+2024-10-18,Internal,6.0,pencekan di ruang meeting kemitraan tapi tidak jadi di cat ulang ,15,1,4.0,,,2024-10-21,3
+2024-10-18,Internal,1.0,Pembersihan puing di gudang ciberum,2,1,1.0,,,2024-10-29,11
+2024-10-21,Internal,4.0,"Pak minta tolong di bantu pak, laptop tidak ada lokal disk D , penyimpanan data D , ",1,2,1.0,,,2024-10-21,0
+2024-10-21,Internal,4.0,"Afwan pak, mau minta tolong untuk instal ulang laptop, karena pin login lupa tidak ada yang tau",13,2,3.0,,,2024-10-22,1
+2024-10-21,Internal,4.0,"kang dafa Bisa di instal ulang lapotp ini,",5,2,3.0,,,2024-10-22,1
+2024-10-21,Internal,3.0,"Meteran Listrik di BRP terlihat Gosong, ada indikasi kebakar atau ngga ya, ",5,5,14.0,,,2024-10-21,0
+2024-10-21,Internal,6.0,pembongkaran rak dan pemasangan kembali ke ruang media,7,1,3.0,,,2024-10-21,0
+2024-10-22,Internal,8.0,2 meja ini bantu disimpan di tim asset ya,5,1,14.0,,,2024-10-22,0
+2024-10-22,Internal,5.0,pembuatan loket ,16,1,3.0,,,2024-11-11,20
+2024-10-24,Internal,9.0,perbaikan closet di kamar mandi tenangah di TSP,9,1,3.0,,,2024-10-24,0
+2024-10-24,Internal,4.0,-  CCTV gudang cibereum 2 mati,2,1,11.0,,,2024-10-24,0
+2024-10-24,Internal,5.0,perbaikan/pengecekan kompor team event pematik 2 error dan cara penggunaan beda dari seperti yang normal nya.,9,2,3.0,,,2024-10-24,0
+2024-10-24,Internal,2.0,perbaikan mesin steam di HO,2,4,5.0,,,2024-10-24,0
+2024-10-24,Internal,9.0,setelah di cek sama tim aset untuk kursi jadi di ganti yang baru ,16,1,3.0,,,2024-10-29,5
+2024-10-24,Internal,1.0,pembuatan dudukan wifi,2,1,5.0,,,2024-11-07,14
+2024-10-24,Internal,5.0,perbaikan dispenser ruang media,7,2,3.0,,,2024-11-22,29
+2024-10-25,Internal,2.0,pengelasan mesin 50 kg ,2,4,1.0,,,2024-10-25,0
+2024-10-25,Internal,5.0,perbaikan pintu di kantor finance,5,1,14.0,,,2024-10-26,1
+2024-10-25,Internal,1.0,Perbaikan pipa air,2,1,5.0,,,2024-10-30,5
+2024-10-25,Internal,5.0,pergantian mesin pompa aquarium,9,2,3.0,,,2024-10-31,6
+2024-10-26,Internal,2.0,perbaikan ac di ciberum,2,7,1.0,,,2024-10-26,0
+2024-10-26,Internal,9.0,Pintu Office HO macet,8,1,5.0,,,2024-10-26,0
+2024-10-28,Internal,5.0, Afwan pak minta tolong untuk pemasangan rak dinding untuk office set up,9,1,3.0,,,2024-10-28,0
+2024-10-28,Internal,4.0,"Afwan pak untuk printer admin tidak bisa ngeprint, tolong di cek ya",9,2,3.0,,,2024-10-30,2
+2024-10-28,Internal,1.0,minta dibuatkan jembatan dari besi untuk jalan motor ke dalam kantor sinbad 4,9,1,18.0,,,2024-11-04,7
+2024-10-28,Internal,4.0,perbaikan printer ,2,3,1.0,,,,#NUM!
+2024-10-29,Internal,5.0,"Bantu untuk pemasangan lampu di ruangan arsip, untuk perlengkapan nya sudah ada di BRP",5,5,14.0,,,2024-10-28,#NUM!
+2024-10-30,Internal,2.0,"Bismillah, TRABEL mesin 100 kg di bagian cakram nya",2,4,1.0,,,2024-10-30,0
+2024-10-30,Internal,2.0,"Bismillah,kipas di gudang  produksi tepung mengeluarkan suara berisik",2,1,1.0,,,2024-10-30,0
+2024-10-30,Internal,2.0,"Afwan pak, minta tolong perbaikan whiteboard di ruangan office Manager cibereum kang",2,1,1.0,,,2024-10-30,0
+2024-10-30,Internal,9.0,pemasangan tirai di kemitraan ,4,1,4.0,,,2024-10-30,0
+2024-10-30,Internal,9.0,pemasangan dudukan shower kawar mandi,9,1,3.0,,,2024-10-30,0
+2024-10-30,Internal,9.0,pemasangan kabel HDMI di tsp ruangan dirops,9,1,3.0,,,2024-10-30,0
+2024-10-30,Internal,2.0,penutupan lubang,2,1,1.0,,,2024-10-30,0
+2024-10-30,Internal,1.0,penggatian vanbelt,2,4,5.0,,,2024-11-05,6
+2024-10-31,Internal,9.0,perakitan kursi,9,1,3.0,,,2024-10-31,0
+2024-10-31,Internal,2.0,pergantian lampu di ruang Produksi,2,5,5.0,,,2024-10-31,0
+2024-10-31,Internal,5.0,perbaikan kaki kursi,16,1,3.0,,,2024-10-31,0
+2024-10-31,Internal,1.0,perbaikan dan pengelasan pintu gerbang di HO,2,1,5.0,,,2024-10-31,0
+2024-11-01,Internal,5.0,perbaikan ac ,9,7,3.0,,,2024-11-01,0
+2024-11-01,Internal,5.0,perbaikan bocor,5,1,14.0,,,2024-11-01,0
+2024-11-01,Internal,2.0,perbaikan mesin tepung 50 kg ,1,4,1.0,,,2024-11-01,0
+2024-11-01,Internal,2.0,perbaikan mesin tepung  100 kg ,1,4,1.0,,,2024-11-01,0
+2024-11-04,Internal,1.0,perbaikan mesin ,1,4,1.0,,,2024-11-04,0
+2024-11-04,Internal,4.0,perbaikan mouse,7,3,3.0,,,2024-11-04,0
+2024-11-05,Internal,1.0,"Afwan pak jalur tangga kantor HO Atapnya Bocor/rembes,lantainya jadi licin khawatir ada yang terpeleset, minta tolong di cek dan diperbaiki pak,Syukran Barakallahu fikum",2,1,5.0,,,2024-11-05,0
+2024-11-05,Internal,1.0,"engsel pintu utama (gerbang) gudang baru Cibereum patah pak , sehingga proses tutup dan buka cukup berat ,",1,1,5.0,,,2024-11-05,0
+2024-11-05,Internal,4.0,pembersihan head,4,3,4.0,,,2024-11-05,0
+2024-11-05,Internal,5.0,pemasangan benner,5,1,14.0,,,2024-11-05,0
+2024-11-05,Internal,5.0,penutupan jendela ruang finance tsp,16,1,3.0,,,2024-11-05,0
+2024-11-05,Internal,5.0,pembuatan skat ,5,1,14.0,,,2024-11-19,14
+2024-11-06,Internal,2.0,pengelasan timbangan ,2,4,5.0,,,2024-11-06,0
+2024-11-06,Internal,2.0,perbaikan ac di media,7,7,3.0,,,2024-11-06,0
+2024-11-06,Internal,5.0,perbaikan saluran dan perbaikan yang bocor ,12,1,3.0,,,2024-11-06,0
+2024-11-06,Internal,5.0,perbaikan yang bocor di ruang  dirut,12,1,3.0,,,2024-11-08,2
+2024-11-06,Internal,5.0,perbaikan plafon,12,1,3.0,,,2024-11-10,4
+2024-11-07,Internal,1.0,pemasangan tirai ,2,1,5.0,,,2024-11-07,0
+2024-11-07,Internal,1.0,pemasangan lampu di dirut,12,1,18.0,,,2024-11-07,0
+2024-11-07,Internal,1.0,perbaikan yang bocor di kantor dirut,12,1,18.0,,,2024-11-07,0
+2024-11-08,Internal,1.0,perbaikan plang,2,1,5.0,,,2024-11-08,0
+2024-11-08,Internal,1.0,pembersihan hexos,12,1,18.0,,,2024-11-08,0
+2024-11-08,Internal,2.0,perbaikan mesin 50 kg ,2,4,1.0,,,2024-11-08,0
+2024-11-08,Internal,2.0,perbaikan mesin 100 kg ,2,4,1.0,,,2024-11-08,0
+2024-11-09,Internal,2.0,perbaikan yang bocor,2,1,5.0,,,2024-11-10,1
+2024-11-10,Internal,5.0,perbaikan kursi,16,1,3.0,,,2024-11-10,0
+2024-11-10,Internal,1.0,penggantian atap yang terbawa angin ,2,1,1.0,,,2024-11-12,2
+2024-11-11,Internal,2.0,perbaikan yang bocor di ciberum,2,1,1.0,,,2024-11-12,1
+2024-11-12,Internal,4.0,laptop lemot,11,3,3.0,,,2024-11-12,0
+2024-11-12,Internal,1.0,fwan pak untuk perbaikan yg bocor kemaren masih bocor,9,1,18.0,,,2024-11-12,0
+2024-11-12,Internal,1.0,pemasangan pisau parting,2,4,5.0,,,2024-11-12,0
+2024-11-12,Internal,2.0,perbaikan dan pemasangan cctv,2,3,1.0,,,2024-11-12,0
+2024-11-12,Internal,5.0,perbaikan bocor di BRP,5,1,14.0,,,2024-11-13,1
+2024-11-13,Internal,2.0,perbaikan mesin 100 kg ,2,4,1.0,,,2024-11-13,0
+2024-11-13,Internal,5.0,penutupan bocor ruang meeting besar,9,1,3.0,,,2024-11-13,0
+2024-11-13,Internal,5.0,penutupan bocor ruang ,9,1,3.0,,,2024-11-13,0
+2024-11-13,Internal,1.0,penggantian  vanbelt mesin jahit karung  ,2,4,5.0,,,2024-11-13,0
+2024-11-14,Internal,2.0,perbaikan pintu ,2,1,5.0,,,2024-11-14,0
+2024-11-14,Internal,1.0,pemasangan kipas di stokis cibungbulang,3,1,12.0,,,2024-11-14,0
+2024-11-14,Internal,4.0,pembersihan printer di ruangan admin,9,3,3.0,,,2024-11-14,0
+2024-11-16,Internal,1.0,perbaikan yang bocor ,2,1,1.0,,,2024-11-17,1
+2024-11-16,Internal,1.0,perbaikan mesin 50 kg ,2,4,1.0,,,2024-11-17,1
+2024-11-17,Internal,1.0,pergantian silinder kunci ,1,1,1.0,,,2024-11-17,0
+2024-11-19,Internal,1.0,perbaikan kursi ,1,1,1.0,,,2024-11-19,0
+2024-11-19,Internal,1.0,perbaikan lampu ,2,1,5.0,,,2024-11-19,0
+2024-11-19,Internal,2.0,perbaikan ac ruang SM,9,7,3.0,,,2024-11-19,0
+2024-11-19,Internal,2.0,perbaikan ac ruang humas,9,7,3.0,,,2024-11-19,0
+2024-11-19,Internal,2.0,perbaikan yang bocor ,1,1,1.0,,,2024-11-20,1
+2024-11-19,Internal,5.0,perbaikan yang bocor ,9,1,3.0,,,2024-11-20,1
+2024-11-20,Internal,2.0,perbaikan mesin ,1,4,1.0,,,2024-11-20,0
+2024-11-21,Internal,9.0,pembersihan lahan parkir HO,2,1,5.0,,,2024-11-21,0
+2024-11-21,Internal,1.0,pembersihan solokan ,1,1,1.0,,,2024-11-21,0
+2024-11-21,Internal,2.0,perbaikan mesin tepung 50 kg,9,1,1.0,,,2024-11-21,0
+2024-11-21,Internal,5.0,perbaikan yang bocor di ruang interviwe,9,1,3.0,,,2024-11-21,0
+2024-11-04,Internal,5.0,perbaikan dispenser ruang set up,1,2,3.0,,,2024-11-22,18
+2024-11-22,Internal,1.0,pembuatan panel ,5,5,14.0,,,2024-11-22,0
+2024-11-23,Internal,5.0,penutupan terepal untuk pemasangan skat,2,1,5.0,,,2024-11-23,0
+2024-11-23,Internal,2.0,perbaikan pintu kamar mandi ,2,1,5.0,,,2024-11-23,0
+2024-11-14,Internal,5.0,perbaikan dan pengelasan plang ,6,1,3.0,,,2024-11-25,11
+2024-11-05,Internal,2.0,Sudah dicek oleh teknisi harus di las dan menunggu kabel las an ,2,1,1.0,,,2024-11-28,23
+2024-11-05,Internal,5.0,Bocor dipojokan ruangan development dan juga kebocoran didapur RnD,6,1,3.0,,,2024-11-26,21
+2024-11-15,Internal,5.0,pemasangan meja loket ,16,1,3.0,,,2024-11-30,15
+2024-11-22,Internal,1.0,perbaikan yang bocor ,2,1,1.0,,,2024-11-26,4
+2024-11-25,Internal,2.0,pemasangan lampu di Ho,2,1,5.0,,,2024-11-25,0
+2024-11-26,Internal,2.0,perbaikan mesin 50 kg ,2,4,1.0,,,2024-11-26,0
+2024-10-22,External,3.0,info pendingin ruang blast bermasalah sehingga kondisi barang dalam proses pembekuan tidak beku secara maksimal dan kondisi barang masih fresh  dibutuhkan pengecekan kerusakan mesin evap dan perbaikan nya,2,4,5.0,,,2024-11-26,35
+2024-11-25,Internal,5.0,pemasangan neon box ,5,1,14.0,,,2024-11-28,3
+2024-11-28,Internal,1.0,pelubangan meja marinasi ,2,1,5.0,,,2024-11-28,0
+2024-11-29,Internal,5.0,pemasangan stop kontak WIFI Kantor BRP,5,5,14.0,,,2024-11-29,0
+2024-11-30,Internal,1.0,pemasangan intalasi listrik,1,5,5.0,,,2024-11-30,0
+2024-12-02,Internal,9.0,tarikan nya patah ,6,2,3.0,,,2024-12-02,0
+2024-12-02,Internal,5.0,perbaikan rel pintu ,16,1,3.0,,,2024-12-02,0
+2024-12-03,Internal,2.0,penutupan pintu  di HO,1,1,5.0,,,2024-12-03,0
+2024-12-04,Internal,2.0,pengelasan troli,1,1,5.0,,,2024-12-04,0
+2024-12-05,Internal,1.0,pemasangan papan jalan di HO,1,1,5.0,,,2024-12-05,0
+2024-12-05,Internal,2.0,pemasangan listrik di kantor TSP di ruang meeting kecil ,9,5,3.0,,,2024-12-05,0
+2024-12-05,Internal,2.0,perbaikan pintu ,4,1,3.0,,,2024-12-05,0
+2024-12-06,Internal,1.0,pemasangan pipa ,2,1,5.0,,,2024-12-06,0
+2024-12-06,Internal,5.0,pergantian kran air ,9,1,3.0,,,2024-12-06,0
+2024-12-06,Internal,5.0,perbaikan cctv,2,2,5.0,,,2024-12-06,0
+2024-12-07,Internal,1.0,perbaikan listrik di gudang ciberum ,2,5,1.0,,,2024-12-07,0
+2024-12-08,Internal,5.0,perbaikan yang bocor ,2,1,1.0,,,2024-12-08,0
+2024-12-09,Internal,1.0,perbaikan mesin steam ,2,4,5.0,,,2024-12-09,0
+2024-11-04,Internal,1.0,Renovasi dan perapihan kantor IPB 1,9,1,9.0,,,2024-12-10,36
+2025-01-10,Internal,5.0,perbaikan yang bocor ,5,1,14.0,,,2024-12-10,#NUM!
+2025-01-09,Internal,1.0,perbaikan mesin tumbler,2,4,5.0,,,2024-12-11,#NUM!
+2024-12-12,Internal,5.0,pemasangan gpsyum,5,1,3.0,,,2024-12-12,0
+2024-12-12,Internal,5.0,pemasangan gpsyum,2,4,1.0,,,2024-12-12,0
+2024-12-13,Internal,1.0,pengelasan meja marinasi ,2,1,5.0,,,2024-12-13,0
+2024-12-13,Internal,5.0,perpihan rak di kantor tsp ,9,1,3.0,,,2024-12-13,0
+2024-12-13,Internal,5.0,perbaikan yang bocor ,9,1,3.0,,,2024-12-13,0
+2024-12-13,Internal,5.0,perakitan kursi,9,1,3.0,,,2024-12-13,0
+2024-12-14,Internal,1.0,perbaikan saklar ,2,5,1.0,,,2024-12-14,0
+2024-12-15,Internal,2.0,perbaikan mesin 100 kg ,2,4,1.0,,,2024-12-15,0
+2024-12-15,Internal,2.0,perbaikan mesin ac ,2,4,5.0,,,2024-12-15,0
+2024-12-16,Internal,5.0,pengecetan pintu ,9,4,3.0,,,2024-12-16,0
+2024-12-16,Internal,1.0,pergantian saklar mesin parting,2,4,5.0,,,2024-12-16,0
+2024-12-16,Internal,1.0,pengelasan meja marinasi ,2,4,5.0,,,2024-12-16,0
+2024-12-17,Internal,1.0,pengelasan pagar ,2,4,4.0,,,2024-12-17,0
+2024-12-17,Internal,5.0,pemasangan pintu ,9,1,3.0,,,2024-12-17,0
+2024-12-17,Internal,1.0,perbaikan yang bocor ,2,1,1.0,,,2024-12-17,0
+2024-12-18,Internal,5.0,pengecetan plafon,9,1,3.0,,,2024-12-18,0
+2024-12-18,Internal,5.0,pemasangan handle pintu ,5,1,14.0,,,2024-12-18,0
+2024-12-18,Internal,5.0,pengecetan plafon,9,1,3.0,,,2024-12-18,0
+2024-12-19,Internal,1.0,perbaikan mesin marinasi ,2,4,5.0,,,2024-12-19,0
+2024-12-19,Internal,1.0,perbaikan mesin tepug ,1,4,1.0,,,2024-12-19,0
+2024-12-19,Internal,5.0,pencucian ac,9,1,18.0,,,2024-12-19,0
+2024-12-20,Internal,5.0,perbaikan yang bocor ,9,1,3.0,,,2024-12-20,0
+2024-12-20,Internal,1.0,perbaikan 3 mesin tepung ,1,4,1.0,,,2024-12-20,0
+2024-12-20,Internal,1.0,pengelasan ,2,4,5.0,,,2024-12-20,0
+2024-12-21,Internal,2.0,pengomponan,2,1,1.0,,,2024-12-21,0
+2024-12-22,Internal,5.0,pemasangan  lubang hexsos,9,1,3.0,,,2024-12-22,0
+2024-12-23,Internal,1.0,perbaikan ac,2,4,1.0,,,2024-12-23,0
+2024-12-23,Internal,1.0,perbaikan pintu gerbang ,2,1,1.0,,,2024-12-23,0
+2024-12-24,Internal,5.0,pemasangan hexsos ,9,1,3.0,,,2024-12-24,0
+2024-12-24,Internal,5.0,perbaikan lampu tembak,17,1,3.0,,,2024-12-24,0
+2024-12-25,Internal,1.0,perakitan panel,9,5,3.0,,,2024-12-25,0
+2024-12-26,Internal,5.0,pemasangan temoat sabun ,9,1,3.0,,,2024-12-26,0
+2024-12-27,Internal,2.0,perbaikan skalar listri mesin tepung ,2,1,1.0,,,2024-12-27,0
+2024-12-27,Internal,1.0,perbaikan pagar,9,1,9.0,,,2024-12-27,0
+2024-12-27,Internal,1.0,perbaikan pagar,2,4,1.0,,,2024-12-27,0
+2024-12-28,Internal,1.0,pergantian lampu di ruang Produksi,2,5,5.0,,,2024-12-28,0
+2024-12-28,Internal,5.0,pemasangan kabel HDMI ,5,5,14.0,,,2024-12-28,0
+2024-12-29,Internal,2.0,pembongkaran mesin tepung ,2,4,1.0,,,2024-12-29,0
+2024-12-30,Internal,1.0,perbaikan mesin,2,4,1.0,,,2024-12-30,0
+2024-12-30,Internal,5.0,pembalan parkiran ,9,1,3.0,,,2024-12-30,0
+2024-12-30,Internal,2.0,perbaikan ac,4,1,3.0,,,2024-12-30,0
+2024-12-31,Internal,2.0,perbaikan dispenser,2,1,1.0,,,2024-12-31,0
+2024-12-31,Internal,2.0,perbaikan cctv,2,3,1.0,,,2024-12-31,0
+2024-12-31,Internal,5.0,pemasangan brangkas,9,1,3.0,,,2024-12-31,0
+2025-01-01,Internal,5.0,perbaikan jahit karung ,2,2,5.0,,,2025-01-01,0
+2025-01-01,Internal,5.0,perbaikan timbangan ,2,2,5.0,,,2025-01-01,0
+2025-01-01,Internal,5.0,perbaikan kipas angin ,2,2,5.0,,,2025-01-01,0
+2025-01-02,Internal,2.0,perbaikan mesin 5 kg,2,4,1.0,,,2025-01-02,0
+2025-01-02,Internal,5.0,perbaikan kursi ,13,1,3.0,,,2025-01-02,0
+2025-01-02,Internal,5.0,perbaikan stop kontak RND,6,5,3.0,,,2025-01-02,0
+2025-01-03,Internal,5.0,Sudah 2 hari ini mcb di meteran turun (ngejepret),5,5,14.0,,,2025-01-03,0
+2025-01-03,Internal,5.0,"Dibantu ya untuk ditutup, plafon kamar mandi ruang tengah lantai atas",5,1,14.0,,,2025-01-03,0
+2025-01-03,Internal,5.0,AC di atas tidak dingin,5,1,14.0,,,2025-01-03,0
+2025-01-03,Internal,2.0,perbaikkan mesin tepung ,2,4,1.0,,,2025-01-04,1
+2025-01-03,Internal,2.0,perbaikkan mesin tepung ,2,4,1.0,,,2025-01-04,1
+2024-12-29,Internal,1.0,cakram otomatis nya sudah haus harus di lalukan pergantian baru ,2,4,1.0,,,2025-01-05,7
+2025-01-03,Internal,5.0,penambalan keramik  di seluruh toilet kantor tsp ,9,1,3.0,,,2025-01-05,2
+2025-01-06,Internal,2.0,pengelasan dudukan mesin ,2,4,5.0,,,2025-01-06,0
+2025-01-07,Internal,1.0,perbaikan pintu ,2,1,1.0,,,2025-01-07,0
+2025-01-07,Internal,5.0,perbaikan tiang marinasi ,6,1,3.0,,,2025-01-07,0
+2025-01-07,Internal,5.0,perbaikan gerobak event,6,1,3.0,,,2025-01-07,0
+2025-01-07,Internal,5.0,perbaikan kursi ,5,1,3.0,,,2025-01-07,0
+2025-01-07,Internal,2.0,pengelas troli ,2,1,5.0,,,2025-01-07,0
+2025-01-07,Internal,5.0,perbaikan troli,6,1,3.0,,,2025-01-07,0
+2025-01-08,Internal,1.0,perbaikan timbangan ,2,2,5.0,,,2025-01-08,0
+2025-01-08,Internal,5.0,pengelasan pagar ,9,1,3.0,,,2025-01-08,0
+2025-01-03,Internal,2.0,pergantian lampu di ruang Produksi,2,1,1.0,,,2025-01-08,5
+2025-01-08,Internal,2.0,pengisian oli ,2,1,1.0,,,2025-01-08,0
+2025-01-09,Internal,2.0,pergantian lampu ,2,1,1.0,,,2025-01-09,0
+2025-01-09,Internal,5.0,perbaikan ac,9,1,3.0,,,2025-01-09,0
+2025-01-09,Internal,1.0,pemasangan lantai blas,2,1,5.0,,,2025-01-11,2
+2025-01-10,Internal,5.0,perbaikan benner di kemitraan ,4,1,3.0,,,2025-01-10,0
+2025-01-11,Internal,1.0,pemasangan pintu sleding,10,1,3.0,,,2025-01-11,0
+2025-01-11,Internal,5.0,perbaikan ac yang bocor ,9,1,3.0,,,2025-01-11,0
+2025-01-11,Internal,5.0,perbaikan gerbang di kantor tsp ,9,1,3.0,,,2025-01-11,0
+2025-01-12,Internal,2.0,perbaikan lantai blas di ho,2,1,5.0,,,2025-01-12,0
+2025-01-13,Internal,5.0,perbaikan keramik ,9,1,3.0,,,2025-01-13,0
+2025-01-13,Internal,5.0,perbaikan mesin tepung ,2,4,1.0,,,2025-01-13,0
+2025-01-14,Internal,1.0,perbaikan mesin tepung ,2,4,1.0,,,2025-01-14,0
+2025-01-14,Internal,2.0,perbaikan lantai keramik,2,1,1.0,,,2025-01-14,0
+2025-01-15,Internal,1.0,perbaikan mesin ,2,4,1.0,,,2025-01-15,0
+2025-01-15,Internal,5.0,perbaikan pintu kamar  mandi ,9,1,3.0,,,2025-01-15,0
+2025-01-16,Internal,5.0,perbaikan gerbang di kantor brp,5,1,14.0,,,2025-01-16,0
+2025-01-16,Internal,5.0,perbaikan pintu ,9,1,3.0,,,2025-01-16,0
+2025-01-16,Internal,5.0,perbaikan pintu ,9,1,3.0,,,2025-01-16,0
+2025-01-17,Internal,5.0,perbaikan pintu ,9,1,3.0,,,2025-01-17,0
+2025-01-17,Internal,2.0,perbaikan mesin ,2,4,1.0,,,2025-01-17,0
+2025-01-17,Internal,1.0,perbaikan kipas angin ,2,4,5.0,,,2025-01-17,0
+2025-01-17,Internal,5.0,pemasangan skat HRD,10,1,3.0,,,2025-01-17,0
+2025-01-18,Internal,2.0,perbaikan mesin tepung ,2,4,1.0,,,2025-01-18,0
+2025-01-18,Internal,2.0,perbaikan mesin tepung ,2,4,1.0,,,2025-01-18,0
+2025-01-18,Internal,2.0,perbaikan mesin tepung ,2,4,1.0,,,2025-01-18,0
+2025-01-19,Internal,1.0,perbaikan mesin tepung ,2,4,1.0,,,2025-01-19,0
+2025-01-19,Internal,1.0,perbaikan 4 stopkontak,2,1,1.0,,,2025-01-19,0
+2025-01-19,Internal,5.0,pembuatan jembatan motor,5,1,14.0,,,2025-01-19,0
+2025-01-20,Internal,5.0,pemasangan kunci di lemari lemari HRD,10,1,3.0,,,2025-01-20,0
+2025-01-20,Internal,2.0,perbaikan tombol mesin marinasi ,2,4,5.0,,,2025-01-20,0
+2025-01-20,Internal,2.0,perbaikan mesin tepung ,2,4,1.0,,,2025-01-20,0
+2025-01-20,Internal,5.0,perbaikan ac dan pembersihan ac,6,1,3.0,,,2025-01-20,0
+2025-01-20,Internal,2.0,Pengisian freon gudang cibereum 2,1,7,11.0,,,2025-01-21,1
+2025-01-21,Internal,5.0,Pembuatan sekat Lemari seragam HRD,10,1,3.0,,,2025-01-21,0
+2025-01-22,Internal,2.0,pemanasan genset ,2,4,5.0,,,2025-01-22,0
+2025-01-22,Internal,5.0,pengukuran lemari arsip ,9,1,3.0,,,2025-01-22,0
+2025-01-22,Internal,5.0,perbaikan stop kontak sales,15,5,3.0,,,2025-01-22,0
+2025-01-22,Internal,1.0,perbaikan timbangan di kantor ho ,2,2,5.0,,,2025-01-22,0
+2025-01-22,Internal,2.0,perbaikan lampu ,2,5,5.0,,,2025-01-22,0
+2025-01-23,Internal,2.0,pengecekan KWH lsitrik dan sudah di perbaiki oleh PLN,3,5,12.0,,,2025-01-23,0
+2025-01-23,Internal,5.0,perbaikan plang,6,1,3.0,,,2025-01-23,0
+2025-01-23,Internal,2.0,pemasangan lampu ,2,1,1.0,,,2025-01-23,0
+2025-01-23,Internal,2.0,pemasangan papan tulis 3 titk,2,1,1.0,,,2025-01-23,0
+2025-01-23,Internal,2.0,perbaikan mesin tepung ,2,1,1.0,,,2025-01-23,0
+2025-01-23,Internal,2.0,perbaikan stop kontak ,2,5,1.0,,,2025-01-23,0
+2025-01-23,Internal,5.0,perbaikan dan penutupan yang bolong di dekat toilet belakang kantor tsp,9,1,3.0,,,2025-01-23,0
+2025-01-24,Internal,1.0,perbaikan yang bocor di kantor HO,2,1,5.0,,,2025-01-24,0
+2025-01-24,Internal,2.0,Perbaikan plafon,2,1,5.0,,,2025-01-24,0
+2025-01-24,Internal,5.0,perbaikan stand baneer,7,1,3.0,,,2025-01-24,0
+2025-01-24,Internal,2.0,perbaikan mesin 100 kg ,2,4,1.0,,,2025-01-24,0
+2025-01-24,Internal,5.0,pembersihan talang air ,9,1,3.0,,,2025-01-24,0
+2025-01-25,Internal,5.0,perbaikan mesin,2,4,1.0,,,2025-01-25,0
+2025-01-25,Internal,5.0,perbaikan mesin jahit tepung,2,4,1.0,,,2025-01-25,0
+2025-01-25,Internal,1.0,perabaikan kramik,2,1,1.0,,,2025-01-25,0
+2025-01-26,Internal,2.0,perbaikan ac,2,7,5.0,,,2025-01-26,0
+2025-01-27,Internal,2.0,pemasangan whaitbord,2,1,5.0,,,2025-01-27,0
+2025-01-27,Internal,2.0,perbaikan mesin,2,4,1.0,,,2025-01-27,0
+2025-01-28,Internal,5.0,perbaikan mesin,2,4,1.0,,,2025-01-28,0
+2025-01-28,Internal,5.0,pemasangan alarm,2,4,1.0,,,2025-01-28,0
+2025-01-29,Internal,2.0,Perbaikan mesin yg 50 kilo yg. E  DKASSET 1032,2,4,1.0,,,2025-01-29,0
+2025-01-29,Internal,2.0,pengelasan dudukan mesin yg 50 kilo yg F DKASSET 1034,2,4,1.0,,,2025-01-29,0
+2025-01-29,Internal,2.0,Penggantian camstater mesin yg A  DKASSET 1033,2,4,1.0,,,2025-01-29,0
+2025-01-30,Internal,2.0,perbaikan mesin parting ,2,4,5.0,,,2025-01-30,0
+2025-01-30,Internal,2.0,perpindahan ruang expedisi,2,4,5.0,,,2025-01-30,0
+2025-01-30,Internal,2.0,"ismillah, perbaikan. Mesin tepung unit f",2,4,1.0,,,2025-01-30,0
+2025-01-28,Internal,2.0,perbaikan gerbang ,2,4,1.0,,,2025-01-30,2
+2025-01-31,Internal,1.0,perbaikan troli,2,1,5.0,,,2025-01-31,0
+2025-01-31,Internal,2.0,perbaikan timbangan ,2,1,5.0,,,2025-01-31,0
+2025-01-31,Internal,5.0,bawa barang dari kantor tsp ke ho ,2,1,3.0,,,2025-01-31,0
+2025-02-01,Internal,9.0,pemasangan lampu di kantor kemitraan ,4,5,3.0,,,2025-02-01,0
+2025-02-01,Internal,2.0,perbaikan mesin jahit tepung ,2,2,1.0,,,2025-02-01,0
+2025-02-02,Internal,1.0,perbaikan kanopi ,9,1,5.0,,,2025-02-02,0
+2025-02-02,Internal,5.0,perganti MCB,9,5,3.0,,,2025-02-02,0
+2025-02-02,Internal,5.0,perbaikan intalasi listrik ,9,5,3.0,,,2025-02-02,0
+2025-02-03,Internal,1.0,penutupan yang lubang agar tikut tidak masuk ,2,1,5.0,,,2025-02-03,0
+2025-02-03,Internal,1.0,pergantian lampu blaz,2,1,5.0,,,2025-02-03,0
+2025-02-03,Internal,1.0,pergantian 2 lampu PJU ,2,1,5.0,,,2025-02-03,0
+2025-02-03,Internal,5.0,perbaikan fingger print,2,2,1.0,,,2025-02-03,0
+2025-02-03,Internal,5.0,perbaikan bell ,2,2,1.0,,,2025-02-03,0
+2025-02-03,Internal,5.0,perbaikan bell ,2,2,1.0,,,2025-02-03,0
+2025-02-03,Internal,5.0,pemasangan spanduk di kantor  finace  BRP,5,1,14.0,,,2025-02-04,1
+2025-02-03,Internal,5.0,pemanasan genset ,2,4,1.0,,,2025-02-03,0
+2025-02-03,Internal,5.0,"Bismillah, perbaikan mesin tepung unit F trabel dari puli nya sudah aus/doll",2,4,1.0,,,2025-02-03,0
+2025-02-04,Internal,2.0,pemasangan kipas angin produksi tepung ,2,2,1.0,,,2025-02-04,0
+2025-02-04,Internal,2.0,perbaikan pintu gerbang ciberum baru ',2,1,11.0,,,2025-02-04,0
+2025-02-04,Internal,2.0,pergantian lampu ,2,5,5.0,,,2025-02-04,0
+2025-02-04,Internal,2.0,Ganti fiting lampu an lampu yg 50 watt digudang baruu,2,5,11.0,,,2025-02-04,0
+2025-02-04,Internal,2.0,Pengantian camstater dimesin 100 klio yg G DKASSET 1031 Sebelum dan sesudah diganti,2,4,1.0,,,2025-02-04,0
+2025-02-04,Internal,1.0,perbaikan dan pemasnagan pintu blasz,2,1,5.0,,,2025-02-04,0
+2025-02-04,Internal,5.0,perbaikan yang bocor  dikantor tsp ,18,1,3.0,,,2025-02-04,0
+2025-02-04,Internal,5.0,pemasangan spanduk di kantor tsp ruang  finace ,9,1,3.0,,,2025-02-04,0
+2025-02-04,Internal,5.0,pemasangan ac,5,7,14.0,,,2025-02-04,0
+2025-02-05,Internal,2.0,perbaikan mesin ,2,4,1.0,,,2025-02-05,0
+2025-02-05,Internal,2.0,perbaikan mesin ,2,4,1.0,,,2025-02-05,0
+2025-02-05,Internal,1.0,pengukuran portal ,2,1,5.0,,,2025-02-05,0
+2025-02-05,Internal,1.0,perbaikan jalur kelistrikan panle ,2,5,5.0,,,2025-02-05,0
+2025-02-05,Internal,1.0,pemanasan genset ,2,4,5.0,,,2025-02-05,0
+2025-02-06,Internal,2.0,pemasangan papan tulis 3,2,4,5.0,,,2025-02-06,0
+2025-02-06,Internal,2.0,perbaikan ac,2,7,5.0,,,2025-02-06,0
+2025-02-06,Internal,1.0,pemotongan rangka baja ringan ,2,1,1.0,,,2025-02-06,0
+2025-02-06,Internal,5.0,perbaikan saluran air ,9,1,3.0,,,2025-02-06,0
+2025-02-06,Internal,5.0,perbaikan saluran air ,9,1,3.0,,,2025-02-06,0
+2025-02-06,Internal,5.0,perbaikan saluran air ,9,1,3.0,,,2025-02-06,0
+2025-02-06,Internal,5.0,perbaikan pembuangan ac ,9,7,3.0,,,2025-02-06,0
+2025-02-07,Internal,1.0,perbaikan mesin ,2,4,5.0,,,2025-02-07,0
+2025-02-08,Internal,2.0,pemasangan partici,2,1,1.0,,,2025-02-08,0
+2025-02-08,Internal,1.0,pemasangan keramik ,2,1,1.0,,,2025-02-08,0
+2025-02-08,Internal,5.0,pengecekan area solokan ,2,1,14.0,,,2025-02-08,0
+2025-02-08,Internal,5.0,pengecekan air ,2,1,5.0,,,2025-02-08,0
+2025-02-09,Internal,2.0,perbaikan mesin tepung yg D DKASSET 1035,2,4,1.0,,,2025-02-09,0
+2025-02-09,Internal,2.0,Pengelasan slot mesin H DKAsset 1407,2,4,1.0,,,2025-02-09,0
+2025-02-09,Internal,2.0,Lanjut pengelasan dudukan mesin gierblok yg E DKSSET1,2,4,1.0,,,2025-02-09,0
+2025-02-10,Internal,2.0,pemsangan kabel wifi,2,2,1.0,,,2025-02-10,0
+2025-02-10,Internal,2.0,Ganti baud yg patah seblm dan sesudah dimesin D  DKSSET 1035,2,4,1.0,,,2025-02-10,0
+2025-02-10,Internal,5.0,pemebersihan ,9,1,3.0,,,2025-02-10,0
+2025-02-10,Internal,5.0,pemsangan close dorr,2,1,5.0,,,2025-02-10,0
+2025-02-11,Internal,2.0,Perbaikann kursi yg patah dioffice cibereum,2,1,1.0,,,2025-02-11,0
+2025-02-11,Internal,2.0,Perbaikan kabel rol produksi 2 pcs,2,5,1.0,,,2025-02-11,0
+2025-02-11,Internal,2.0,Perbaikan mesin F yg DKASSET1034 pulinya kendor,2,4,1.0,,,2025-02-11,0
+2025-02-11,Internal,2.0,Lanjut perbaikan puli baudnya patah dimesin D DKASSET 1035,2,4,1.0,,,2025-02-11,0
+2025-02-11,Internal,1.0,Pengukuran plat bordes utk depan pintu ciler,2,1,5.0,,,2025-02-11,0
+2025-02-11,Internal,1.0,pemasangan tirai,2,1,5.0,,,2025-02-11,0
+2025-02-11,Internal,5.0,pemasangan kertas box,2,1,3.0,,,2025-02-11,0
+2025-02-11,Internal,5.0,pengecetan ruaang dirops,2,1,3.0,,,2025-02-11,0
+2025-02-12,Internal,2.0,Pengencangan mesin dan girblok,2,4,1.0,,,2025-02-12,0
+2025-02-12,Internal,2.0,pembersihan ac,2,7,5.0,,,2025-02-12,0
+2025-02-12,Internal,1.0,perbaikan mesin E tepung,2,4,1.0,,,2025-02-12,0
+2025-02-12,Internal,1.0,Pengelasan dudukan mesin dinamo yg goyang di akibatkan tidak adanya baut kuncian mesin menyebabkan seringnya merusak puli dan menjadu aus,2,4,1.0,,,2025-02-12,0
+2025-02-12,Internal,1.0,Perbaikan mesin tepung A,2,4,1.0,,,2025-02-12,0
+2025-02-12,Internal,1.0,perbaikan mesin steam ,2,4,5.0,,,2025-02-12,0
+2025-02-12,Internal,5.0,"perbaikan roda kursi yang patah, di ruang div. Stokis sebelum dan sesudah penggantian/selesai",3,1,3.0,,,2025-02-12,0
+2025-02-12,Internal,5.0,"Perbaikan kursi di ruang div, stokis selesai",3,1,3.0,,,2025-02-12,0
+2025-02-12,Internal,5.0,pembuatan skat ,9,1,3.0,,,2025-02-12,0
+2025-02-13,Internal,2.0,perbaikan pintu blaz,2,1,5.0,,,2025-02-13,0
+2025-02-13,Internal,2.0,pengecekan ac,2,7,5.0,,,2025-02-13,0
+2025-02-13,Internal,1.0,pemasangan lampu ,2,1,5.0,,,2025-02-13,0
+2025-02-13,Internal,1.0,pemasangan lampu 4 tiitk ,2,1,5.0,,,2025-02-13,0
+2025-02-13,Internal,5.0,pemasangan kaca ,9,1,3.0,,,2025-02-13,0
+2025-02-13,Internal,5.0,perbaikan pintu blaz,9,1,3.0,,,2025-02-13,0
+2025-02-13,Internal,5.0,pemasangan pintu ,12,1,3.0,,,2025-02-13,0
+2025-02-13,Internal,5.0,pemasangan replektor di ruang finance,5,1,3.0,,,2025-02-13,0
+2025-02-14,Internal,2.0,pemasangan pully ,2,2,5.0,,,2025-02-14,0
+2025-02-14,Internal,2.0,perbaikan di stopkontak ,2,5,5.0,,,2025-02-14,0
+2025-02-14,Internal,2.0,pemasangan pully ,2,4,1.0,,,2025-02-14,0
+2025-02-14,Internal,5.0,pengecekan saluran air,9,1,3.0,,,2025-02-14,0
+2025-02-14,Internal,5.0,pengecekan saluran air,9,1,3.0,,,2025-02-14,0
+2025-02-14,Internal,5.0,perbaikan ac,9,7,3.0,,,2025-02-14,0
+2025-02-15,Internal,1.0,pengawasan perbaikan dan pembersihan ac diops,12,7,3.0,,,2025-02-15,0
+2025-02-15,Internal,1.0,pengawasan perbaikan dan pembersihan ac SM ,9,7,3.0,,,2025-02-15,0
+2025-02-15,Internal,1.0,pengawasan perbaikan dan pembersihan ac interview,10,7,3.0,,,2025-02-15,0
+2025-02-15,Internal,1.0,pengawasan perbaikan dan pembersihan ac RND,6,7,3.0,,,2025-02-15,0
+2025-02-15,Internal,1.0,pengawasan perbaikan dan pembersihan ac it,9,7,3.0,,,2025-02-15,0
+2025-02-15,Internal,1.0,pengawasan perbaikan dan pembersihan ac asset,16,7,3.0,,,2025-02-15,0
+2025-02-15,Internal,1.0,pengawasan perbaikan dan pembersihan ac HRD,10,7,3.0,,,2025-02-15,0
+2025-02-15,Internal,1.0,pengawasan perbaikan dan pembersihan ac R meeting,9,7,3.0,,,2025-02-15,0
+2025-02-15,Internal,1.0,pengawasan perbaikan dan pembersihan ac stokis,15,7,3.0,,,2025-02-15,0
+2025-02-16,Internal,2.0,pengecekan AC dan preon seluruh ruangan BRP ,5,7,14.0,,,2025-02-16,
+2025-02-16,Internal,2.0,pengecekan AC dan preon di ruang HRD,10,7,3.0,,,2025-02-16,
+2025-02-16,Internal,2.0,pengecekan AC dan preon di ruang IT,9,7,3.0,,,2025-02-16,
+2025-02-16,Internal,2.0,pengecekan AC dan preon di ruang admin ,9,7,3.0,,,2025-02-16,
+2025-02-16,Internal,5.0,pemasangan pully ,2,4,1.0,,,2025-02-16,
+2025-02-16,Internal,5.0,pencucian AC  seluruh ruangan BRP ,5,7,14.0,,,2025-02-16,
+2025-02-17,Internal,1.0,pemasangan kipas angin pos satpam ,2,2,5.0,,,2025-02-17,0
+2025-02-17,Internal,1.0,emasangan lampu tembak area pintu blas dan cs,2,5,5.0,,,2025-02-17,0
+2025-02-17,Internal,1.0,pemasangan selang ,2,4,5.0,,,2025-02-17,0
+2025-02-17,Internal,5.0,pembersihan aliran air di tsp,18,1,1.0,,,2025-02-17,0
+2025-02-17,Internal,5.0,pembersihan kamar mandi tengah yang mampet ,9,1,1.0,,,2025-02-17,0
+2025-02-17,Internal,5.0,perbaikan pintu kamar mandi dirops,12,1,1.0,,,2025-02-17,0
+2025-02-17,External,3.0,pembuatan rangka skat ,1,1,19.0,,,2025-02-17,0
+2025-02-18,Internal,2.0, perbaikan kabel roll produksi,1,5,1.0,,,2025-02-18,
+2025-02-18,Internal,2.0,Pengisian solar kegenset dicibereum,1,4,1.0,,,2025-02-18,
+2025-02-18,Internal,1.0,mesin jahit d ciberem ,1,2,3.0,,,2025-02-18,0
+2025-02-18,Internal,1.0,menyalakan genset cibereum,1,1,1.0,,,2025-02-18,0
+2025-02-18,Internal,1.0,Tumbler tidak bisa memutar ,2,4,2.0,,,2025-02-18,
+2025-02-18,Internal,5.0,perbaikan kursi di ruang admin,19,1,3.0,,,2025-02-18,0
+2025-02-18,Internal,5.0, pengecekan bocoran di ruang kamar mandi dir'op,12,1,3.0,,,2025-02-19,
+2025-02-18,Internal,5.0,perbaikan terminal stopkontak di ruang humas yang terbakar,9,5,3.0,,,2025-02-18,0
+2025-02-18,Internal,5.0,perbaikan stopkontak terminal di pos scurity TSP,9,5,3.0,,,2025-02-18,
+2025-02-18,External,3.0,jalur 3 phase trouble,1,5,1.0,,,2025-02-18,1
+2025-02-18,External,3.0,Perbaikan listrik yg mati ditepung cibereum oleh pihak PLn,1,5,1.0,,,2025-02-18,
+2025-02-19,Internal,2.0, perbaikan mesin jahit karung diproduksi diho,2,2,2.0,,,2025-02-19,
+2025-02-19,Internal,2.0,Perbaikan mesin jahit karung diproduksi tepung,1,2,1.0,,,2025-02-19,
+2025-02-19,Internal,2.0,Perbaikan mesin yg F DKASSET 1034,1,4,1.0,,,2025-02-19,
+2025-02-19,Internal,1.0,Pengelasan penggantian roda meja marinasi,20,1,2.0,,,2025-02-19,
+2025-02-19,Internal,1.0,Perbaikan setim,1,4,2.0,,,2025-02-19,
+2025-02-19,Internal,5.0,pengencangan baut roda  troli team event,21,1,3.0,,,2025-02-19,
+2025-02-19,Internal,5.0,Proses penambalan bocoran di ruang kamar mandi dir'op,12,1,3.0,,,2025-02-19,
+2025-02-19,Internal,5.0, pengukuran instalasi kabel yang akan di pasang  bawah meja ruang meeting BRP lantai 2,5,5,14.0,,,2025-02-19,
+2025-02-20,Internal,2.0,Pemasangan cctv dicibereum,22,2,1.0,,,2025-02-20,
+2025-02-20,Internal,2.0,Perbaikan pipa dicibereum yg bocor,22,1,1.0,,,2025-02-20,
+2025-02-20,Internal,2.0,Pengisian solat buat genset dicibereum,22,4,1.0,,,2025-02-20,
+2025-02-20,Internal,1.0,Pantau pemasangan portal,18,1,5.0,,,,
+2025-02-20,Internal,5.0,membuka/pembongkaran kunci etalase piagam yang sudah dool/selek,4,1,3.0,,,2025-02-20,
+2025-02-20,Internal,5.0,penggantian mesin akuariumdi TSP,18,1,3.0,,,2025-02-20,
+2025-02-20,Internal,5.0,proses penggantian lampu di depan office BRP 1 unit,5,1,14.0,,,2025-02-20,
+2025-02-20,Internal,5.0,penggantian lampu di ruang tengah office TSP,18,1,3.0,,,2025-02-20,
+2025-02-21,Internal,1.0,pembuatan skat ruang bumbu,22,1,5.0,,,2025-02-21,
+2025-02-21,Internal,5.0,perbaikan plafon kamar mandi dirops ,12,1,3.0,,,2025-02-21,
+2025-02-21,Internal,5.0,perbaikan wastafel ,4,1,3.0,,,2025-02-21,
+2025-02-21,Internal,5.0,pengecetan portal ,18,1,5.0,,,2025-02-22,
+2025-02-22,Internal,1.0,perbaikan mesin ,20,1,5.0,,,2025-02-22,
+2025-02-22,Internal,5.0,pelanjutan pemasangan partici ,20,1,5.0,,,2025-02-22,
+2025-02-23,Internal,2.0,penambalan lantai di depan cs ,20,1,5.0,,,2025-02-23,
+2025-02-24,Internal,2.0,pemasangan gpsyum pada skat ,20,1,5.0,,,2025-02-24,
+2025-02-24,Internal,1.0,pemasangan gpsyum pada skat ,20,1,5.0,,,2025-02-24,
+2025-02-25,Internal,1.0,pengawasan pemasangan portal ,20,1,5.0,,,2025-02-25,
+2025-02-25,Internal,2.0,perbaikan mesin jahit tepung ,20,4,1.0,,,2025-02-25,
+2025-02-25,Internal,5.0,perapihan ruangan aset ,20,1,3.0,,,2025-02-25,
+2025-02-25,Internal,2.0,pemasangan kipas angin ,20,1,1.0,,,2025-02-25,
+2025-02-25,Internal,1.0,pembobokan RND,20,1,3.0,,,2025-02-25,
+2025-02-26,Internal,1.0,perbaikan gerbang ,20,1,1.0,,,2025-02-26,
+2025-02-26,Internal,5.0,pemasangan stiker kaca ,4,1,4.0,,,2025-02-26,
+2025-02-26,Internal,2.0,pengelasan meja marinasi ,20,1,1.0,,,2025-02-26,
+2025-02-26,Internal,3.0,perbaikan yang mampet ,18,1,3.0,,,2025-02-26,
+2025-02-27,Internal,5.0,perbaikan wastafel ,18,1,3.0,,,2025-02-27,
+2025-02-27,Internal,5.0,perbaikan cctv ,12,2,3.0,,,2025-02-27,
+2025-02-27,Internal,5.0,pembutaan skat ruang admin ,18,1,3.0,,,2025-02-27,
+2025-02-27,Internal,2.0,pembersihan saluran air ,20,1,1.0,,,2025-02-27,
+2025-02-27,Internal,2.0,perbaikan cctv ,20,1,1.0,,,2025-02-27,
+2025-02-28,Internal,2.0,perbaikan cctv bersama tim IT,20,1,1.0,,,2025-02-28,
+2025-02-28,Internal,5.0,pemasangan ppan tulis ,20,1,1.0,,,2025-02-28,
+2025-02-28,Internal,5.0,pemasangan toilet ,18,1,3.0,,,2025-02-28,
+2025-02-28,Internal,1.0,pembuangan puing ,18,1,1.0,,,2025-02-28,
+2025-03-01,Internal,2.0,pergantian MCB ,20,5,1.0,,,2025-03-01,
+2025-03-01,Internal,2.0,perbaikan mesin ,20,4,1.0,,,2025-03-01,
+2025-03-02,Internal,5.0,pemasangan toilet ,18,1,3.0,,,2025-03-02,
+2025-03-02,Internal,1.0,Perbaikan mesin ,20,4,3.0,,,2025-03-02,
+2025-03-03,Internal,2.0,perbaikan dudukan benang mesin jahit yang patah,20,2,20.0,,,,
+2025-03-03,Internal,5.0,kencangkan mur kursi aset karena kendor dan mudah goyang khawatir copot atau patah,23,1,3.0,,,2025-03-03,
+2025-03-03,Internal,1.0,Penutupan lubang masuk tikus area pintu ciler,20,1,2.0,,,2025-03-03,
+2025-03-03,Internal,5.0,pembuatan stok kontak ruang meeting di BRP,5,5,14.0,,,2025-03-03,
+2025-03-03,Internal,2.0,Menganti oli stim diho,20,4,5.0,,,,
+2025-03-04,Internal,5.0,pengangkatan puing dan pengecoran lantai di ruang dapur RND,24,1,3.0,,,2025-03-04,
+2025-03-04,Internal,1.0,Memperbaiki troli yg patah,20,1,5.0,,,2025-03-04,
+2025-03-04,Internal,5.0,pengukuran balkon lantai 2 yang akan di buat ruang arsip di office finance,5,1,14.0,,,2025-03-04,
+2025-03-04,Internal,5.0,pemasangan appar di ruang tengah office TSP,18,1,3.0,,,2025-03-04,
+2025-03-04,Internal,5.0,pemasangan appar di ruang dir'op,12,1,3.0,,,2025-03-04,
+2025-03-04,Internal,5.0,perbaikan kursi di ruang media,25,1,3.0,,,2025-03-04,
+2025-03-04,Internal,1.0,memperbaiki mesin steam,20,4,5.0,,,2025-03-04,
+2025-03-04,Internal,2.0,Perbaikan puli dimesin E DKASSET1032,22,4,1.0,,,2025-03-04,
+2025-03-05,Internal,2.0,memperbaiki jembtan besi d gudang cibereum,22,1,1.0,,,2025-03-05,
+2025-03-05,Internal,1.0,lampu di depan office kantor HO mati.,20,4,5.0,,,2025-03-19,
+2025-03-06,Internal,2.0,Pemasangan bender himbauan digudang cibereum seblm dan sesudahh,22,1,1.0,,,2025-03-06,
+2025-03-06,Internal,5.0,"penggantian benner ,lantai dua depan kemitraan",4,1,4.0,,,2025-03-06,
+2025-03-06,Internal,5.0,pengukuran tembok dinding  di ruang dir'op,12,1,3.0,,,2025-03-06,
+2025-03-06,Internal,2.0,Perbaikan mesin yg D DKASSET 1035,20,4,1.0,,,2025-03-06,
+2025-03-06,Internal,2.0, perbaikan puli yg lepas dimesin E DKASSET 1032,20,4,1.0,,,2025-03-06,
+2025-03-07,Internal,1.0,timbangan besar merk sojikyo sudah selesai di perbaiki dan di elas kembali oleh teknisi,20,2,14.0,,,2025-03-07,
+2025-03-07,Internal,5.0,melanjutkan pembuatan Ruang admin,18,1,3.0,,,2025-03-07,
+2025-03-07,Internal,5.0,proses pemasangan GRC ruang admin,18,1,3.0,,,2025-03-07,
+2025-03-07,Internal,1.0,Pemasangan hendel pintu ciler,20,4,3.0,,,2025-03-07,
+2025-03-08,Internal,5.0,perbaikan grc di ruang admin ,18,1,3.0,,,2025-03-08,
+2025-03-08,Internal,1.0,pemasangan lampu ,20,5,1.0,,,2025-03-09,
+2025-03-09,Internal,2.0,pengelasan gerbang ,20,1,1.0,,,2025-03-09,
+2025-03-10,Internal,2.0,Bismilah perbaikan camstater dimesin yg 100 kilo yg G DKASSET 1031 seblm dan sesudah udah bisa dipake lagi,20,4,1.0,,,2025-03-10,
+2025-03-11,Internal,5.0,pembuatan skat ruang admin ,20,1,3.0,,,2025-03-12,
+2025-03-11,Internal,2.0,pomotongan drigen ,20,1,5.0,,,2025-03-12,
+2025-03-11,Internal,5.0,pengukuran ruang stokis ,18,1,3.0,,,2025-03-12,
+2025-03-11,Internal,1.0,Perbaikan jalur listrik gudang 2vsekesai,20,5,1.0,,,2025-03-11,
+2025-03-11,Internal,1.0,Perbaikan listrik  ,20,5,1.0,,,2025-03-11,
+2025-03-11,Internal,2.0,Perbaikan mesin jahit 2 unit dicibereum,20,4,1.0,,,2025-03-11,
+2025-03-11,Internal,2.0,perbaikan mesin steam ,20,4,5.0,,,2025-03-12,
+2025-03-11,Internal,1.0,perbaikan mesin steam ,20,4,5.0,,,2025-03-12,
+2025-03-11,Internal,1.0,perbaikan troli ,20,4,5.0,,,2025-03-12,
+2025-03-11,Internal,2.0,perbaikan troli ,20,4,5.0,,,2025-03-12,
+2025-03-11,Internal,2.0,perbaikan ac,20,7,5.0,,,2025-03-12,
+2025-03-12,External,3.0,perbaikan yang bocor  dikantor tsp ,18,1,3.0,,,2025-03-12,
+2025-03-12,External,3.0,perbaikan pembuangan di kamar mandi dirops,18,1,3.0,,,2025-03-12,
+2025-03-12,Internal,2.0,pemasangan stiker line ,20,1,1.0,,,2025-03-12,
+2025-03-12,Internal,1.0,pemasanga 4 banner ,20,1,1.0,,,2025-03-12,
+2025-03-12,Internal,2.0,perbaikan gerbang ,20,1,1.0,,,2025-03-12,
+2025-03-12,Internal,5.0,pelanjutan proses pembuatan ruang admin ,18,1,3.0,,,2025-03-12,
+2025-03-12,Internal,2.0,perbaikan mesin ,20,4,1.0,,,2025-03-12,
+2025-03-13,Internal,5.0,Bismillah melanjutkan pengomponan ruang admin,20,1,3.0,,,2025-03-13,
+2025-03-13,Internal,1.0,Pembuatan kran westapel produksi,20,1,5.0,,,2025-03-13,
+2025-03-13,Internal,2.0,Penmbalan pencucian kaki  diporoduksi,20,1,5.0,,,2025-03-13,
+2025-03-13,Internal,1.0,pemasangan handle pintu ,20,1,1.0,,,2025-03-13,
+2025-03-13,Internal,1.0,perbaikan stopkeran ,20,1,1.0,,,2025-03-13,
+2025-03-13,Internal,5.0,"Bismillah, pemasangan herbel lantai ruang admin",18,1,3.0,,,2025-03-13,
+2025-03-13,Internal,2.0,Pengecekan dan perbaikan ac diproduksi yg mati total,20,7,5.0,,,2025-03-13,
+2025-03-14,Internal,2.0,Penamblan ulang bak  pencucian kaki diproduksi,20,1,5.0,,,2025-03-14,
+2025-03-14,Internal,5.0,"Bismillah, pengecekan instalasi jalur AC di area TSP",18,5,3.0,,,2025-03-14,
+2025-03-14,Internal,5.0,"Bismillah, perbaikan instalasi jalur AC di ruang media sudah hidup kembali",18,5,3.0,,,2025-03-14,
+2025-03-14,Internal,5.0,"Bismillah, izin untuk memindah kan colokan Wi-Fi,  colokan akuarium di ruang tengah office TSP",18,5,3.0,,,2025-03-14,
+2025-03-14,Internal,2.0,Panasin mesin genset diho,20,4,5.0,,,2025-03-14,
+2025-03-15,Internal,2.0,Bismilah penambalan yg bocor digudang tepung,20,1,1.0,,,2025-03-15,
+2025-03-15,Internal,2.0,Bismilah penambalan yg bocor produksi tepung,20,1,1.0,,,2025-03-15,
+2025-03-16,Internal,5.0,"Bismillah, penambalan bocoran di area atas parkiran TSP",18,1,3.0,,,2025-03-16,
+2025-03-16,Internal,1.0,Lanjut perapihan sampah area ofies ciberem,20,1,1.0,,,2025-03-16,
+2025-03-16,Internal,1.0,Membuang sampah dan membakar sampah,20,1,1.0,,,2025-03-16,
+2025-03-16,Internal,1.0,Pemasangan MCB baru,20,5,1.0,,,2025-03-16,
+2025-03-16,Internal,5.0,"Bismillah, proses penarikan instalasi jalur listrik untuk ruang admin",18,5,3.0,,,2025-03-16,
+2025-03-16,Internal,5.0,"Bismillah, proses perbaikan mesin jahit tumpung",20,4,1.0,,,2025-03-16,
+2025-03-17,Internal,5.0,"Bismillah, melanjutkan pengerjaan ruang admin",18,1,3.0,,,2025-03-17,
+2025-03-17,Internal,1.0,Membersihkan pasir didepan pendopo diho,20,1,5.0,,,2025-03-17,
+2025-03-17,Internal,5.0,"Bismillah, proses pemasangan rumah kunci",18,1,3.0,,,2025-03-17,
+2025-03-17,Internal,5.0,"Bismillah, penutupan jendela ruang H'U/ruang admin sebelum proses dan sesudah",18,1,3.0,,,2025-03-17,
+2025-03-17,Internal,5.0,Bismillah proses perbaikan talang air di samping ruang dir'op,18,1,3.0,,,2025-03-17,
+2025-03-17,Internal,2.0,Lanjut perbaikan dan pengantian puli bawah dimesinA DKSSET1033,20,4,1.0,,,2025-03-17,
+2025-03-17,Internal,5.0,"Bismillah, pengecekan AC di kemitraan yang bocor",4,7,3.0,,,2025-03-17,
+2025-03-18,Internal,5.0,pembersiham area depan ruang admin yang baru ,18,1,3.0,,,2025-03-18,
+2025-03-18,Internal,5.0,pemasangan instalasi jalur lampu dan stop kontak,18,5,3.0,,,2025-03-18,
+2025-03-18,Internal,1.0,memanaskan genset ,20,4,5.0,,,2025-03-18,
+2025-03-18,Internal,1.0,Perbaikan mesin setim,20,4,5.0,,,2025-03-18,
+2025-03-18,Internal,1.0,pengecekan AC di area produksi HO,20,7,5.0,,,2025-03-18,
+2025-03-19,Internal,5.0,plesteran lantai ruang admin ,18,1,3.0,,,2025-03-19,
+2025-03-19,Internal,1.0,Pemasangan kotak obat,20,1,5.0,,,2025-03-24,
+2025-03-19,Internal,1.0,pemasangan kotak p3k,20,4,1.0,,,2025-03-24,
+2025-03-20,Internal,2.0,Perbaikan pipa air digudang cibereum,20,1,1.0,,,2025-03-20,
+2025-03-20,Internal,5.0,"Bismillah, proses pengacian lantai ruang admin",18,1,3.0,,,2025-03-20,
+2025-03-20,Internal,1.0,pengecekan listrik di ruang produksi ,20,5,1.0,,,2025-03-20,
+2025-03-21,Internal,1.0,Perbaikan pipa air Sanyo gudang ciberem,20,1,1.0,,,2025-03-21,
+2025-03-21,Internal,2.0,Pengelasan troli diho,20,1,5.0,,,2025-03-21,
+2025-03-21,Internal,5.0,"Bismillah, proses pemasangan tirai dan benner di area parkiran KR2 di TSP",18,1,3.0,,,2025-03-21,
+2025-03-21,Internal,2.0, ,20,1,1.0,,,2025-03-21,
+2025-03-21,Internal,5.0, perapihan benner dan terpal  di area parkiran sebelum proses dan sesudah/selesai,18,1,3.0,,,2025-03-21,
+2025-03-22,Internal,1.0,Beresin sampal yg mau d buang kemitraan lama,4,1,5.0,,,2025-03-22,
+2025-03-22,Internal,1.0,membantu pindahan ke ciberum ,20,1,1.0,,,2025-03-22,
+2025-03-22,Internal,5.0,"Bismillah, proses pengecatan ruang admin",18,1,3.0,,,2025-03-22,
+2025-03-22,Internal,5.0,Kang egi sedang membantu pindahan di tsp ,18,1,3.0,,,2025-03-22,
+2025-03-23,Internal,2.0,Lampu udah nyla kembali karenakn mcb kilo meter nya turunn,20,5,1.0,,,2025-03-23,
+2025-03-24,Internal,1.0,Perbaikan mesin jahit,20,2,1.0,,,2025-03-24,
+2025-03-24,Internal,5.0,perbaikan mesin jahit karung di Cibereum,20,2,1.0,,,2025-03-24,
+2025-03-24,Internal,5.0,perbaikan mesin jahit karung di Cibereum,20,2,1.0,,,2025-03-24,
+2025-03-24,Internal,1.0,Pemasangan plat moto,18,1,5.0,,,2025-03-24,
+2025-03-24,Internal,1.0,Perbaikan 3 unit terminal mesin timbangan tepung,20,5,1.0,,,2025-03-24,
+2025-03-24,Internal,9.0,Membantu pindahan dan memindahkan Terminal colokan dari ruang HRD lama ke ruang HRD baru,10,5,3.0,,,2025-03-24,
+2025-03-24,Internal,1.0,Memperbaiki mesin tepung A,20,4,1.0,,,2025-03-24,
+2025-03-24,Internal,1.0,Lanjut perbaikan mesin tepung E,20,4,1.0,,,2025-03-24,
+2025-03-24,Internal,1.0,Lanjut perbaikan mesin F,20,4,1.0,,,2025-03-24,
+2025-03-25,Internal,9.0,perakitan rak sepatu ,12,1,3.0,,,2025-03-25,
+2025-03-25,Internal,5.0,Pemasangan kotak p3k,18,1,3.0,,,2025-03-25,
+2025-03-25,Internal,1.0,Perbaikan gerbang utama ciberem,20,1,1.0,,,2025-03-25,
+2025-03-25,Internal,1.0,Perbaikan pintu ciler,20,1,1.0,,,2025-03-25,
+2025-03-25,Internal,2.0,Pegantian lampu diruangan pak alfian diho 2 pcs selesai,20,5,5.0,,,2025-03-25,
+2025-03-25,Internal,5.0,peminisingan ruang admin selesai.,18,1,3.0,,,2025-03-25,
+2025-03-25,Internal,2.0,Perbaikan dan pengantian steker ac diruangan pak alfian selesai dan udah nyla kembali,20,7,5.0,,,2025-03-25,
+2025-03-25,Internal,1.0,Memperbaiki kursi yng patah tim. Produksi,20,1,5.0,,,2025-03-25,
+2025-03-25,Internal,1.0,membongkar partisi di kantor ho ,20,1,5.0,,,2025-03-26,
+2025-03-25,Internal,2.0,membongkar partisi di kantor ho ,20,1,5.0,,,2025-03-26,
+2025-03-26,Internal,5.0,perbaikan intalasi listrik ,5,5,14.0,,,2025-03-26,
+2025-03-26,Internal,2.0,perbaikan toren ,20,1,1.0,,,2025-03-26,
+2025-03-25,Internal,10.0,pembuangan puing ,18,1,3.0,,,2025-03-26,
+2025-03-23,External,3.0,"Freezer stokis babelan tidak dingin indikator suhunya di angka31°c, setelah di bersihkan masih tidak dingin dan keluar uap dari dalam freezer",3,2,7.0,,,2025-03-25,
+2025-03-26,Internal,5.0, pencopotan rumah kunci di ruang legal & audit sebelum proses dan sesudah selesai,18,1,3.0,,,2025-03-26,
+2025-03-26,Internal,5.0,pemasangan slot gembok untuk lemari ,18,1,3.0,,,2025-03-26,
+2025-03-26,Internal,1.0,perbaikan mesin A,20,4,1.0,,,2025-03-26,
+2025-03-26,Internal,2.0,Perbaikan mesinyg A DKASSET 1033,20,4,1.0,,,2025-03-26,
+2025-03-27,Internal,5.0," penggantian kran air di kamar mandi office finance BRP, sebelum proses dan sesudah/selesa",5,1,14.0,,,2025-03-27,
+2025-03-27,Internal,1.0, perbaikan jln digudamg cibereum,20,1,1.0,,,2025-03-27,
+2025-03-27,Internal,2.0,Mengnti lampu yg putus digudang kering cibereum 1 pcs 18 watt,20,5,1.0,,,2025-03-27,
+2025-03-28,Internal,2.0,perbaikan mesin steam ,20,4,5.0,,,2025-03-28,
+2025-03-28,Internal,5.0,permanasan genset ,20,4,1.0,,,2025-03-28,
+2025-03-28,Internal,2.0,perbaikan mesin jahit ,20,4,5.0,,,2025-03-28,
+2025-03-28,Internal,5.0,perbaikan toilet ,20,1,1.0,,,2025-03-28,
+2025-03-28,Internal,1.0,pengecekan dan pengukuran ,20,1,5.0,,,2025-03-28,
+2025-03-28,Internal,1.0,perbaikan dril ,20,1,1.0,,,2025-03-28,
+2025-03-28,Internal,1.0,perbaikan dril ,20,1,1.0,,,2025-03-28,
+2025-03-28,Internal,1.0,perbaikan dril ,20,1,1.0,,,2025-03-28,
+2025-03-28,Internal,5.0,pembersihan solokan ,20,1,1.0,,,2025-03-28,
+2025-04-02,Internal,1.0,pengawasan proyek ,20,1,5.0,,,2025-04-02,
+2025-04-03,Internal,1.0,pengawasan proyek ,20,1,5.0,,,2025-04-03,
+2025-04-04,Internal,1.0,pengawasan proyek ,20,1,5.0,,,2025-04-04,
+2025-04-05,Internal,1.0,pengawasan proyek ,20,1,5.0,,,2025-04-05,
+2025-04-06,Internal,1.0,pengawasan perbaikan mesin blas,20,1,5.0,,,2025-04-06,
+2025-04-08,Internal,1.0,pengukuran bersama vendor ,20,1,5.0,,,2025-04-08,
+2025-04-08,Internal,2.0,perbaikan ac,20,1,5.0,,,2025-04-08,
+2025-04-08,Internal,5.0,pemasangan ruter dan penarikan jalur listrik ,18,5,3.0,,,2025-04-08,
+2025-04-08,Internal,5.0,pemasangan rumah kunci ,18,1,3.0,,,2025-04-08,
+2025-04-08,Internal,5.0,pengecekan jalur panel ,5,5,14.0,,,2025-04-08,
+2025-04-09,Internal,5.0,pembuatan ruangan skat di brp,5,1,14.0,,,2025-04-09,
+2025-04-09,Internal,1.0,pengecetan kusen yang rusak ,18,1,1.0,,,2025-04-09,
+2025-04-09,Internal,1.0,pencabutan jendela,20,1,5.0,,,2025-04-09,
+2025-04-10,Internal,2.0,pemansan genset ,20,1,5.0,,,2025-04-10,
+2025-04-10,Internal,5.0,pengecekan panel ,20,5,5.0,,,2025-04-10,
+2025-04-10,Internal,5.0,pembuatan ruangan skat di brp,5,1,14.0,,,2025-04-10,
+2025-04-10,Internal,2.0,pergantian kipas,18,1,1.0,,,2025-04-10,
+2025-04-11,Internal,1.0,perbaikan mesin jahit,20,4,5.0,,,2025-04-11,
+2025-04-11,Internal,5.0,pembuatan ruangan skat di brp,5,1,14.0,,,2025-04-11,
+2025-04-11,Internal,1.0,perbaikan colokan ,20,5,5.0,,,2025-04-11,
+2025-04-11,Internal,1.0,perbaikan intalasi listrilk,20,4,5.0,,,2025-04-11,
+2025-04-12,Internal,5.0,Pemasangan terminal untuk ruang legal,18,5,14.0,,,2025-04-12,
+2025-04-12,Internal,1.0,Pembuatan meja buat layar cctv,20,1,5.0,,,2025-04-12,
+2025-04-12,Internal,5.0,Izin report perbaikan kipas angin oleh kang egi di stokis ciomas,3,4,7.0,,,2025-04-12,
+2025-04-12,Internal,1.0,Pengecekan mesin thamler yg kendala,20,4,5.0,,,2025-04-12,
+2025-04-13,Internal,2.0,Izin report pak untuk pengerjaan  drainase di eksekusi oleh pak iwan dan juga pak irawan ,20,1,5.0,,,2025-04-13,
+2025-04-13,Internal,1.0,Izin report pak untuk pengerjaan  drainase di eksekusi oleh pak iwan dan juga pak irawan ,20,1,5.0,,,2025-04-13,
+2025-04-13,Internal,1.0,mpo panel mesin thamler tuba tiba mati sedang dalam proses perbaikan,20,4,5.0,,,2025-04-13,
+2025-04-14,Internal,5.0,"Bismillah,perapihan stopkontak diruang H'U Meja pak Paris, sebelum proses dan sesudah/selesai.",18,5,14.0,,,2025-04-14,
+2025-04-14,Internal,1.0,Pemasangan cantel gembok gudang bumbu area parkir,18,1,5.0,,,2025-04-14,
+2025-04-14,Internal,2.0,pembuatan skat ,5,1,14.0,,,2025-04-14,
+2025-04-14,Internal,2.0,Memperbaiki cctv diruangan mesin diho,20,1,5.0,,,2025-04-14,
+2025-04-14,Internal,1.0,Pembongkaran talang dan perapihan talang d office ciberem,20,1,1.0,,,2025-04-14,
+2025-04-14,Internal,2.0,Penutupan samping area office ciberem,20,1,1.0,,,2025-04-14,
+2025-04-15,Internal,1.0,Perbaikan mesin tepung F,20,1,1.0,,,2025-04-15,
+2025-04-15,Internal,5.0,", melanjutkan pembuatan skatan ruang arsip",18,1,14.0,,,2025-04-15,
+2025-04-15,Internal,1.0,Lanjut perbaikan mesin A,20,4,1.0,,,2025-04-15,
+2025-04-15,Internal,5.0,", pengecekan breket stending tv div, Iven. Karena roda baut sudah selek/doll solusi nya harus di lass.",18,1,3.0,,,2025-04-15,
+2025-04-15,Internal,1.0,Pembongkaran rak besi yang sempat tertunda karna perbaikan mesin,18,1,5.0,,,2025-04-15,

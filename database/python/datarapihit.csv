@@ -1,0 +1,487 @@
+tanggal,keterangan,user_id,deskripsi_pekerjaan,divisi_id,jenis_pekerjaan_id,lokasi_id,foto_before,foto_after,tanggal_selesai,lead_time
+2025-01-15,Internal,11,Pengecekan Wi-Fi Kemitraan & BRP,11.0,8,4,,,2025-01-15,0.0
+2025-01-15,Internal,11,Perbaikan laptop Alfian ,9.0,8,3,,,2025-01-15,0.0
+2025-01-15,Internal,12,Pengecekan traffic website dkriuk.com,9.0,9,3,,,2025-01-15,0.0
+2025-01-15,Internal,12,Pengecekan data server Arsip Finance,5.0,9,3,,,2025-01-15,0.0
+2025-01-15,Internal,11,Pengecekan laptop spv Accounting,5.0,8,3,,,2025-01-15,0.0
+2025-01-16,Internal,11,Perbaikan 1 unit CCTV Cibereum Gudang lama,1.0,8,1,,,2025-01-16,0.0
+2025-01-16,Internal,12,Setting/Update logo baru di semua website dkriuk.com,7.0,9,3,,,2025-01-16,0.0
+2025-01-16,Internal,12,Pengecekan web server dkriuk,9.0,9,3,,,2025-01-16,0.0
+2025-01-16,Internal,12,Take out menu yang penjualannya kurang di website dkriuk.com,15.0,9,3,,,2025-01-16,0.0
+2025-01-16,Internal,12,Update landing page / link promo bulan januari 2025,15.0,9,3,,,2025-01-16,0.0
+2025-01-16,Internal,12,Setting SEO perihal logo baru dkriuk 2025 di blog.dkriuk.com,15.0,9,3,,,2025-01-16,0.0
+2025-01-16,Internal,11,Pemasangan Box Panel (untuk melindungi dvr) Di Cibereum,1.0,8,1,,,2025-01-16,0.0
+2025-01-17,Internal,11,Pengecekan laptop Asset (GA) ketika dicas overheat mengakibatkan lemot atau ngefreez ,9.0,8,3,,,2025-01-17,0.0
+2025-01-17,Internal,12,Menghubungkan fingerspot personnel (data absensi hrd) ke mysql server,10.0,9,3,,,2025-01-17,0.0
+2025-01-20,Internal,11,"Pengecekan laptop Stokis Sumedang via online (laptop nyetrum saat mencolokan charger, printer struk dll)",3.0,8,3,,,2025-01-20,0.0
+2025-01-20,Internal,12,Update Gerobak terbaru di website dkriuk.com,7.0,9,3,,,2025-01-20,0.0
+2025-01-20,Internal,12,Menambahkan email domain service.headoffice@dkriuk.com,9.0,9,3,,,2025-01-20,0.0
+2025-01-22,Internal,11,Perbaikan sistem aset yang terkendala pada gambar yang tidak muncul/tidak tampil pada server HO,9.0,8,5,,,2025-01-22,0.0
+2025-01-22,Internal,11,Pengecekan laptop kang rian (kendala pada kipasnya),9.0,8,3,,,2025-01-22,0.0
+2025-01-22,Internal,12,Pembuatan Akses Stokis Banjarmasin di program stokis berbasis desktop,3.0,9,3,,,2025-01-22,0.0
+2025-01-22,Internal,12,Update data stokis Banjarmasin & pekan baru di program warehouse berdasarkan permintaan pak budi,1.0,9,3,,,2025-01-22,0.0
+2025-01-22,Internal,12,Update data produk/item saus tartar 100gr & 500gr beserta harga modalnya di program warehouse,1.0,9,3,,,2025-01-22,0.0
+2025-01-22,Internal,12,Pembuatan link zoom tgl 22/01/2025 untuk kebutuhan HR Rekrutmen,10.0,9,3,,,2025-01-22,0.0
+2025-01-22,Internal,11,Pengecekan laptop staff audit (ms word error / expired),10.0,8,3,,,2025-01-22,0.0
+2025-01-22,Internal,11,Pengecekan laptop kang surya (terkait baterai laptop),11.0,8,4,,,2025-01-22,0.0
+2025-01-23,Internal,11,Pengecekan 2 laptop aset baru,9.0,8,3,,,2025-01-23,0.0
+2025-01-23,Internal,11,Pengecekan Wi-Fi Kemitraan,4.0,8,4,,,2025-01-23,0.0
+2025-01-23,Internal,12,Pembuatan link zoom tgl 23/01/2025 untuk kebutuhan HR Rekrutmen,10.0,9,3,,,2025-01-23,0.0
+2025-01-23,Internal,11,Aktivasi M.S office stokis tegal,3.0,8,3,,,2025-01-23,0.0
+2025-01-23,Internal,11,Menghubungkan server aset ke internet,9.0,8,5,,,2025-01-23,0.0
+2025-01-23,Internal,11,Pengecekan hp staff accounting (Kendala pada mode pesawat yang tidak bisa dimatikan),5.0,8,14,,,2025-01-23,0.0
+2025-01-24,Internal,11,Pengecekan Laptop Aset,9.0,8,3,,,2025-01-24,0.0
+2025-01-24,Internal,12,Update logo baru di program arsip finance,5.0,9,3,,,2025-01-24,0.0
+2025-01-24,Internal,12,Pembuatan link zoom tgl 24/01/2025 untuk kebutuhan HR Rekrutmen,10.0,9,3,,,2025-01-24,0.0
+2025-01-24,Internal,12,Install aplikasi dms stokis di laptop Pak Adi Nugroho SM beserta akses seluruh stokis,11.0,9,3,,,2025-01-24,0.0
+2025-01-24,Internal,11,Pergantian pasta thermal di laptop Kang Rico,9.0,8,3,,,2025-01-24,0.0
+2025-01-24,Internal,11,Pengecekan Laptop Kang Fahmi (Kendala pada aplikasi 3D terlalu berat),9.0,8,3,,,2025-01-24,0.0
+2025-01-24,Internal,11,Setting PC kang fahmi (PC bekas admin marketing),9.0,8,3,,,2025-01-24,0.0
+2025-01-25,Internal,11,Pengecekan HP Admin Medsos,15.0,8,3,,,2025-01-25,0.0
+2025-01-25,Internal,11,Pengecekan Laptop Baru terkait akun Outlook untuk PiC JATENG,3.0,8,3,,,2025-01-25,0.0
+2025-01-29,Internal,11,Pengecekan laptop kang rian (Kendala pada kipasnya),9.0,8,3,,,2025-01-29,0.0
+2025-01-29,Internal,11,Pengecekan laptop admin g.a (wallpaper tidak bisa di ganti) ,9.0,8,3,,,2025-01-29,0.0
+2025-01-29,Internal,12,Pembuatan link zoom untuk kebutuhan HR Rekrutmen 29/01/2025,10.0,9,3,,,2025-01-29,0.0
+2025-01-29,Internal,12,Aktivasi sistem dms stokis di laptop pic stokis jateng,3.0,9,3,,,2025-01-29,0.0
+2025-01-29,Internal,11,Setting akun outlook di 4 laptop baru asset,3.0,8,3,,,2025-01-29,0.0
+2025-01-29,Internal,11,Install sketchup untuk kebutuhan 3D kang fahmi,9.0,8,3,,,2025-01-29,0.0
+2025-01-30,Internal,11,Uji coba Install aplikasi / software CCTV di laptop pak eko,9.0,8,3,,,2025-01-30,0.0
+2025-01-30,Internal,11,Uji coba Install aplikasi / software CCTV di laptop pak eko,9.0,8,3,,,2025-01-30,0.0
+2025-01-30,Internal,11,Install V-Ray untuk sketchup kebutuhan 3D kang fahmi,9.0,8,3,,,2025-01-30,0.0
+2025-01-30,Internal,11,Install enscape untuk kebutuhan rendering 3D kang fahmi,9.0,8,3,,,2025-01-30,0.0
+2025-01-30,Internal,11,Perbaikan file pada laptop staff stokis,3.0,8,3,,,2025-01-30,0.0
+2025-01-31,Internal,12,Aktivasi aplikasi dms stokis untuk laptop pic Jateng 1 ,3.0,9,3,,,2025-01-31,0.0
+2025-01-31,Internal,12,Pengecekan data pengunjung menuju website dkriuk.com,15.0,9,3,,,2025-01-31,0.0
+2025-01-31,Internal,12,Aktivasi aplikasi dms stokis untuk laptop pic Jateng 2,3.0,9,3,,,2025-01-31,0.0
+2025-01-31,Internal,12,Update gambar gerobak baru yang logo barunya terlalu mepet telah dikirim oleh Pak afid / Manager Brand Media,7.0,9,3,,,2025-01-31,0.0
+2025-01-31,Internal,11,Pengecekan seluruh cctv di area HO terkait resolusi gambarnya,9.0,8,5,,,2025-01-31,0.0
+2025-01-31,Internal,11,Pemasangan body laptop kang aries finance,5.0,8,3,,,2025-01-31,0.0
+2025-01-31,Internal,11,Pengecekan seluruh cctv di area TSP terkait resolusi gambarnya,9.0,8,3,,,2025-01-31,0.0
+2025-01-31,Internal,11,Pengecekan CCTV Finance TSP,5.0,8,3,,,2025-01-31,0.0
+2025-01-31,Internal,11,Aktivasi M.S Office laptop milik finance,5.0,8,3,,,2025-01-31,0.0
+2025-01-31,Internal,11,Aktivasi M.S Office laptop milik spv sales (kang sandrian),15.0,8,3,,,2025-01-31,0.0
+2025-01-31,Internal,11,Aktivasi M.S Office laptop stokis cikarang,3.0,8,3,,,2025-01-31,0.0
+2025-02-01,Internal,12,Update gerobak yang sudah di revisi di logo sejak 2020 di design baru pada website,7.0,9,3,,,2025-02-01,0.0
+2025-02-01,Internal,12,Update Link Promo Februari 2025 pada website dkriuk.com & linktree,7.0,9,3,,,2025-02-01,0.0
+2025-02-01,Internal,12,Update Landing Page Website Promo Februari 2025 ,7.0,9,3,,,2025-02-01,0.0
+2025-02-01,Internal,12,Update Artikel + Keyword Promo Februari 2025 di website Blog.dkriuk.com,7.0,9,3,,,2025-02-01,0.0
+2025-02-01,Internal,11,Verfikasi Resolusi gambar khusus CCTV Gudang lama,9.0,8,1,,,2025-02-01,0.0
+2025-02-01,Internal,11,Verfikasi Resolusi gambar khusus CCTV Gudang baru,9.0,8,11,,,2025-02-01,0.0
+2025-02-01,Internal,11,Install Ubuntu di VM Server HO ,9.0,8,5,,,2025-02-01,0.0
+2025-02-01,Internal,11,Pengecekan Server Aset Dkriuk Yang Berada di HO,9.0,8,5,,,2025-02-01,0.0
+2025-02-01,Internal,13,Update jobdesk harian IT ke nomor aset,9.0,9,3,,,2025-02-01,0.0
+2025-02-01,Internal,11,Pengecekan Server Aset Dkriuk Yang Berada di HO,9.0,8,5,,,2025-02-01,0.0
+2025-02-03,Internal,12,Penambahan Akses untuk stokis katulampa,7.0,9,3,,,2025-02-03,0.0
+2025-02-03,Internal,12,Mengerjakan proyek lanjutan terkait aplikasi penitikan lokasi mitra berbasis web,4.0,9,3,,,2025-02-03,0.0
+2025-02-03,Internal,12,Maintenance & monitoring traffic website dkriuk,4.0,9,3,,,2025-02-03,0.0
+2025-02-03,Internal,12,Maintenance & monitoring database server dkriuk,4.0,9,3,,,2025-02-03,0.0
+2025-02-03,Internal,12,Maintenance & monitoring program dms,4.0,9,3,,,2025-02-03,0.0
+2025-02-03,Internal,12,Penambahan Akses untuk stokis Bukittinggi,4.0,9,3,,,2025-02-03,0.0
+2025-02-03,Internal,12,Memo tempered glass (TG) yg sempat mengalami kerusakan (ghost touch),7.0,9,3,,,2025-02-03,0.0
+2025-02-03,Internal,11,Aktivasi M.S Office Stokis tegal,3.0,8,3,,,2025-02-03,0.0
+2025-02-03,Internal,11,Pengecekan dan perbaikan printer busdev yg tidak menyala,13.0,8,3,,,2025-02-03,0.0
+2025-02-03,Internal,11,Mengoptimalkan os windows laptop staf RnD,13.0,8,3,,,2025-02-03,0.0
+2025-02-03,Internal,11,Mengoptimalkan laptop milik spv service - Mas Alfian,9.0,8,3,,,2025-02-03,0.0
+2025-02-03,Internal,11,Kalibrasi monitor laptop media - Kang Ari,7.0,8,3,,,2025-02-03,0.0
+2025-02-03,Internal,11,Pengecekan laptop sales 3 kendala pada driver error & filesystem korup,9.0,8,3,,,2025-02-03,0.0
+2025-02-03,Internal,11,Pengecekan fisik cctv yang berada di HO,9.0,8,5,,,2025-02-03,0.0
+2025-02-03,Internal,11,Install VM untuk aapanel untuk kebutuhan server HO,4.0,8,5,,,2025-02-03,
+2025-02-04,Internal,12,Mengerjakan proyek lanjutan terkait aplikasi penitikan lokasi mitra berbasis web,4.0,9,3,,,2025-02-04,0.0
+2025-02-04,Internal,12,Cek spesifikasi untuk laptop & monitor pic security,9.0,9,3,,,2025-02-04,0.0
+2025-02-04,Internal,12,Maintenance & monitoring traffic website dkriuk,,9,3,,,2025-02-04,0.0
+2025-02-04,Internal,12,Maintenance & monitoring database server dkriuk,9.0,9,3,,,2025-02-04,0.0
+2025-02-04,Internal,12,Maintenance & monitoring program dms,,9,3,,,2025-02-04,0.0
+2025-02-04,Internal,11,Pengecekan laptop team media ,7.0,8,3,,,2025-02-04,0.0
+2025-02-04,Internal,12,Monitoring ke group komplen ,9.0,9,3,,,2025-02-04,0.0
+2025-02-04,Internal,11,Pengecekan laptop & printer regional jabar,4.0,8,3,,,2025-02-04,0.0
+2025-02-04,Internal,11,Tes 2 unit CCTV dahua yang tidak support di gudang cibereum,9.0,8,1,,,2025-02-04,0.0
+2025-02-04,Internal,11,Pengecekan laptop staff kemitraan jabodetabek yg ngefreze saat dinyalakan,4.0,8,3,,,2025-02-04,0.0
+2025-02-04,Internal,11,Pengecekan laptop team sales 3,15.0,8,3,,,2025-02-04,0.0
+2025-02-04,Internal,11,Setting 1 laptop baru dari aset,9.0,8,3,,,2025-02-04,0.0
+2025-02-04,Internal,11,Pengecekan laptop pak surya,4.0,8,3,,,2025-02-04,0.0
+2025-02-05,Internal,12,GIS Data Entry pekan pertama,4.0,9,3,,,2025-02-05,0.0
+2025-02-05,Internal,11,Printer Team Regional Jabar,4.0,8,3,,,2025-02-05,0.0
+2025-02-05,Internal,12,Maintenance & monitoring traffic website dkriuk,,9,3,,,2025-02-05,0.0
+2025-02-05,Internal,11,Pengecekan laptop admin marketing,15.0,8,3,,,2025-02-05,0.0
+2025-02-05,Internal,12,Memastikan sistem DMS (khususnya stokis) berjalan dengan baik,3.0,9,3,,,2025-02-05,0.0
+2025-02-05,Internal,12,Proyek aplikasi penitikan lokasi mitra berbasis web,9.0,9,3,,,2025-02-05,0.0
+2025-02-05,Internal,11,Pengecekan wifi di cibereum dikarenakan tidak ada internet,9.0,8,1,,,2025-02-05,0.0
+2025-02-05,Internal,12,Membuat pengajuan perpanjangan server arsip finance per tahun,5.0,9,3,,,2025-02-05,0.0
+2025-02-05,Internal,12,Maintenance & monitoring database server dkriuk,,9,3,,,2025-02-05,0.0
+2025-02-05,Internal,12,Maintenance & monitoring database server dkriuk,,9,3,,,2025-02-05,0.0
+2025-02-06,Internal,11,Pengecekan laptop pak dadik SM,1.0,8,1,,,2025-02-06,0.0
+2025-02-06,Internal,11,Pemantauan team indihome di gudang lama cibereum,,8,1,,,2025-02-06,0.0
+2025-02-06,Internal,11,Setting printer laptop pak farid ,9.0,8,3,,,2025-02-06,0.0
+2025-02-06,Internal,11,Membersihkan file yg tidak digunakan di laptop kang ardi,7.0,8,3,,,2025-02-06,0.0
+2025-02-06,Internal,11,Membersihkan file ang tidak digunakan di pc kang maulana div promosi,15.0,8,3,,,2025-02-06,0.0
+2025-02-06,Internal,11,Uninstall wps office,15.0,8,3,,,2025-02-06,0.0
+2025-02-07,Internal,12,Uji coba kembali secara mandiri aplikasi dms khusus stokis & kemitraan berbasis web sebelum di tampilkan ke team terkait,3.0,9,3,,,2025-02-07,0.0
+2025-02-07,Internal,12,Aktivasi program dms khusus laptop team produksi berdasarkan permintaan SM Produksi,2.0,9,3,,,2025-02-07,0.0
+2025-02-07,Internal,12,Maintenance & monitoring traffic website dkriuk (Awal),,9,3,,,2025-02-07,0.0
+2025-02-07,Internal,12,Melanjutkan pendataan lokasi terkait latitude dan longitude lokasi mitra untuk di aplikasi GIS berbasis web ,,9,3,,,2025-02-07,0.0
+2025-02-07,Internal,12,Memastikan sistem DMS (khususnya stokis) berjalan dengan baik,3.0,9,3,,,2025-02-07,0.0
+2025-02-07,Internal,12,Pembuatan link zoom untuk Pic Humas Sumatera,9.0,9,3,,,2025-02-07,0.0
+2025-02-07,Internal,11,Menghubungi kantor GraPARI (dikarenakan internet mati),,8,3,,,2025-02-07,0.0
+2025-02-07,Internal,11,Aktivasi m.s office poultry,,8,3,,,2025-02-07,0.0
+2025-02-07,Internal,11,Membersihkan sampah file di laptop pic security (pak eko) yang tidak digunakan,9.0,8,3,,,2025-02-07,0.0
+2025-02-07,Internal,11,Pengecekan 4 laptop baru dari aset,9.0,8,3,,,2025-02-07,0.0
+2025-02-07,Internal,11,Cek Wi-Fi Kemitraan,4.0,8,4,,,2025-02-07,0.0
+2025-02-07,Internal,11,Cek server HO mengaktifkan ulang server asset & install ubuntu untuk aapanel,,8,5,,,2025-02-07,0.0
+2025-02-08,Internal,11,Setting 3 laptop baru dari aset yang sempat dicek sebelumnya,9.0,8,3,,,2025-02-08,0.0
+2025-02-08,Internal,11,Seting 3 laptop baru dari aset dan setting Akun Outlook IT di 3 laptop baru dari aset,9.0,8,3,,,2025-02-08,0.0
+2025-02-08,Internal,11,Setting server HO terkait aapanel dan install aapanel di Server yang berada di HO,,8,5,,,2025-02-08,0.0
+2025-02-08,Internal,11,"Pengecekan Wi-Fi,Cek Kecepatan Internet atau Memeriksa Koneksi Fisik ",,8,5,,,2025-02-08,0.0
+2025-02-08,Internal,12,Setting software laptop pak bilal dan Install + aktivasi aplikasi dms di laptop pak bilal,,9,3,,,2025-02-10,0.0
+2025-02-10,Internal,12,Pembuatan link zoom dan Pembuatan link zoom untuk kebutuhan HRD tgl 10/2/2025,10.0,9,3,,,2025-02-10,0.0
+2025-02-10,Internal,12,Proyek Aplikasi GIS Kemitraan terkait latitude dan longitude lokasi mitra untuk di aplikasi,4.0,9,3,,,2025-02-10,0.0
+2025-02-10,Internal,12,Maintenance & monitoring traffic website dkriuk (Awal),,9,3,,,2025-02-10,0.0
+2025-02-10,Internal,12,Mengoptimalkan query dan indeks untuk meningkatkan performa database dkriuk.,,9,3,,,,
+2025-02-10,Internal,12,Maintenance & monitoring program dms (Awal) dan memastikan sistem DMS agar berjalan dengan baik,3.0,9,3,,,2025-02-10,0.0
+2025-02-10,Internal,12,Monitoring grup komplen dan Balas chat grup komplen,,9,3,,,2025-02-10,0.0
+2025-02-10,Internal,11,Setting cctv Cibereum dibantu oleh team teknisi untuk melakukan penarikan kabel,9.0,8,1,,,2025-02-10,0.0
+2025-02-10,Internal,11,Setting server HO terkait aapanel & ubuntu,,8,5,,,2025-02-10,0.0
+2025-02-10,Internal,11,Pengecekan dan perbaikan mouse admin partnership yang rusak pada donglenya,11.0,8,3,,,2025-02-10,0.0
+2025-02-10,Internal,11,Pengecekan dan perbaikan laptop admin partnership yang tidak sempat menyala,11.0,8,3,,,2025-02-10,0.0
+2025-02-10,Internal,11,Pengecekan Wi-Fi Cibereum  ( Kecepatan Internet atau Memeriksa Koneksi Fisik,,8,1,,,2025-02-10,0.0
+2025-02-10,Internal,11,Pengecekan Wi-Fi HO ( Kecepatan Internet atau Memeriksa Koneksi Fisik,,8,5,,,2025-02-10,0.0
+2025-02-11,Internal,12,Maintenance & monitoring traffic website dkriuk,,9,3,,,2025-02-11,0.0
+2025-02-11,Internal,12,Pembuatan link zoom untuk kebutuhan admin stokis kang wira tgl 11/2/2025,3.0,9,3,,,2025-02-11,0.0
+2025-02-11,Internal,12,Maintenance & monitoring program dms,3.0,9,3,,,2025-02-11,0.0
+2025-02-11,Internal,12,Maintenance & monitoring database server dkriuk,,9,3,,,2025-02-11,0.0
+2025-02-11,Internal,11,Pengecekan pc staff videographer,7.0,8,3,,,2025-02-11,0.0
+2025-02-11,Internal,12,Monitoring grup komplen ,9.0,9,3,,,2025-02-11,0.0
+2025-02-11,Internal,11,Perbaikan tombol power yg tidak bisa hidup,11.0,8,3,,,2025-02-11,0.0
+2025-02-11,Internal,11,Pengecekan laptop stokis terkait setting date & time serta office excel laptop stokis,9.0,8,3,,,2025-02-11,0.0
+2025-02-11,Internal,11,Pengecekan Wi-Fi Kemitraan TSP,4.0,8,3,,,2025-02-11,0.0
+2025-02-11,Internal,11,Pengecekan dan perbaikan laptop spv marketing yg tidak bisa ngprint,15.0,8,3,,,2025-02-11,0.0
+2025-02-11,Internal,11,Setting server HO dan Install nextcloud untuk kebutuhan arsip brand & media,,8,5,,,2025-02-11,0.0
+2025-02-12,Internal,12,Proyek penambahan fitur pada Aplikasi GIS Kemitraan berbasis web,4.0,9,3,,,2025-02-11,0.0
+2025-02-12,Internal,12,Maintenance & monitoring traffic website dkriuk,,9,3,,,2025-02-12,0.0
+2025-02-12,Internal,12,Maintenance & monitoring database server dkriuk,,9,3,,,2025-02-12,0.0
+2025-02-12,Internal,12,Maintenance & monitoring program dms,3.0,9,3,,,2025-02-12,0.0
+2025-02-12,Internal,11,Setting nextcloud di TSP remote dari server HO,,8,3,,,2025-02-12,0.0
+2025-02-12,Internal,11,Pengecekan dan update lisesnsi + service driver pada laptop staff warehouse ,,8,3,,,2025-02-12,0.0
+2025-02-12,Internal,11,Pengecekan laptop spv warehouse sumatera,1.0,8,3,,,2025-02-12,0.0
+2025-02-12,Internal,11,Pengecekan laptop SPV Kemitraan Jabodetabek,4.0,8,3,,,2025-02-12,0.0
+2025-02-12,Internal,11,Pengecekan laptop Staff RnD,,8,3,,,2025-02-12,0.0
+2025-02-12,Internal,11,Pengecekan SSH di server HO dengan tim PKL,,8,5,,,2025-02-12,0.0
+2025-02-13,Internal,12,Mengerjakan (revisi/penambahan fitur) terkait aplikasi penitikan lokasi mitra berbasis web,4.0,9,3,,,2025-02-13,0.0
+2025-02-13,Internal,11,Perbaikan monitor di pos security HO yang mati,9.0,8,5,,,2025-02-13,0.0
+2025-02-13,Internal,12,Maintenance & monitoring traffic website .,,9,3,,,2025-02-13,0.0
+2025-02-13,Internal,11,Pemasangan temperred glass di hp admin sosmed,15.0,8,3,,,2025-02-13,0.0
+2025-02-14,Internal,12,Setting Aplikasi DMS Stokis,3.0,9,3,,,2025-02-14,0.0
+2025-02-14,Internal,12,Setting Aplikasi DMS Kemitraan,4.0,9,3,,,2025-02-14,0.0
+2025-02-14,Internal,12,Maintenance & monitoring traffic website dkriuk,,9,3,,,2025-02-14,0.0
+2025-02-14,Internal,11,Setting laptop hrd ke printer,10.0,8,3,,,2025-02-14,0.0
+2025-02-14,Internal,11,Setting nextcloud untuk arsip brand & media,7.0,8,3,,,2025-02-14,0.0
+2025-02-14,Internal,11,Uninstall software wps office di laptop set-up,7.0,8,3,,,2025-02-14,0.0
+2025-02-15,Internal,11,Backup data WA Tim Aset,9.0,8,3,,,2025-02-15,0.0
+2025-02-15,Internal,11,Setting aapanel agar nextcloud bisa untuk buka office,9.0,8,3,,,2025-02-15,0.0
+2025-02-15,Internal,11,Uninstall WPS di laptop kang erivien,2.0,8,3,,,2025-02-15,0.0
+2025-02-17,Internal,11,Perbaikan WiFi yang tidak terkoneksi dengan internet di Cibereum Gudang Lama,1.0,8,3,,,2025-02-17,0.0
+2025-02-17,Internal,12,Penambahan Akses Manager untuk aplikasi DMS Stokis Bukittinggi,3.0,9,3,,,2025-02-17,0.0
+2025-02-17,Internal,12,Maintenance & monitoring traffic website dkriuk,,9,3,,,2025-02-17,0.0
+2025-02-17,Internal,11,Perbaikan WiFi yang tidak terkoneksi dengan internet di Cibereum Gudang Lama,1.0,8,1,,,2025-02-18,0.0
+2025-02-18,Internal,11,Pengecekan Fingerprint HO yang sempat tidak terkoneksi dengan internet/WiFi,,8,5,,,2025-02-18,0.0
+2025-02-18,Internal,11,Rubah regional formatnya jadi English (United States) serta setting printer struk PIC Jateng ,3.0,8,3,,,2025-02-18,0.0
+2025-02-18,Internal,12,Maintenance & monitoring program dms,3.0,9,3,,,2025-02-18,0.0
+2025-02-18,Internal,11,Pengecekan laptop stokis Citayam terkait munculnya notif Fan Error,3.0,8,1,,,2025-02-18,0.0
+2025-02-18,Internal,11,Pasang Harddisk untuk laptop kang maul (media promosi),7.0,8,3,,,2025-02-18,0.0
+2025-02-19,Internal,11,Aktivasi m.s office di laptop baru untuk tim stokis ,3.0,8,3,,,2025-02-19,0.0
+2025-02-19,Internal,11,Menyalakan Ulang Server HO & pengecekan switch yg bermasalah di router security,,8,5,,,2025-02-19,0.0
+2025-02-19,Internal,12,penambahan item ayam ori pisah paket lengkap untuk dimasukkan ke aplikasi dms stokis,3.0,9,3,,,2025-02-19,0.0
+2025-02-20,Internal,12,Setting harga berdasarkan wilayah di aplikasi https://kasir.dkriuk.com,,9,3,,,2025-02-20,0.0
+2025-02-20,Internal,12,Setting Perihal artikel https://blog.dkriuk.com untuk mengarsipkan data yang menggunakan atau mencakup nama owner berdasarkan permintaan SM Marketing,15.0,9,3,,,2025-02-20,0.0
+2025-02-20,Internal,12,Maintenance & monitoring traffic website dkriuk.com,15.0,9,3,,,2025-02-20,0.0
+2025-02-20,Internal,12,Mengoptimalkan query dan indeks untuk meningkatkan performa database.,,9,3,,,2025-02-20,0.0
+2025-02-20,Internal,11,Setting 2 laptop baru dari aset mencakup pengecekan m.s office dan pengecekan softaware yang akan digunakan,16.0,8,3,,,2025-02-20,0.0
+2025-02-20,Internal,11,pengecekan & pemasangan 1 Unit CCTV baru dari tim aset alhamdulillah cctv support dan cocok digunakan di cibereum bersama tim teknisi,,8,1,,,2025-02-20,0.0
+2025-02-20,Internal,11,"Perbaikan printer logistik (kendala pada saat cetak, hasil warnanya hanya 1 warna biru saja)",1.0,8,1,,,2025-02-20,0.0
+2025-02-20,Internal,11,Setting printer yang tidak terhubung / tidak bisa cetak struk milik laptop pak budi,1.0,8,1,,,2025-02-20,0.0
+2025-02-21,Internal,12,setting harga berdasarkan wilayah di aplikasi https://kasir.dkriuk.com,,9,3,,,2025-02-21,0.0
+2025-02-21,Internal,12,Demo aplikasi https://kasir.dkriuk.com ke Pak Adi (SM Kemitraaan & Support),11.0,9,3,,,2025-02-21,0.0
+2025-02-24,Internal,11,pergantian kipas cpu di laptop kang ryan admin,8.0,8,3,,,2025-02-24,0.0
+2025-02-24,Internal,11,pengoptimalan sekaligus pembersihan sampah laptop kang ari GA Bandung,,8,3,,,2025-02-24,0.0
+2025-02-25,Internal,12,Update data harga sate wilayah Banjarmasin yang sebelumnya menggunakan kategori varian dialihkan ke kategori ayam,5.0,9,3,,,2025-02-25,0.0
+2025-02-25,Internal,12,Pembuatan link zoom untuk admin sekretariat HU,19.0,9,3,,,2025-02-25,0.0
+2025-02-25,Internal,12,"Setting website dkriuk.com  yang menerima traffic tinggi agar tidak mengalami masalah teknis (misalnya, waktu muat yang lambat atau kesalahan 404).",,9,3,,,2025-02-25,0.0
+2025-02-25,Internal,12,Penambahan/setting disk space 8GB untuk akun accounting di aplikasi arsip finance,5.0,9,3,,,2025-02-25,0.0
+2025-02-25,Internal,11,Remote terkait aktivasi m.s office dilaptop pic Jabodetabek 4,11.0,8,3,,,2025-02-25,0.0
+2025-02-25,Internal,11,Pengecekan charger laptop kang Rizky admin PO,3.0,8,3,,,2025-02-25,0.0
+2025-02-25,Internal,11,Pengecekan 2 unit laptop baru dari aset.,16.0,8,3,,,2025-02-25,0.0
+2025-02-25,Internal,11,remote aktivasi m.s office di laptop warehouse sumatera,1.0,8,3,,,2025-02-25,0.0
+2025-02-26,Internal,12,Demo aplikasi https://kasir.dkriuk.com ke Manager Development (Pak daus) dan tim ,13.0,9,3,,,2025-02-26,0.0
+2025-02-26,Internal,11,Pengecekan aplikasi aset pada server HO yang sempat mati / tidak terkoneksi,16.0,8,5,,,2025-02-26,0.0
+2025-02-26,Internal,11,Pengecekan HP Admin Stokis Cibinong,3.0,8,3,,,2025-02-26,0.0
+2025-02-26,Internal,11,Setting printer kang ryan ,8.0,8,3,,,2025-02-26,0.0
+2025-02-26,Internal,11,Pencabutan RAM laptop untuk diganti dengan yg baru dilaptop SPV Kemitraan Jabodetabek,11.0,8,3,,,2025-02-26,0.0
+2025-02-27,Internal,11,Pemasangan 2 unit cctv baru di CIbereum bersama tim teknisi,,8,1,,,2025-02-27,0.0
+2025-02-27,Internal,12,Penambahan akses aplikasi untuk warehouse bandung,1.0,9,3,,,2025-02-27,0.0
+2025-03-01,Internal,12,Update link & landing page promo ramadhan bulan maret 2025,15.0,9,3,,,2025-03-01,0.0
+2025-03-03,Internal,11,Pengecekan Wi-Fi Cibereum yang sempat tidak terkoneksi dengan internet,1.0,8,1,,,2025-03-03,0.0
+2025-03-03,Internal,11,aktivasi m.s office laptop pak budi logistik,1.0,8,1,,,2025-03-03,0.0
+2025-03-03,Internal,11,mengaktifkan aplikasi aset pada server HO yang mati,16.0,8,5,,,2025-03-03,0.0
+2025-03-03,Internal,11,Pengecekan Wi-Fi Kemitraan,11.0,8,3,,,2025-03-03,0.0
+2025-03-03,Internal,11,setting cctv wireless untuk finance tsp,5.0,8,3,,,2025-03-03,0.0
+2025-03-04,Internal,12,Demo aplikasi https://gis.dkriuk.com dengan Manager & SPV Kemitraan Jabodetabek,11.0,9,3,,,2025-03-04,0.0
+2025-03-04,Internal,12,Update perubahan harga jual ke mitra terkait item baskom d38 berdasarkan permintaan finance,5.0,9,3,,,2025-03-04,0.0
+2025-03-04,Internal,11,Pemasangan kabel power di gudang baru,,8,1,,,2025-03-04,0.0
+2025-03-04,Internal,11,setting peinter laptop hrd,10.0,8,3,,,2025-03-04,0.0
+2025-03-04,Internal,11,aktivasi office laptop kang ryan,8.0,8,3,,,2025-03-04,0.0
+2025-03-04,Internal,12,Demo aplikasi https://it.dkriuk.com ke Pak Faris (SM GA),8.0,9,3,,,2025-03-04,0.0
+2025-03-05,Internal,12,"Revisi/penambahan fitur pada aplikasi https://it.dkriuk.com/login berdasarkan permintaan SM GA (Pak faris) seperti lokasi,kategori,progress persen dan menghilangkan opsi email dll",8.0,9,3,,,2025-03-05,0.0
+2025-03-05,Internal,12,"Penambahan akses aplikasi stokis Medan, Pekanbaru & Palembang untuk finance berdasarkan permintaan pak asep (Manager admin finance)",5.0,9,3,,,2025-03-05,0.0
+2025-03-05,Internal,12,"Penambahan akses stokis cianjur,purwakarta,indramayu,tasikmalaya berdasarkan permintaan admin pusat regional",3.0,9,3,,,2025-03-05,0.0
+2025-03-05,Internal,11,Pengecekan laptop staff poultry,2.0,8,5,,,2025-03-05,0.0
+2025-03-05,Internal,11,Menghidupkan server HO yang sempat tidak terkoneksi dengan aplikasi aset,,8,5,,,2025-03-05,0.0
+2025-03-05,Internal,11,perbaikan hp stokis cibinong(pergantian port charger),3.0,8,3,,,2025-03-05,0.0
+2025-03-05,Internal,11,Pengecekan 2 unit laptop bekas dari aset ,16.0,8,3,,,2025-03-05,0.0
+2025-03-05,Internal,11,Menambahkan Pagination pada bagian serah terima di aplikasi aset,16.0,8,3,,,2025-03-05,0.0
+2025-03-06,Internal,12,perubahan jadwal/jam kerja Kemitraan di website dkriuk.com berdasarkan permintaan SM Marketing,15.0,9,3,,,2025-03-06,0.0
+2025-03-06,Internal,12,Perubahan password untuk akses aplikasi DMS warehouse bandung berdasarkan permintaan SM Logistik,1.0,9,3,,,2025-03-06,0.0
+2025-03-06,Internal,11,pengecekan laptop kang putra finance bermasalah pada lcdnya (perlu diganti),5.0,8,3,,,2025-03-06,0.0
+2025-03-06,Internal,11,sharing file windows di tim asset,16.0,8,3,,,2025-03-06,0.0
+2025-03-06,Internal,11,Pengecekan laptop tim stokis Bermasalah pada keyboard (harus diganti),3.0,8,3,,,2025-03-06,0.0
+2025-03-06,Internal,11,Pengecekan laptop SM Poultry aktivasi m.s officenya pada laptop pak alfian,2.0,8,3,,,2025-03-06,0.0
+2025-03-08,Internal,11,Downgrade windows 11 ke windows 10 di laptop stokis jabodetabek 4,3.0,8,3,,,2025-03-08,0.0
+2025-03-08,Internal,11,"menyalakan kembali server HO, terkait aplikasi asset & aapanel yg sempat mati",,8,3,,,2025-03-08,0.0
+2025-03-08,Internal,11,"Perbaikan printer diruangan dirops, Penyebab printer mengalami kerusakan: ada plastik didalam printer sehingga menyebabkan head tidak stabil",12.0,8,3,,,2025-03-08,0.0
+2025-03-08,Internal,11,pengecekan laptop milik spv promosi & event,6.0,8,3,,,2025-03-08,0.0
+2025-03-08,Internal,11,setting laptop baru dari asset,16.0,8,3,,,2025-03-08,0.0
+2025-03-10,Internal,12,"Penambahan 3 hak akses (Divisi terkait, teknisi, pemberi tugas) pada aplikasi IT https://it.dkriuk.com",,9,3,,,2025-03-10,0.0
+2025-03-10,Internal,11,membenarkan posisi cctv yang salah di HO & pengecekan kabel cctv di HO,,8,3,,,2025-03-10,0.0
+2025-03-10,Internal,11,install ulang driver vga di pc kang apri media,7.0,8,3,,,2025-03-10,0.0
+2025-03-10,Internal,11,Pengecekan laptop tim promosi & event,6.0,8,3,,,2025-03-10,0.0
+2025-03-10,Internal,11,Setting laptop baru untuk stokis purwakarta,3.0,8,3,,,2025-03-10,0.0
+2025-03-10,Internal,11,Seting laptop baru untuk stokis yang sempat eror ms office nya,3.0,8,3,,,2025-03-10,0.0
+2025-03-11,Internal,12,Penambahan fitur di aplikasi poultry pada bagian item ayam karkas menjadi ayam ori dan hot (yg sudah dimarinasi) yang dapat mengurangi stok item ayam karkas (yg belum dimarinasi),20.0,9,3,,,2025-03-11,0.0
+2025-03-11,Internal,12,Update/penambahan fitur icon/button copy pada ID di aplikasi IT https://it.dkriuk.com,,9,3,,,2025-03-11,0.0
+2025-03-11,Internal,12,Penarikan & pengecekan data CCTV mulai dari jam 05:36 hingga jam 05:38 (pelaku melancarkan aksinya pada unit kendaraan tim ob a.n hardi)  di ruangan CCTV TSP Kemitraan depan,,9,3,,,2025-03-11,0.0
+2025-03-11,Internal,12,"Maintenance website dkriuk.com Memastikan bahwa halaman yang menerima traffic tinggi tidak mengalami masalah teknis (misalnya, waktu muat yang lambat atau kesalahan 404).",,9,3,,,2025-03-12,0.0
+2025-03-12,Internal,12,Pembuatan data rekap tim produksi di aplikasi poultry,20.0,9,3,,,2025-03-12,0.0
+2025-03-12,Internal,12,"Update data mesin, data lokasi serta pembuatan button search lokasi di aplikasi https://it.dkriuk.com",20.0,9,3,,,2025-03-12,0.0
+2025-03-12,Internal,12,Pembuatan link zoom untuk meeting permintaan admin head unit bisnis,,9,3,,,2025-03-12,0.0
+2025-03-12,Internal,12,Pembuatan akun email baru untuk Admin HU GA adminhuga@dkriuk.com beserta setting outlooknya dilaptop adminnya,,9,3,,,2025-03-12,0.0
+2025-03-13,Internal,12,Menghubungkan email adminhuga@dkriuk.com ke gmail agar dapat menerima dan membaca file seperti spreadsheets dll,,9,3,,,2025-03-13,0.0
+2025-03-13,Internal,12,Menyiapkan dan menjalankan program DMS dilaptop pak reno untuk akses warehouse bandung,,9,3,,,2025-03-13,0.0
+2025-03-13,Internal,12,Menyiapkan dan menjalankan program DMS Warehouse Palembang untuk laptop pak hidayat manager,,9,3,,,2025-03-13,0.0
+2025-03-13,Internal,12,Menambahkan stokis indramayu dan Mengaktivasi program untuk PJ SPV & admin gudang berdasarkan permintaan pak budi,,9,3,,,2025-03-13,0.0
+2025-03-13,Internal,12,Mengaktivasi program dms dilaptop pic area sumatera 3,,9,3,,,2025-03-13,0.0
+2025-03-13,Internal,12,Mengoptimalkan query dan indeks untuk meningkatkan performa database.,,9,3,,,2025-03-13,0.0
+2025-03-13,Internal,11,Pengecekan LCD laptop pak hidayat (Manager),,8,3,,,2025-03-13,0.0
+2025-03-13,Internal,11,mengkoneksikan laptop ke printer HRD,10.0,8,3,,,2025-03-13,0.0
+2025-03-13,Internal,11,aktivasi m.s office di komputer kang fahmi,9.0,8,3,,,2025-03-13,0.0
+2025-03-13,Internal,11,perbaikan printer divisi asset,16.0,8,3,,,2025-03-13,0.0
+2025-03-13,Internal,11,perbaikan printer divisi RnD & perbaikan laptop kang gilang RnD yang lemot,,8,3,,,2025-03-13,0.0
+2025-03-13,Internal,11,perbaikan laptop staff busdev yang microphonenya tidak bisa,13.0,8,3,,,2025-03-13,0.0
+2025-03-14,Internal,12,Pendataan program DMS untuk Stokis Bondowoso.,3.0,9,3,,,2025-03-14,0.0
+2025-03-14,Internal,12,"Pendataan program DMS untuk stokis parung, target nya launching 25 maret 2025.",3.0,9,3,,,2025-03-14,0.0
+2025-03-14,Internal,12,"Pembuatan video tutorial cara penggunaan Aplikasi IT dibuat dalam bentuk 3 video user (yang komplen), pemberi tugas & IT/Teknisi",,9,3,,,2025-03-14,0.0
+2025-03-14,Internal,12,Mengirimkan data akses seluruh stokis berdasarkan permintaan pak adi manager,,9,3,,,2025-03-14,0.0
+2025-03-14,Internal,11,menyalakan server di HO yang sempat mati,,8,5,,,2025-03-14,0.0
+2025-03-14,Internal,11,aktivasi office staff administrasi regional,,8,3,,,2025-03-14,0.0
+2025-03-14,Internal,11,setting laptop baru dari asset,16.0,8,3,,,2025-03-14,0.0
+2025-03-14,Internal,11,Pengecekan 2 unit laptop tim kemitraan,4.0,8,3,,,2025-03-14,0.0
+2025-03-17,Internal,12,Pembuatan stokis bondowoso beserta aksesnya menggunakan harga pulau jawa,3.0,9,3,,,2025-03-17,0.0
+2025-03-17,Internal,12,Setting region pada aplikasi DMS yang terkendala pada proses transaksi di laptop SPV Warehouse Bandung,,9,3,,,2025-03-17,0.0
+2025-03-17,Internal,12,"Memastikan bahwa halaman yang menerima traffic tinggi tidak mengalami masalah teknis (misalnya, waktu muat yang lambat atau kesalahan 404).",,9,3,,,2025-03-17,0.0
+2025-03-17,Internal,12,Pembuatan link zoom hari ini tgl 17/03/2025 untuk admin head unit bisnis,19.0,9,3,,,2025-03-17,0.0
+2025-03-17,Internal,11,membuat partisi di laptop staff PO,,8,3,,,2025-03-17,0.0
+2025-03-17,Internal,11,aktivasi office laptop stokis karang anyar,3.0,8,3,,,2025-03-17,0.0
+2025-03-17,Internal,11,pengecekan usb hub milik pak yana selesai,12.0,8,3,,,2025-03-17,0.0
+2025-03-17,Internal,11,mengaktifkan server asset dan aapanel dan membackup database mysql asset yg sempat mati,,8,3,,,2025-03-17,0.0
+2025-03-17,Internal,11,Setting printer spv warehouse via remote,,8,3,,,2025-03-17,0.0
+2025-03-18,Internal,12,Setting Ruang Penyimpanan atau tambah Disk Space 5 GB dari 50 ke 55GB di aplikasi arsip finance,5.0,9,3,,,2025-03-18,0.0
+2025-03-18,Internal,12,Setting akses program di laptop admin warehouse bandung beserta setting printernya via remote ,,9,3,,,2025-03-18,0.0
+2025-03-18,Internal,12,Pembuatan link zoom hari ini tgl 18/3/2025 untuk head unit bisnis,19.0,9,3,,,2025-03-18,0.0
+2025-03-18,Internal,11,pengecekan laptop stokis citayam dan pembersihan fan laptop citayam,3.0,8,3,,,2025-03-18,0.0
+2025-03-18,Internal,11,perbaikan jaringan di server/aplikasi aset yang menyebabkan kendala pada internet,16.0,8,3,,,2025-03-18,0.0
+2025-03-18,Internal,11,aktivasi office laptop staff kemitraan jabodetabek,4.0,8,3,,,2025-03-18,0.0
+2025-03-18,Internal,11,setting router untuk ruangan IT (tinggal pemasangan oleh tim teknisi),,8,3,,,2025-03-18,0.0
+2025-03-18,Internal,11,Pengecekan laptop staff kemitraan yg casing layarnya patah dan performanya lemot dikarenakan usia laptop sudah lebih dari 5tahun,4.0,8,3,,,2025-03-18,0.0
+2025-03-18,Internal,11,setting waktu untuk laptop stokis cianjur,3.0,8,3,,,2025-03-18,0.0
+2025-03-19,Internal,12,Penambahan Stokis Karanganyar sudah diselesaikan hingga akses manager dan adminnya,3.0,9,3,,,2025-03-19,0.0
+2025-03-19,Internal,12,Mengoptimalkan query dan indeks untuk meningkatkan performa database server,,9,3,,,2025-03-19,0.0
+2025-03-19,Internal,11,pengecekan type lcd laptop kang putra finance,5.0,8,3,,,2025-03-19,0.0
+2025-03-19,Internal,11,install ulang laptop kang ryan dari win 11 ke win 10,,8,3,,,2025-03-19,0.0
+2025-03-19,Internal,11,setting laptop baru dari aset,16.0,8,3,,,2025-03-19,0.0
+2025-03-20,Internal,12,Pembuatan link zoom untuk meeting pak akbar tgl 20/3/2025,,9,3,,,2025-03-20,0.0
+2025-03-20,Internal,12,Pembuatan akun untuk kang badrul diaplikasi aset,16.0,9,3,,,2025-03-20,0.0
+2025-03-20,Internal,12,Memastikan sistem DMS berjalan dengan baik,,9,3,,,2025-03-20,0.0
+2025-03-20,Internal,11,perbaikan pc kang apri media yang sering ngefreze dan amd error,7.0,8,3,,,2025-03-20,0.0
+2025-03-20,Internal,11,perbaikan pc kang maul promosi dengan kendala network error,6.0,8,3,,,2025-03-20,0.0
+2025-03-20,Internal,11,Perbaikan pc kang hendar staff promosi yang mengalami network error,6.0,8,3,,,2025-03-20,0.0
+2025-03-20,Internal,11,perbaikan wifi security di HO,,8,3,,,2025-03-20,0.0
+2025-03-20,Internal,11,penginstallan driver printer untuk laptop kang iqbal,14.0,8,3,,,2025-03-20,0.0
+2025-03-21,Internal,12,Pembuatan akses aplikasi Stokis Parung beserta akses manager dan admin atau kasirnya,3.0,9,3,,,2025-03-21,0.0
+2025-03-21,Internal,12,Mengirimkan akses Aplikasi lama untuk penilaian ob https://nservis.dkriuk.com/,9.0,9,3,,,2025-03-21,0.0
+2025-03-21,Internal,12,"Menyiapkan dan mengirimkan akses untuk stokis Cianjur, Purwakarta, indramayu, Tasikmalaya",3.0,9,3,,,2025-03-21,0.0
+2025-03-21,Internal,11,perbaikan fingerprint yang tidak terkoneksi ke internet,10.0,8,3,,,2025-03-21,0.0
+2025-03-21,Internal,11,install laptop baru milik pak faris,,8,3,,,2025-03-21,0.0
+2025-03-21,Internal,11,setting laptop pak reno yang tidak bisa mendownload,,8,3,,,2025-03-21,0.0
+2025-03-21,Internal,11,uninstall opera browser di laptop pak afid,7.0,8,3,,,2025-03-21,0.0
+2025-03-21,Internal,11,install ulang pc kang apri,7.0,8,3,,,2025-03-21,0.0
+2025-03-21,Internal,11,Pemasangan RAM  di laptop kang surya,4.0,8,3,,,2025-03-21,0.0
+2025-03-24,Internal,12,Kordinasi dengan pak budi manager warehouse,,8,3,,,2025-03-24,
+2025-03-24,Internal,12,Kordinasi dengan PIC Warehouse Sumatera,,8,3,,,,
+2025-03-24,Internal,12,Kordinasi dengan Tim Stock Accounting,,8,3,,,2025-03-24,
+2025-03-24,Internal,12,Kordinasi dengan Head Unit GA & Asisten Dirut,12.0,8,3,,,2025-03-24,
+2025-03-24,Internal,12,Maintenance & monitoring traffic website dkriuk,,9,3,,,2025-03-24,
+2025-03-24,Internal,12,Maintenance & monitoring database server dkriuk,,9,3,,,2025-03-24,
+2025-03-24,Internal,12,Maintenance & monitoring program dms ,,9,3,,,2025-03-24,
+2025-03-24,Internal,12,Buat laporan bulan maret 2025,,8,3,,,,
+2025-03-24,Internal,12,Update data Spreadsheets,,8,3,,,2025-03-24,
+2025-03-24,Internal,11,Pengecekan Fingerprint,10.0,8,3,,,2025-03-24,
+2025-03-24,Internal,11,Pngecekan laptop poultry,20.0,8,3,,,2025-03-24,
+2025-03-24,Internal,11,Pengecekan laptop stokis,3.0,8,3,,,2025-03-24,
+2025-03-24,Internal,11,Pengecekan laptop pak dirut ,12.0,8,3,,,2025-03-24,
+2025-03-24,Internal,11,Mengembalikan laptop kemitraan & stokis,3.0,8,3,,,2025-03-24,
+2025-03-25,Internal,12,Kordinasi dengan HeadUnit GA (Pak faris) & tim service (Kang Alfian & Kang Badrul),9.0,8,3,,,,
+2025-03-25,Internal,12,Kordinasi dengan Kang Badrul (SPV Aset/Service),16.0,8,3,,,2025-03-25,
+2025-03-25,Internal,12,Kordinasi dengan Manager Logistik (Pak Hakim),1.0,8,3,,,2025-03-25,
+2025-03-25,Internal,12,Maintenance & monitoring traffic website dkriuk,,9,3,,,2025-03-25,
+2025-03-25,Internal,12,Maintenance & monitoring database server dkriuk,,9,3,,,2025-03-25,
+2025-03-25,Internal,12,Maintenance & monitoring program dms ,,9,3,,,2025-03-25,
+2025-03-25,Internal,12,Buat laporan bulan maret 2025,,8,3,,,2025-03-25,
+2025-03-25,Internal,12,Update data Spreadsheets,,8,3,,,2025-03-25,
+2025-03-25,Internal,11,Pengecekan printer finance,5.0,8,3,,,2025-03-25,
+2025-03-25,Internal,11,Pengecekan printer kang farid hrd,10.0,8,3,,,2025-03-25,
+2025-03-25,Internal,11,Perbaikan Kabel lan ,,8,1,,,2025-03-25,
+2025-03-25,Internal,11,Pengecekan laptop kemitraan,4.0,8,3,,,2025-03-25,
+2025-03-26,Internal,12,Kordinasi dengan Pak Faris (HeadUnit) terkait email domain perusahaan,,8,3,,,2025-03-26,
+2025-03-26,Internal,12,Pendampingan karyawan baru a.n fahmi dwi putra,10.0,8,3,,,2025-03-26,
+2025-03-26,Internal,12,Maintenance & monitoring traffic website dkriuk,,9,3,,,2025-03-26,
+2025-03-26,Internal,12,Maintenance & monitoring database server dkriuk,,9,3,,,2025-03-26,
+2025-03-26,Internal,12,Maintenance & monitoring program dms ,,9,3,,,2025-03-26,
+2025-03-26,Internal,12,Monitoring grup ,,8,3,,,2025-03-26,
+2025-03-26,Internal,12,Kordinasi dengan Manager Area 4,,8,3,,,2025-03-26,
+2025-03-26,Internal,12,Update data Spreadsheets,,8,3,,,2025-03-26,
+2025-03-26,Internal,11,Pemasangan dvr di gudang baru cibereum,,8,1,,,2025-03-26,
+2025-03-27,Internal,12,Kordinasi dengan Tim Pajak RRK,,8,3,,,2025-03-27,
+2025-03-27,Internal,12,Kordinasi dengan tim poultry,20.0,8,3,,,2025-03-27,
+2025-03-27,Internal,12,Kordinasi dengan SPV Wheat Logistik,1.0,8,3,,,2025-03-27,
+2025-03-27,Internal,12,Kordinasi dengan admin warehouse sumatera,,8,3,,,2025-03-27,
+2025-03-27,Internal,12,Maintenance & monitoring traffic website dkriuk,,8,3,,,2025-03-27,
+2025-03-27,Internal,12,Maintenance & monitoring database server dkriuk,,9,3,,,2025-03-27,
+2025-03-27,Internal,12,Maintenance & monitoring program dms ,,9,3,,,2025-03-27,
+2025-03-27,Internal,12,Monitoring grup ,,8,3,,,2025-03-27,
+2025-03-27,Internal,12,Update data Spreadsheets,,8,3,,,2025-03-27,
+2025-03-27,Internal,12,meeting bulanan (maret) 2025,,8,3,,,2025-03-27,
+2025-03-27,Internal,14,meeting bulanan (maret) 2025,,8,3,,,2025-03-27,
+2025-03-27,Internal,14,Pemasangan dan penarikan kabel lan,,8,3,,,2025-03-27,
+2025-03-28,Internal,12,Kordinasi dengan SPV Finance ,5.0,8,3,,,,
+2025-03-28,Internal,12,Kordinasi dengan Manager Logistik,1.0,8,3,,,2025-03-28,
+2025-03-28,Internal,12,Kordinasi dengan admin stokis lombok,3.0,8,3,,,2025-03-28,
+2025-03-28,Internal,12,Kordinasi dengan PIC HR GA Sumatera,10.0,8,3,,,2025-03-28,
+2025-03-28,Internal,12,Kordinasi dengan admin media,,8,3,,,2025-03-28,
+2025-03-28,Internal,12,Maintenance & monitoring traffic website dkriuk,,8,3,,,2025-03-28,
+2025-03-28,Internal,12,Maintenance & monitoring database server dkriuk,,8,3,,,2025-03-28,
+2025-03-28,Internal,12,Maintenance & monitoring program dms ,,8,3,,,2025-03-28,
+2025-03-28,Internal,12,Monitoring grup ,,8,3,,,2025-03-28,
+2025-03-28,Internal,12,Update data Spreadsheets,,8,3,,,2025-03-28,
+2025-03-28,Internal,14,Pengecekan dan setting 6 laptop,,8,3,,,2025-03-28,
+2025-03-28,Internal,14,pengecekan internet di pc marketing,,8,3,,,2025-03-28,
+2025-03-28,Internal,14,aktivasi office stokis lombok,,8,3,,,2025-03-28,
+2025-04-08,Internal,12,Kordinasi dengan SPV Finance ,5.0,9,3,,,2025-04-08,
+2025-04-08,Internal,12,Kordinasi dengan Manager Logistik,1.0,9,3,,,2025-04-08,
+2025-04-08,Internal,12,Kordinasi dengan admin warehouse sumatera,,9,3,,,2025-04-08,
+2025-04-08,Internal,12,Kordinasi dengan Manager Legal & Audit,9.0,9,3,,,2025-04-08,
+2025-04-08,Internal,12,Kordinasi dengan stokis subang,3.0,9,3,,,2025-04-08,
+2025-04-08,Internal,12,Maintenance & monitoring traffic website dkriuk,,9,3,,,2025-04-08,
+2025-04-08,Internal,12,Maintenance & monitoring database server dkriuk,,9,3,,,2025-04-08,
+2025-04-08,Internal,12,Maintenance & monitoring program dms ,,9,3,,,2025-04-08,
+2025-04-08,Internal,12,Monitoring grup ,,9,3,,,2025-04-08,
+2025-04-08,Internal,12,Update data Spreadsheets,,9,3,,,2025-04-08,
+2025-04-08,Internal,11,Pengecekan laptop asset,16.0,8,3,,,2025-04-08,
+2025-04-08,Internal,11,Pengecekan printer RND,,8,3,,,2025-04-08,
+2025-04-08,Internal,11,Pengecekan laptop HRD,10.0,8,3,,,2025-04-08,
+2025-04-08,Internal,11,Pengecekan 2 unit laptop legal audit,9.0,8,3,,,2025-04-08,
+2025-04-08,Internal,11,Pengecekan laptop kang tedy,4.0,8,3,,,2025-04-08,
+2025-04-08,Internal,11,Pengecekan PC promosi,6.0,8,3,,,2025-04-08,
+2025-04-08,Internal,14,Pengecekan laptop sales,7.0,8,3,,,2025-04-08,
+2025-04-08,Internal,14,Pemasangan router,,8,3,,,2025-04-08,
+2025-04-08,Internal,14,Pemasangan RJ45,,8,3,,,2025-04-08,
+2025-04-08,Internal,14,Pengecekan laptop stokis subang,3.0,8,3,,,2025-04-08,
+2025-04-08,Internal,14,Pengecekan lapton kemitraan jateng,4.0,8,3,,,2025-04-08,
+2025-04-09,Internal,12,Kordinasi dengan Tim Finance,5.0,9,3,,,2025-04-09,
+2025-04-09,Internal,12,Kordinasi dengan Manager Logistik (pak hakim),1.0,9,3,,,2025-04-09,
+2025-04-09,Internal,12,Kordinasi dengan PIC Area 1 Sumatera,3.0,9,3,,,2025-04-09,
+2025-04-09,Internal,12,Kordinasi dengan pic warehouse & logistik sumatera,,9,3,,,2025-04-09,
+2025-04-09,Internal,12,Kordinasi dengan Pic Jabodetabek 3 ,3.0,9,3,,,2025-04-09,
+2025-04-09,Internal,12,Maintenance & monitoring traffic website dkriuk,,9,3,,,2025-04-09,
+2025-04-09,Internal,12,Maintenance & monitoring database server dkriuk,,9,3,,,2025-04-09,
+2025-04-09,Internal,12,Maintenance & monitoring program dms ,,9,3,,,2025-04-09,
+2025-04-09,Internal,12,Monitoring grup ,,9,3,,,2025-04-09,
+2025-04-09,Internal,12,Update data Spreadsheets,,9,3,,,2025-04-09,
+2025-04-09,Internal,11,Pengecekan laptok kang surya,4.0,8,3,,,2025-04-09,
+2025-04-09,Internal,11,Pengecekan pc promosi,6.0,8,3,,,2025-04-09,
+2025-04-09,Internal,11,Pengecekan wifi yang mati di HO,,8,5,,,2025-04-09,
+2025-04-09,Internal,11,Pengecekan laptop HRD,10.0,8,3,,,2025-04-09,
+2025-04-09,Internal,11,Pengecekan laptop RND,,8,3,,,2025-04-09,
+2025-04-09,Internal,14,Pengecekan server HO,,8,5,,,2025-04-10,
+2025-04-09,Internal,14,Pengecekan wifi BRP,5.0,8,14,,,2025-04-10,
+2025-04-09,Internal,14,Pengecekan laptop baru ,,8,3,,,2025-04-10,
+2025-04-09,Internal,14,Pengcekan wifi,,8,3,,,2025-04-10,
+2025-04-09,Internal,14,Pengcekan laptop stokis sumedang,3.0,8,3,,,2025-04-10,
+2025-04-10,Internal,12,Kordinasi dengan Manager Finance,5.0,9,3,,,2025-04-10,
+2025-04-10,Internal,12,Kordinasi dengan Pak yana,12.0,9,3,,,2025-04-10,
+2025-04-10,Internal,12,Kordinasi dengan PIC area Sumatera 1,3.0,9,3,,,2025-04-10,
+2025-04-10,Internal,12,Kordinasi dengan Admin Warehouse Sumatera,,9,3,,,2025-04-10,
+2025-04-10,Internal,12,Kordinasi dengan SPV Area Jabodetabek 2,3.0,9,3,,,2025-04-10,
+2025-04-10,Internal,12,Maintenance & monitoring traffic website dkriuk,,9,3,,,2025-04-10,
+2025-04-10,Internal,12,Maintenance & monitoring database server dkriuk,,9,3,,,2025-04-10,
+2025-04-10,Internal,12,Maintenance & monitoring program dms ,,9,3,,,2025-04-10,
+2025-04-10,Internal,12,Monitoring grup ,,9,3,,,2025-04-10,
+2025-04-10,Internal,11,Setting Printer,,8,3,,,2025-04-10,
+2025-04-10,Internal,11,pengecekan laptop sales,7.0,8,3,,,2025-04-10,
+2025-04-10,Internal,11,pengecekan laptop pak weli,,8,3,,,2025-04-10,
+2025-04-10,Internal,14,Update data spreadsheet,,8,3,,,2025-04-10,
+2025-04-10,Internal,14,pemindahan pc,9.0,8,3,,,2025-04-10,
+2025-04-10,Internal,14,Pengecekan laptop pak romi,2.0,8,3,,,2025-04-10,
+2025-04-11,Internal,12,Kordinasi dengan tim sumatera,,9,3,,,2025-04-11,
+2025-04-11,Internal,12,Kordinasi dengan SPV Warehouse Bandung,,9,3,,,2025-04-11,
+2025-04-11,Internal,12,kordinasi dengan SPV Promosi,6.0,9,3,,,2025-04-11,
+2025-04-11,Internal,12,Kordinasi dengan PIC Marketing Sumatera,15.0,9,3,,,2025-04-11,
+2025-04-11,Internal,12,Setting laptop asisten direktur produksi,12.0,9,3,,,2025-04-11,
+2025-04-11,Internal,12,Maintenance & monitoring traffic website dkriuk,,9,3,,,2025-04-11,
+2025-04-11,Internal,12,Maintenance & monitoring database server dkriuk,,9,3,,,2025-04-11,
+2025-04-11,Internal,12,Maintenance & monitoring program dms ,,9,3,,,2025-04-11,
+2025-04-11,Internal,12,Monitoring grup ,,9,3,,,2025-04-11,
+2025-04-11,Internal,14,pengecekan proyektor,,8,3,,,2025-04-11,
+2025-04-11,Internal,14,install cctv,5.0,8,3,,,2025-04-11,
+2025-04-11,Internal,14,Pengecekan cctv dan monitor,,8,5,,,2025-04-11,
+2025-04-11,Internal,14,Pengecekan cctv dan monitor,,8,5,,,2025-04-11,
+2025-04-11,Internal,14,Pengecekan cctv dan monitor,,8,5,,,2025-04-11,
+2025-04-12,Internal,14,Penginstalan printer,5.0,8,3,,,2025-04-12,
+2025-04-12,Internal,14,Pemasangan monitor,,8,5,,,2025-04-12,
+2025-04-14,Internal,12,Aplikasi Pemesanan Bahan Baku Mitra,,9,3,,,2025-04-14,
+2025-04-14,Internal,12,Kordinasi dengan Manager Regional Sumatera (Pak Bilal),,9,3,,,2025-04-14,
+2025-04-14,Internal,12,Kordinasi dengan Manager Legal & Audit,9.0,9,3,,,2025-04-14,
+2025-04-14,Internal,12,Kordinasi dengan PIC Security,9.0,9,3,,,2025-04-14,
+2025-04-14,Internal,12,Kordinasi SPV Jabodetabek,3.0,9,3,,,2025-04-14,
+2025-04-14,Internal,12,Maintenance & monitoring traffic website dkriuk,,9,3,,,2025-04-14,
+2025-04-14,Internal,12,Maintenance & monitoring database server dkriuk,,9,3,,,2025-04-14,
+2025-04-14,Internal,12,Maintenance & monitoring program dms ,,9,3,,,2025-04-14,
+2025-04-14,Internal,12,Monitoring grup ,,9,3,,,2025-04-14,
+2025-04-14,Internal,11,Pengecekan laptop manager poultry,2.0,8,5,,,2025-04-14,
+2025-04-14,Internal,11,Pengecekan CCTV ,,8,5,,,2025-04-14,
+2025-04-14,Internal,11,Pengecekan laptop admin produksi,2.0,8,5,,,2025-04-14,
+2025-04-14,Internal,11,Cek Server HO,,8,5,,,2025-04-14,
+2025-04-14,Internal,11,Perbaikan laptop citayam,3.0,8,3,,,2025-04-14,
+2025-04-14,Internal,11,Perbaikan laptop service,9.0,8,3,,,2025-04-14,
+2025-04-14,Internal,14,Pengecekan laptop baru,,8,3,,,2025-04-14,
+2025-04-14,Internal,14,Pembuatan aplikasi pemesanan bahan baku,,8,3,,,2025-04-14,
+2025-04-14,Internal,14,Pembuatan memo ,,8,3,,,2025-04-14,
+2025-04-14,Internal,14,Menyiapkan link pembelian untuk tim sales,15.0,8,3,,,2025-04-14,
+2025-04-15,Internal,11,Perbaikan kabel power pc,9.0,8,3,,,2025-04-15,
+2025-04-15,Internal,11,Setting printer ,16.0,8,3,,,2025-04-15,
+2025-04-15,Internal,11,pengecekan laptop staff mitra,,8,3,,,2025-04-15,
+2025-04-15,Internal,11,Setting laptop baru,,8,3,,,2025-04-15,
+2025-04-15,Internal,11,Setting printer ,16.0,8,3,,,2025-04-15,
+2025-04-15,Internal,14,aktivasi akun,9.0,8,3,,,2025-04-15,
+2025-04-15,Internal,14,penyetingan laptop baru,16.0,8,3,,,2025-04-15,
+2025-04-15,Internal,14,penginstalan dan aktivasi,,8,3,,,2025-04-15,
+2025-04-15,Internal,14,Pembuatan aplikasi pemesanan bahan baku,,9,3,,,,
+2025-04-15,Internal,14,Update data spreadseet,,8,3,,,2025-04-15,
+2025-04-15,Internal,14,Cek CCTV Baru,,8,3,,,2025-04-15,
+2025-04-15,Internal,11,Cek CCTV Baru,,8,3,,,2025-04-15,
