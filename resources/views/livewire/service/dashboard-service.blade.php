@@ -1,5 +1,4 @@
 <div class="row gy-4">
-
     <div class="row row-cols-xxl-12 gy-4" wire:poll>
         <div class="col-md-4">
             <div class="card shadow-none border bg-gradient-start-3 h-100">
@@ -57,31 +56,34 @@
         </div>
         <div class="col-xxl-8 col-xl-8" wire:ignore>
             <div class="card h-100 radius-8 border">
-              <div class="card-body p-24">
-                  <h6 class="mb-12 fw-semibold text-lg mb-16">Lokasi</h6>
-                  <div class="d-flex align-items-center gap-2 mb-20">
-
-                      <p class="fw-semibold mb-0">Pekerjaan di Lokasi pada bulan {{ \Carbon\Carbon::parse($tanggal)->format('F Y') }}</p>
-                  </div>
-                  <div class="mt-20 d-flex justify-content-center flex-wrap gap-3">
-                    @foreach ($lokasi as $item)
-                    <div class="text-center d-inline-flex align-items-center gap-2 p-2 radius-8 border pe-36 br-hover-primary group-item">
-                        <span class="text-secondary-light text-sm fw-medium">{{ $item->nama }}</span>
-                        <h6 class="text-md fw-semibold mb-0">{{ $item->jumlah }}</h6>
+                <div class="card-header">
+                    <h6 class="fw-semibold text-lg">Lokasi</h6>
+                    <div class="d-flex align-items-center gap-2 ">
+                        <p class="fw-semibold mb-0">Pekerjaan di Lokasi pada bulan {{ \Carbon\Carbon::parse($tanggal)->format('F Y') }}</p>
                     </div>
-                    @endforeach
                 </div>
-                  <div id="lokasiChart" class="barChart"></div>
+                <div class="card-body p-24">
+                    <div class="mt-20 d-flex justify-content-center flex-wrap gap-3">
+                        @foreach ($lokasi as $item)
+                        <div class="text-center d-inline-flex align-items-center gap-2 p-2 radius-8 border pe-10 br-hover-primary group-item">
+                            <span class="text-secondary-light text-sm fw-medium">{{ $item->nama }}</span>
+                            <h6 class="text-md fw-semibold mb-0">{{ $item->jumlah }}</h6>
+                        </div>
+                        @endforeach
+                    </div>
+                    <div id="lokasiChart" class="barChart"></div>
 
-              </div>
+                </div>
             </div>
         </div>
         <div class="col-xxl-4 col-xl-4" wire:ignore>
             <div class="card h-100 radius-8 border-0 overflow-hidden">
-                <div class="card-body p-24">
+                <div class="card-header">
                     <div class="d-flex align-items-center flex-wrap gap-2 justify-content-between">
-                        <h6 class="mb-2 fw-bold text-lg">Keterangan</h6>
+                        <h6 class="fw-bold text-lg">Keterangan</h6>
                     </div>
+                </div>
+                <div class="card-body p-24">
                     <ul class="d-flex flex-wrap align-items-center justify-content-between mt-3 gap-3">
                         <li class="d-flex align-items-center gap-2">
                             <span class="w-12-px h-12-px radius-2 bg-primary-600"></span>
@@ -99,11 +101,13 @@
             </div>
         </div>
         <div class="col-xxl-3 col-xl-12">
-            <div class="card h-100">
-                <div class="card-body">
+            <div class="card header">
+                <div class="card-header">
                     <div class="d-flex align-items-center flex-wrap gap-2 justify-content-between">
-                        <h6 class="mb-2 fw-bold text-lg mb-0">Leaderboard bulan {{ \Carbon\Carbon::parse($tanggal)->format('F Y') }}</h6>
+                        <h6 class="fw-bold text-lg mb-0">Leaderboard bulan {{ \Carbon\Carbon::parse($tanggal)->format('F Y') }}</h6>
                     </div>
+                </div>
+                <div class="card-body">
 
                     <div class="mt-32">
                         @foreach ($leaderboard as $item)
