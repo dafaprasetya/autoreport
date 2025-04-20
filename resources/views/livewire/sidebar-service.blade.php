@@ -9,6 +9,13 @@
     </div>
     <div class="sidebar-menu-area">
         <ul class="sidebar-menu" id="sidebar-menu">
+            <li class="sidebar-menu-group-title">Dashboard</li>
+            <li>
+                <a href="{{ route('dashboardService') }}" class="{{ Route::is('dashboardService') ? 'active-page' : '' }}" >
+                    <iconify-icon icon="material-symbols:dashboard" class="menu-icon"></iconify-icon>
+                    <span>Dashboard</span>
+                </a>
+            </li>
             <li class="sidebar-menu-group-title">Report</li>
             <li>
                 <a href="{{ route('mastergaservice') }}" class="{{ Route::is('mastergaservice') ? 'active-page' : '' }}" >

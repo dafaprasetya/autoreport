@@ -30,6 +30,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::middleware(['auth', 'bagian:Service,Manager'])->group(function(){
     // STAF
     Route::middleware(['jabatan:Staff,Manager'])->group(function(){
+        Route::get('/service', [ServiceController::class, 'dashboard'])->name('dashboardService');
         Route::get('/service/masterga', [ServiceController::class, 'masterGa'])->name('mastergaservice');
         Route::get('/service/report/harian', [ServiceController::class, 'reportHarian'])->name('reportHarianService');
         Route::get('/service/report/harian/{tanggal}', [ServiceController::class, 'reportHarianDetail'])->name('reportHarianServiceDetail');
@@ -37,7 +38,7 @@ Route::middleware(['auth', 'bagian:Service,Manager'])->group(function(){
     });
     // EKSEKUTOR
     Route::middleware(['jabatan:Eksekutor,Manager'])->group(function(){
-
+        
     });
 });
 Route::middleware(['auth', 'bagian:IT,Manager'])->group(function(){

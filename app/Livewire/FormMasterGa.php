@@ -74,7 +74,7 @@ class FormMasterGa extends Component
         if ($this->foto_after) {
             $report->foto_after = $this->foto_after->store('images');
             $foto_after = $this->foto_after;
-            $nama_file = 'before_'.$report->id.'.'.$foto_after->extension();
+            $nama_file = 'after_'.$report->id.'.'.$foto_after->extension();
             $foto_after->storeAs('public/service/foto_after/', $nama_file);
             $report->foto_after = $nama_file;
             $report->save();

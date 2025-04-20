@@ -147,6 +147,7 @@ class ReportHarianService extends Component
 
         }
         $report->$field = $value;
+
         $report->save();
 
         $this->loadReports();

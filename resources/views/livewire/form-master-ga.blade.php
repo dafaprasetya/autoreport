@@ -16,7 +16,7 @@
                     <select class="form-select" wire:model="keterangan">
                         <option selected>--Pilih Keterangan --</option>
                         <option value="Internal">Internal</option>
-                        <option value="Ekternal">External</option>
+                        <option value="External">External</option>
                     </select>
                     <div>
                         @error('keterangan') <span class="error text-danger">{{ $message }}</span> @enderror

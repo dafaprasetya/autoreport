@@ -22,7 +22,8 @@
                             @endif
                         </div>
                             <div class="w-50-px h-50-px bg-cyan rounded-circle d-flex justify-content-center align-items-center">
-                            <div class="text-white fw-bold">{{ $loop->iteration }}</div>
+                                <div class="text-white fw-bold">{{ $loop->iteration }}
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -76,7 +76,6 @@
   <!-- main js -->
   <script src="{{ asset('wowdash/assets/js/app.js') }}"></script>
 
-  <script src="{{ asset('wowdash/assets/js/homeOneChart.js') }}"></script>
   @yield('script')
     @stack('script')
 </body>

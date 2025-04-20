@@ -16,6 +16,23 @@ class ServiceController extends Controller
     {
         // echo 'hai';
     }
+    function dashboard(Request $request) {
+        $leaderboard = ReportHarianService::select('user_id')
+                        ->selectRaw('SUM(poin) as total_poin')
+                        // ->whereMonth('date', now()->month)
+                        ->whereYear('date', now()->year)
+                        ->groupBy('user_id')
+                        ->orderByDesc('total_poin')
+                        ->get();
+        $tanggal = $request->input('tanggal');
+        $data = [
+            'title'=> 'Admin Report Harian Service',
+            'leaderboard' => $leaderboard,
+            'tanggal' => $tanggal,
+        ];
+        return view('admin.service.dashboard.index', $data);
+    }
+
     public function masterGa(Request $request){
         $report = ReportService::orderBy('created_at', 'desc')->get();
         $divisi = Divisi::all();
@@ -30,7 +47,7 @@ class ServiceController extends Controller
             'lokasi'=>$lokasi,
             'user'=>$user,
         ];
-        return view('admin.service.index', $data);
+        return view('admin.service.masterga.index', $data);
     }
     public function reportHarian(Request $request) {
         $leaderboard = ReportHarianService::select('user_id')

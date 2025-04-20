@@ -8,10 +8,10 @@
 
         <div class="card basic-data-table">
             <div class="card-header">
-              <h5 class="card-title mb-0">Report Harian Tim Service</h5>
+              <h5 class="card-title mb-0">Tambah Report Tim Service</h5>
             </div>
             <div class="card-body">
-
+                @livewire('FormTambahReport')
             </div>
 
         </div>

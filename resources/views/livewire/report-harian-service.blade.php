@@ -54,7 +54,7 @@
                     </td>
                     <td>
                         <select wire:blur="updateCell({{ $reports->id }}, 'kategori_harian_id', $event.target.value)" class="form-select">
-                            <option selected>{{ $reports->kategoriHarian->nama }}</option>
+                            <option value="{{ $reports->kategori_harian_id }}" selected>{{ $reports->kategoriHarian->nama }}</option>
                             @foreach ($kategori as $kategoris)
                                 <option value="{{ $kategoris->id }}">{{ $kategoris->nama }}</option>
                             @endforeach
@@ -62,7 +62,7 @@
                     </td>
                     <td>
                         <select wire:blur="updateCell({{ $reports->id }}, 'user_id', $event.target.value)" class="form-select">
-                            <option selected>{{ $reports->user->name }} - {{ $reports->user->jabatan }}</option>
+                            <option value="{{ $reports->user_id }}" selected>{{ $reports->user->name }} - {{ $reports->user->jabatan }}</option>
                             @foreach ($user as $users)
                                 <option value="{{ $users->id }}">{{ $users->name }} - {{ $users->jabatan }}</option>
                             @endforeach
@@ -70,7 +70,7 @@
                     </td>
                     <td>
                         <select wire:blur="updateCell({{ $reports->id }}, 'status', $event.target.value)" class="form-select">
-                            <option selected>{{ $reports->status }}</option>
+                            <option value="{{ $reports->status }}" selected>{{ $reports->status }}</option>
                             <option value="Selesai">Selesai</option>
                             <option value="Belum Selesai">Belum Selesai</option>
                         </select>

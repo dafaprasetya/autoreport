@@ -20,6 +20,10 @@ class ReportServiceTable extends Component
     public $reports;
     public $fotoBefore = [];
     public $fotoAfter = [];
+    protected $listeners = [
+        'updateMaster' => 'updateCell',
+        'updateMasterFoto' => 'uploadFoto',
+    ];
 
     public function updateCell($id, $field, $value){
         $report = ReportService::find($id);
@@ -30,6 +34,7 @@ class ReportServiceTable extends Component
             $report->save();
         }
         $report->$field = $value;
+
         $report->save();
 
         $this->loadReports();

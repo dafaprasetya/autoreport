@@ -73,14 +73,14 @@
                     <td><a href="#{{ $reports->tanggal }}" class="text-primary-600">{{ $reports->tanggal }}</a></td>
                     <td>
                         <select wire:blur="updateCell({{ $reports->id }}, 'keterangan', $event.target.value)" class="form-select" id="kategori{{ $reports->id }}">
-                            <option selected>{{ $reports->keterangan }}</option>
+                            <option value="{{ $reports->keterangan }}" selected>{{ $reports->keterangan }}</option>
                             <option value="Internal">Internal</option>
-                            <option value="Ekternal">External</option>
+                            <option value="External">External</option>
                         </select>
                     </td>
                     <td>
                         <select wire:blur="updateCell({{ $reports->id }}, 'user_id', $event.target.value)" class="form-select" id="user{{ $reports->id }}">
-                            <option selected>{{ $reports->user->name }}</option>
+                            <option value="{{ $reports->user_id }}" selected>{{ $reports->user->name }}</option>
                             @foreach ($user as $users)
                                 <option value="{{ $users->id }}">{{ $users->name }}</option>
                             @endforeach
@@ -91,7 +91,7 @@
                     </td>
                     <td>
                         <select class="form-select" id="jenis_pekerjaan{{ $reports->id }}" class="divisi">
-                            <option selected>{{ $reports->divisi->nama }}</option>
+                            <option value="{{ $reports->user_id }}" selected>{{ $reports->divisi->nama }}</option>
                             @foreach ($divisi as $divisis)
                                 <option value="{{ $divisis->id }}">{{ $divisis->nama }}</option>
                             @endforeach
@@ -99,7 +99,7 @@
                     </td>
                     <td>
                         <select wire:blur="updateCell({{ $reports->id }}, 'jenis_pekerjaan_id', $event.target.value)" class="form-select" id="divisi{{ $reports->id }}" class="divisi">
-                            <option selected>{{ $reports->jenis_pekerjaan->nama }}</option>
+                            <option value="{{ $reports->jenis_pekerjaan_id }}" selected>{{ $reports->jenis_pekerjaan->nama }}</option>
                             @foreach ($jenispekerjaan as $jenispekerjaans)
                                 <option value="{{ $jenispekerjaans->id }}">{{ $jenispekerjaans->nama }}</option>
                             @endforeach
@@ -107,7 +107,7 @@
                     </td>
                     <td>
                         <select wire:blur="updateCell({{ $reports->id }}, 'lokasi_id', $event.target.value)" class="form-select" id="lokasi{{ $reports->id }}" class="divisi">
-                            <option selected>{{ $reports->lokasi->nama }}</option>
+                            <option value="{{ $reports->lokasi_id }}" selected>{{ $reports->lokasi->nama }}</option>
                             @foreach ($lokasi as $lokasis)
                                 <option value="{{ $lokasis->id }}">{{ $lokasis->nama }}</option>
                             @endforeach
