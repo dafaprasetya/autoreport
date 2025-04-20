@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ITController;
 use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\UserManagementController;
 use App\Livewire\Counter;
 use Illuminate\Support\Facades\Route;
 
@@ -25,6 +26,9 @@ Route::get('/counter', Counter::class);
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/profile', [UserManagementController::class, 'userProfile'])->name('userProfile');
+Route::post('/profile/edit/{id}', [UserManagementController::class, 'editUser'])->name('editUser');
+Route::post('/profile/edi/password/{id}', [UserManagementController::class, 'editPassword'])->name('editPassword');
 
 // SERVICE
 Route::middleware(['auth', 'bagian:Service,Manager'])->group(function(){
@@ -38,7 +42,7 @@ Route::middleware(['auth', 'bagian:Service,Manager'])->group(function(){
     });
     // EKSEKUTOR
     Route::middleware(['jabatan:Eksekutor,Manager'])->group(function(){
-        
+
     });
 });
 Route::middleware(['auth', 'bagian:IT,Manager'])->group(function(){

@@ -154,41 +154,70 @@
                 </div>
             </div>
         </div>
-        <div class="col-xxl-12" wire:ignore>
-            <div class="card h-100">
-                <div class="card-header">
+        <div class="col-xxl-8" wire:ignore>
+            <div class="card h-100 radius-8 border-0">
+                <div class="card-body p-24">
                     <div class="d-flex align-items-center flex-wrap gap-2 justify-content-between">
-                        <h6 class="mb-2 fw-bold text-lg mb-0">Patient Visited by Depertment</h6>
+                        <div>
+                            <h6 class="mb-2 fw-bold text-lg">Total Pekerjaan Disetiap Divisi</h6>
+                            <span class="text-sm fw-medium text-secondary-light">Bulan {{ \Carbon\Carbon::parse($tanggal)->format('F Y') }}</span>
+                        </div>
+
                     </div>
-                </div>
-                <div class="card-body p-24 d-flex align-items-center gap-16">
+
+                    <div class="mt-20 d-flex justify-content-center flex-wrap gap-3">
+                        @foreach ($jenis_pekerjaan as $index => $item)
+
+                            <li class="d-flex align-items-center gap-2">
+                                <span class="w-12-px h-12-px radius-2" style="background-color: {{ $warnaPekerjaan[$index] }}"></span>
+                                <span class="text-secondary-light text-sm fw-normal">{{ $item->nama }} : {{ $item->jumlah }}
+                                </span>
+                            </li>
+                        @endforeach
+                    </div>
                     <div id="jenisPekerjaanChart"></div>
-                    <ul class="d-flex flex-column gap-12">
-                        <li>
-                            <span class="text-lg">Cardiology: <span class="text-primary-600 fw-semibold">80%</span> </span>
-                        </li>
-                        <li>
-                            <span class="text-lg">Psychiatry:  <span class="text-warning-600 fw-semibold">40%</span> </span>
-                        </li>
-                        <li>
-                            <span class="text-lg">Pediatrics: <span class="text-success-600 fw-semibold">10%</span> </span>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </div>
+
     </div>
 
 </div>
 @push('script')
 <script>
+    @php
+        $pekerjaanJumlah = [];
+        $pekerjaanWarnas = [];
+        $pekerjaanNama = [];
+        foreach ($jenis_pekerjaan as $index => $item) {
+            $pekerjaanJumlah[] = (int)$item->jumlah;
+            $pekerjaanWarnas[] = $warnaPekerjaan[$index];
+            $pekerjaanNama[] = $item->nama;
+        }
+        $dataDivisi = [];
+        foreach ($divisi as $item) {
+            $dataDivisi[] = [
+                'x' => $item->nama,
+                'y' => (int)$item->jumlah
+            ];
+        }
+        $dataLokasi = [];
+        foreach ($lokasi as $item) {
+            $dataLokasi[] = [
+                'x' => $item->nama,
+                'y' => (int)$item->jumlah
+            ];
+        }
+    @endphp
      var options = {
-        series: [80, 40, 10],
+        series: @json($pekerjaanJumlah),
         chart: {
-            height: 300,
+            height: 400,
             type: 'radialBar',
         },
-        colors: ['#3D7FF9', '#ff9f29', '#16a34a'],
+        colors:
+            @json($pekerjaanWarnas),
+
         stroke: {
             lineCap: 'round',
         },
@@ -204,31 +233,22 @@
                     value: {
                         fontSize: '16px',
                     },
-                    // total: {
-                    //     show: true,
-                    //     formatter: function (w) {
-                    //         return '82%'
-                    //     }
-                    // }
                 },
                 track: {
                     margin: 20, // Space between the bars
                 }
             }
         },
-        labels: ['Cardiology', 'Psychiatry', 'Pediatrics'],
+        labels: @json($pekerjaanNama),
     };
 
     var chart = new ApexCharts(document.querySelector("#jenisPekerjaanChart"), options);
     chart.render();
+
     var options = {
         series: [{
           name: "Total",
-          data: [
-                @foreach($divisi as $item)
-                    { x: '{{ $item->nama }}', y: {{ $item->jumlah }} }{{ !$loop->last ? ',' : '' }}
-                @endforeach
-            ]
+          data:@json($dataDivisi)
         }],
       chart: {
           type: 'bar',
@@ -270,12 +290,7 @@
       },
       xaxis: {
           type: 'category',
-          categories: [
-            // 'Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'
-            @foreach($divisi as $item)
-                '{{ $item->nama }}',
-            @endforeach
-        ]
+
       },
       yaxis: {
           labels: {
@@ -295,139 +310,11 @@
 
     var chart = new ApexCharts(document.querySelector("#divisiChart"), options);
     chart.render();
-    function createChartTwo(chartId, color1, color2) {
-        var options = {
-            series: [{
-                name: ['serries1', 'series2'],
-                data: [48, 35, 55, 32, 48, 30, 55, 50, 57]
-            }, {
-                name: 'series2',
-                data: [12, 20, 15, 26, 22, 60, 40, 48, 25]
-            }],
-            legend: {
-                show: false
-            },
-            chart: {
-                type: 'area',
-                width: '100%',
-                height: 200,
-                toolbar: {
-                    show: false
-                },
-                padding: {
-                    left: 0,
-                    right: 0,
-                    top: 0,
-                    bottom: 0
-                }
-            },
-            dataLabels: {
-                enabled: false
-            },
-            stroke: {
-                curve: 'smooth',
-                width: 3,
-                colors: [color1, color2], // Use two colors for the lines
-                lineCap: 'round'
-            },
-            grid: {
-                show: true,
-                borderColor: '#D1D5DB',
-                strokeDashArray: 1,
-                position: 'back',
-                xaxis: {
-                    lines: {
-                        show: false
-                    }
-                },
-                yaxis: {
-                    lines: {
-                        show: true
-                    }
-                },
-                row: {
-                    colors: undefined,
-                    opacity: 0.5
-                },
-                column: {
-                    colors: undefined,
-                    opacity: 0.5
-                },
-                padding: {
-                    top: -20,
-                    right: 0,
-                    bottom: -10,
-                    left: 0
-                },
-            },
-            fill: {
-                type: 'gradient',
-                colors: [color1, color2], // Use two colors for the gradient
-                gradient: {
-                    shade: 'light',
-                    type: 'vertical',
-                    shadeIntensity: 0.5,
-                    gradientToColors: [undefined, `${color2}00`], // Apply transparency to both colors
-                    inverseColors: false,
-                    opacityFrom: [0, 0], // Starting opacity for both colors
-                    opacityTo: [0, 0], // Ending opacity for both colors
-                    stops: [0, 100],
-                },
-            },
-            markers: {
-                colors: [color1, color2], // Use two colors for the markers
-                strokeWidth: 3,
-                size: 0,
-                hover: {
-                    size: 10
-                }
-            },
-            xaxis: {
-                labels: {
-                    show: false
-                },
-                tooltip: {
-                    enabled: false
-                },
-                labels: {
-                    formatter: function (value) {
-                        return value;
-                    },
-                    style: {
-                        fontSize: "14px"
-                    }
-                }
-            },
-            yaxis: {
-                labels: {
-                    formatter: function (value) {
-                    return "Total: " + value;
-                    },
-                    style: {
-                    fontSize: "14px"
-                    }
-                },
-            },
-            tooltip: {
-                x: {
-                    format: 'dd/MM/yy HH:mm'
-                }
-            }
-        };
 
-        var chart = new ApexCharts(document.querySelector(`#${chartId}`), options);
-        chart.render();
-    }
-
-    createChartTwo('enrollmentChart', '#487FFF', '#FF9F29');
 var options = {
       series: [{
           name: "Total",
-          data: [
-                @foreach($lokasi as $item)
-                    { x: '{{ $item->nama }}', y: {{ $item->jumlah }} }{{ !$loop->last ? ',' : '' }}
-                @endforeach
-            ]
+          data: @json($dataLokasi)
       }],
       chart: {
           type: 'bar',

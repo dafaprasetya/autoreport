@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
@@ -23,6 +24,14 @@ class HomeController extends Controller
      */
     public function index()
     {
+        if (Auth::user()->jabatan == 'Staff') {
+            if (Auth::user()->bagian == 'Service') {
+                return redirect()->route('dashboardService');
+            }
+            else if (Auth::user()->bagian == 'IT'){
+                return redirect()->route('itadmin');
+            }
+        }
         return view('home');
     }
 }
