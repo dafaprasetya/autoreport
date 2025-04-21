@@ -5,6 +5,7 @@
 /public/storage
 /storage/*.key
 !/storage/public/profile_picture/default/*
+!/storage/public/profile_picture/default/.gitignore
 /vendor
 .env
 .env.backup
