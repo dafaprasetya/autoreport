@@ -35,7 +35,7 @@ class UserManagementController extends Controller
             $user->picture = $nama_file;
         }
         $user->save();
-        return redirect()->route('editUser')->with('success','Profile berhasil diupdate');
+        return redirect()->back()->with('success','Profile berhasil diupdate');
     }
     public function editPassword($id, Request $request) {
         $userId = decrypt($id);
@@ -45,7 +45,7 @@ class UserManagementController extends Controller
         ]);
         $user->password = Hash::make($validatedData['password']);
         $user->save();
-        return redirect()->route('editUser')->with('success','Password berhasil diupdate');
+        return redirect()->back()->with('success','Password berhasil diupdate');
     }
     public function userProfile() {
         $data = [

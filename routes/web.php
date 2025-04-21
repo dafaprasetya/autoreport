@@ -48,7 +48,10 @@ Route::middleware(['auth', 'bagian:Service,Manager'])->group(function(){
 Route::middleware(['auth', 'bagian:IT,Manager'])->group(function(){
     // STAFF
     Route::middleware(['jabatan:Staff,Manager'])->group(function(){
-        Route::get('/it', [ITController::class, 'index'])->name('itadmin');
+        Route::get('/it', [ITController::class, 'index'])->name('dashboardIT');
+        Route::get('/it/masterga', [ITController::class, 'masterGa'])->name('mastergaIT');
+        Route::get('/it/report/harian', [ITController::class, 'reportHarian'])->name('reportHarianIT');
+        Route::get('/it/report/tambah', [ITController::class, 'tambahReport'])->name('tambahReportIT');
     });
     // EKSEKUTOR
     Route::middleware(['jabatan:Eksekutor,Manager'])->group(function(){

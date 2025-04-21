@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Livewire;
+namespace App\Livewire\It;
 
 use Livewire\Component;
 
-class HarianPage extends Component
+class HarianPageIt extends Component
 {
     public $tanggal = null;
 
@@ -21,6 +21,6 @@ class HarianPage extends Component
 
     public function render()
     {
-        return view('livewire.harian-page');
+        return view('livewire.it.harian-page-it');
     }
 }

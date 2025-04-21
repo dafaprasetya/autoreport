@@ -25,10 +25,12 @@ class ServiceController extends Controller
                         ->orderByDesc('total_poin')
                         ->get();
         $tanggal = $request->input('tanggal');
+        $waktu = $request->input('waktu');
         $data = [
             'title'=> 'Admin Report Harian Service',
             'leaderboard' => $leaderboard,
             'tanggal' => $tanggal,
+            'waktu' => $waktu ? $waktu : 'whereMonth',
         ];
         return view('admin.service.dashboard.index', $data);
     }

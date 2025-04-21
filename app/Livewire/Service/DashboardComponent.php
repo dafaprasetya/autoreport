@@ -8,31 +8,46 @@ use App\Models\Lokasi;
 use App\Models\ReportService;
 use Livewire\Component;
 use App\Models\ReportHarianService as HarianModel;
+use Carbon\Carbon;
 
-class DashboardService extends Component
+class DashboardComponent extends Component
 {
     public $waktu;
     public $waktu2;
 
-    public $hexPekerjaan = [];
+    protected $listeners = ['setWaktu'];
+
+    public function setWaktu($waktu)
+    {
+        $this->waktu2 = Carbon::parse($waktu);
+        // $this->waktu2 = $waktu;
+    }
+
     public function getRandomHex($data) {
-        $hexData = [];  // Membuat array kosong untuk menampung data divisi;
+        $hexData = [];
         $count = 0;
         foreach ($data as $item) {
             $warna = str_replace([" ", "&"], ["_", "dan"], $item->nama);
             $count++;
             // Menambahkan warna hex acak
             $warna_hex = sprintf('#%06X', mt_rand(0, 0xFFFFFF));
-            $this->hexPekerjaan[] = $warna_hex;
+            $hexData[] = $warna_hex;
         }
+        return $hexData;
     }
 
-    public function boot() {
-        $jenis_pekerjaan = JenisPekerjaan::withCount(['reportservice as jumlah' => function ($query) {
-            $query->{$this->waktu}('tanggal', $this->waktu2);
-        }])->having('jumlah', '>', 0)
-        ->get();
-        $this->getRandomHex($jenis_pekerjaan);
+    // Method untuk update chart saat model berubah
+    public function updatedWaktu2($value)
+    {
+        $this->loadChartData();  // Method untuk load data chart sesuai waktu2
+    }
+
+    // Method untuk mengambil data chart berdasarkan waktu2
+    public function loadChartData()
+    {
+
+        // Emit event untuk memberi tahu JS tentang data baru
+        $this->dispatch('updateWaktu2');
     }
 
     public function render()
@@ -72,8 +87,8 @@ class DashboardService extends Component
             'tanggal' => $this->waktu2,
             'divisi' => $divisi,
             'jenis_pekerjaan' => $jenis_pekerjaan,
-            'warnaPekerjaan' => $this->hexPekerjaan,
+            'warnaPekerjaan' => $this->getRandomHex($jenis_pekerjaan)
         ];
-        return view('livewire.service.dashboard-service', $data);
+        return view('livewire.service.dashboard-component', $data);
     }
 }

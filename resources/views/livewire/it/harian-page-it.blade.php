@@ -4,7 +4,7 @@
     <button class="btn btn-outline-primary-600 radius-8 px-20 py-11 d-flex align-items-center justify-content-center" wire:click='kembali'>
         <iconify-icon icon="lets-icons:back" width="24" height="24"></iconify-icon>
     </button>
-    @livewire('LeaderBoardHarianService', ['tanggal' => $tanggal, 'waktu' => 'whereDate'])
+    @livewire('It.Leaderboard', ['tanggal' => $tanggal, 'waktu' => 'whereDate'])
     <div class="row mt-3 mb-3">
         <div class="col-lg-12">
             <button class="btn btn-outline-primary-600 radius-8 px-20 py-11 w-100 d-flex align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#tambahReportHarianModal">
@@ -20,15 +20,16 @@
                     </div>
                     <div class="modal-body">
                         @livewire('FormReportHarianService',['tanggal' => $tanggal])
+
                     </div>
                   </div>
                 </div>
             </div>
         </div>
     </div>
-    @livewire('ReportHarianService', ['tanggal' => $tanggal])
+    @livewire('It.ReportHarian', ['tanggal' => $tanggal])
     @else
-        @livewire('LeaderBoardHarianService', ['tanggal' => now()->month, 'waktu' => 'whereMonth'])
+        @livewire('It.Leaderboard', ['tanggal' => now()->month, 'waktu' => 'whereMonth'])
         @livewire('CalendarHarian')
     @endif
 </div>

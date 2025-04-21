@@ -29,9 +29,10 @@ class HomeController extends Controller
                 return redirect()->route('dashboardService');
             }
             else if (Auth::user()->bagian == 'IT'){
-                return redirect()->route('itadmin');
+                return redirect()->route('dashboardIT');
             }
         }
+
         return view('home');
     }
 }

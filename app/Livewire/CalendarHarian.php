@@ -4,11 +4,11 @@ namespace App\Livewire;
 
 use Livewire\Component;
 
-class CalendarHarianService extends Component
+class CalendarHarian extends Component
 {
 
     public function render()
     {
-        return view('livewire.calendar-harian-service');
+        return view('livewire.calendar-harian');
     }
 }
