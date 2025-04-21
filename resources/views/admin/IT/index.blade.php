@@ -17,7 +17,7 @@
               </li>
             </ul>
         </div>
-        @livewire('It.Dashboard', ['waktu' => 'whereMonth', 'waktu2' => $tanggal ? \Carbon\Carbon::parse($tanggal) : now()])
+        @livewire('It.Dashboard', ['waktu' => $waktu, 'waktu2' => $tanggal ? \Carbon\Carbon::parse($tanggal) : now()])
         {{-- {{ \Carbon\Carbon::parse($tanggal) }} --}}
     </div>
 </main>

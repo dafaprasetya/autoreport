@@ -201,6 +201,10 @@
             ];
         }
         $dataLokasi = [];
+        $namaLokasi = [];
+        foreach ($namaLokasi as $index => $item) {
+            $namaLokasi[] = $item->nama;
+        }
         foreach ($lokasi as $item) {
             $dataLokasi[] = [
                 'x' => $item->nama,
@@ -362,12 +366,9 @@ var options = {
       },
       xaxis: {
           type: 'category',
-          categories: [
-            // 'Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'
-            @foreach($lokasi as $item)
-                '{{ $item->nama }}',
-            @endforeach
-        ]
+          categories:
+            @json($namaLokasi)
+
       },
       yaxis: {
         show: false,

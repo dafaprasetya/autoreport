@@ -27,6 +27,7 @@
 
         </div>
     </div>
+    {{-- {{ $waktu2 }} --}}
     <div id="dashboardComponent">
         @livewire('It.DashboardComponent', ['waktu' => $waktu, 'waktu2' => $waktu2])
     </div>
