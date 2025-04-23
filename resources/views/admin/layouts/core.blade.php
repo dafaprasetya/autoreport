@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ $title }}</title>
-  <link rel="icon" type="image/png" href="" sizes="16x16">
+  <link rel="icon" type="image/jpg" href="{{ asset('wowdash/assets/images/logo.jpg') }}" sizes="16x16">
 @livewireStyles
 
   <link rel="stylesheet" href="{{ asset('foodking/assets/css/font-awesome.css') }}">

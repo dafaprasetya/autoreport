@@ -40,6 +40,7 @@ Route::middleware(['auth', 'bagian:Service,Manager'])->group(function(){
         Route::get('/service/report/harian', [ServiceController::class, 'reportHarian'])->name('reportHarianService');
         Route::get('/service/report/harian/{tanggal}', [ServiceController::class, 'reportHarianDetail'])->name('reportHarianServiceDetail');
         Route::get('/service/report/tambah', [ServiceController::class, 'tambahReport'])->name('tambahReportService');
+        Route::get('/service/report/eksekutor', [ServiceController::class, 'reportEksekutor'])->name('reportEksekutor');
     });
     // EKSEKUTOR
     Route::middleware(['jabatan:Eksekutor,Manager'])->group(function(){
@@ -63,9 +64,4 @@ Route::middleware(['auth', 'bagian:IT,Manager'])->group(function(){
 
 
 // API
-Route::middleware('api')->group(function(){
-    Route::post('api/v1/login',[ApiLogin::class, 'login'])->name('loginApi');
-    Route::middleware(['auth:sanctum'])->group(function(){
-        Route::get('api/v1/user',[ApiLogin::class, 'user'])->name('userApi');
-    });
-});
+

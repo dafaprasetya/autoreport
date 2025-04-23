@@ -18,6 +18,9 @@ return new class extends Migration
             $table->date('tanggal');
             $table->string('deskripsi_pekerjaan');
             $table->string('kategori');
+            $table->string('foto_before')->nullable();
+            $table->string('foto_after')->nullable();
+            $table->string('status')->default('Belum Ditambahkan');
             $table->timestamps();
         });
     }

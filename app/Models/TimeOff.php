@@ -8,4 +8,15 @@ use Illuminate\Database\Eloquent\Model;
 class TimeOff extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        'user_id',
+        'bagian',
+        'kategori',
+        'alasan',
+        'foto',
+    ];
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }

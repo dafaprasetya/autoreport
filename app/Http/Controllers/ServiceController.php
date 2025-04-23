@@ -90,4 +90,12 @@ class ServiceController extends Controller
         ];
         return view('admin.service.report.tambah', $data);
     }
+
+    public function reportEksekutor(Request $request) {
+        $data = [
+            'title'=> 'Admin Report Eksekutor',
+        ];
+        return view('admin.service.eksekutor.index', $data);
+
+    }
 }
