@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\LoginController as ApiLogin;
 use App\Http\Controllers\ITController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\UserManagementController;
@@ -56,5 +57,15 @@ Route::middleware(['auth', 'bagian:IT,Manager'])->group(function(){
     // EKSEKUTOR
     Route::middleware(['jabatan:Eksekutor,Manager'])->group(function(){
 
+    });
+});
+
+
+
+// API
+Route::middleware('api')->group(function(){
+    Route::post('api/v1/login',[ApiLogin::class, 'login'])->name('loginApi');
+    Route::middleware(['auth:sanctum'])->group(function(){
+        Route::get('api/v1/user',[ApiLogin::class, 'user'])->name('userApi');
     });
 });
