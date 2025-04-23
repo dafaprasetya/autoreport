@@ -191,9 +191,23 @@
                             <iconify-icon icon="mingcute:delete-2-line"></iconify-icon>
                         </button>
                         @if ($reports->status == 'Belum Ditambahkan')
-                        <button class="w-32-px h-32-px bg-info-focus text-info-main rounded-circle d-inline-flex align-items-center justify-content-center">
+                        <button data-bs-toggle="modal" data-bs-target="#tambahReport{{ $reports->id }}" class="w-32-px h-32-px bg-info-focus text-info-main rounded-circle d-inline-flex align-items-center justify-content-center">
                             <iconify-icon icon="gridicons:add"></iconify-icon>
                         </button>
+                        <div wire:ignore class="modal fade" id="tambahReport{{ $reports->id }}" tabindex="-1" aria-labelledby="tambahReport{{ $reports->id }}" aria-hidden="true">
+                            <div class="modal-dialog modal-xl">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Tambah Data Master G.A</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    @livewire('FormTambahReport',['agenda' => $reports->deskripsi_pekerjaan, 'kategori_harian_id' => $reports->kategori_harian_id, 'tanggal' => $tanggal, 'keterangan' => 'Internal', 'user_id'=>$reports->user_id, 'detail_kerja' => $reports->deskripsi_pekerjaan, 'divisi_id' => $reports->divisi_id, 'jenis_pekerjaan_id' => $reports->jenis_pekerjaan_id, 'lokasi_id' => $reports->lokasi_id, 'eksekutors'=>true])
+
+                                </div>
+                              </div>
+                            </div>
+                        </div>
                         @endif
                     </td>
                 </tr>

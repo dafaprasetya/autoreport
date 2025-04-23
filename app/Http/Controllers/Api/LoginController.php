@@ -35,7 +35,7 @@ class LoginController extends Controller
     {
         return response()->json([
             'success' => true,
-            'user' => $request->user()
+            $request->user()
         ]);
     }
 }

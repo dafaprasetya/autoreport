@@ -21,6 +21,7 @@ class FormTambahReport extends Component
     #[Validate('required')]
     public $agenda, $kategori_harian_id, $user_id, $detail_kerja, $tanggal, $keterangan, $divisi_id, $lokasi_id, $jenis_pekerjaan_id;
 
+    public $eksekutors;
     public $foto_before, $foto_after, $status, $tanggal_selesai;
     public $listMasterGa = [];
     public $listReportHarian = [];

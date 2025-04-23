@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\GetController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\LoginController as ApiLogin;
@@ -26,3 +27,4 @@ Route::middleware(['auth:sanctum'])->group(function(){
     Route::post('v1/tambah/report',[ReportEksekutorController::class, 'buatReport'])->name('buatReport');
     Route::post('v1/tambah/timeoff',[ReportEksekutorController::class, 'buatTimeOff'])->name('buatTimeOff');
 });
+Route::get('v1/get/lokasi', [GetController::class, 'getLokasi'])->name('getLokasi');
