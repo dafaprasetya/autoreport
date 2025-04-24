@@ -8,6 +8,7 @@ use App\Models\Divisi;
 use App\Models\JenisPekerjaan;
 use App\Models\KategoriHarian;
 use App\Models\Lokasi;
+use App\Models\ReportEksekutor;
 use App\Models\ReportHarianIt as HarianModel;
 use App\Models\ReportIt;
 use App\Models\User;
@@ -22,13 +23,15 @@ class FormTambahReport extends Component
     #[Validate('required')]
     public $agenda, $kategori_harian_id, $user_id, $detail_kerja, $tanggal, $keterangan, $divisi_id, $lokasi_id, $jenis_pekerjaan_id;
 
+    public $eksekutors;
+    public $report_eksekutor_id;
+
     public $foto_before, $foto_after, $status, $tanggal_selesai;
     public $listMasterGa = [];
     public $listReportHarian = [];
 
     public $reportHBaru = [];
     public $reportMBaru = [];
-
     public $reportsharian;
 
     public function loadReportsHarian()
@@ -75,6 +78,11 @@ class FormTambahReport extends Component
             'detail_kerja' => $this->detail_kerja,
         ];
         $this->saves();
+        if($this->eksekutors){
+            $eksekutor = ReportEksekutor::find($this->report_eksekutor_id);
+            $eksekutor->status = 'Sudah Ditambahkan';
+            $eksekutor->save();
+        }
         session()->flash('message', 'Data berhasil ditambahkan.');
 
     }
@@ -99,18 +107,32 @@ class FormTambahReport extends Component
             if ($data['foto_before_url']) {
                 // $master->foto_before = $this->foto_before->store('images');
                 $foto_before = $data['foto_before_url'];
-                $nama_file = 'before_'.$master->id.'.'.$foto_before->extension();
-                $foto_before->storeAs('public/it/foto_before/', $nama_file);
-                $master->foto_before = $nama_file;
-                $master->save();
+                if (is_string($data['foto_before_url'])) {
+                    $ext = pathinfo($data['foto_before_url'], PATHINFO_EXTENSION);
+                    Storage::copy('public/reporteksekutor/foto_before/'.$data['foto_before_url'],'public/it/foto_before/'.'before_'.$master->id.'.'.$ext);
+                    $master->foto_before = 'before_'.$master->id.'.'.$ext;
+                    $master->save();
+                }else{
+                    $nama_file = 'before_'.$master->id.'.'.$foto_before->extension();
+                    $foto_before->storeAs('public/it/foto_before/', $nama_file);
+                    $master->foto_before = $nama_file;
+                    $master->save();
+                }
             }
             if ($data['foto_after_url']) {
                 // $master->foto_after = $this->foto_after->store('images');
                 $foto_after = $data['foto_after_url'];
-                $nama_file = 'after_'.$master->id.'.'.$foto_after->extension();
-                $foto_after->storeAs('public/it/foto_after/', $nama_file);
-                $master->foto_after = $nama_file;
-                $master->save();
+                if (is_string($data['foto_after_url'])) {
+                    $ext = pathinfo($data['foto_after_url'], PATHINFO_EXTENSION);
+                    Storage::copy('public/reporteksekutor/foto_after/'.$data['foto_after_url'],'public/it/foto_after/'.'after_'.$master->id.'.'.$ext);
+                    $master->foto_after = 'after_'.$master->id.'.'.$ext;
+                    $master->save();
+                }else{
+                    $nama_file = 'after_'.$master->id.'.'.$foto_after->extension();
+                    $foto_after->storeAs('public/it/foto_after/', $nama_file);
+                    $master->foto_after = $nama_file;
+                    $master->save();
+                }
             }
 
             $this->listMasterGa = [];
@@ -129,7 +151,7 @@ class FormTambahReport extends Component
             // dd($this->status);
             $report->save();
             if($harians['status'] == 'Selesai'){
-                $this->dispatch('updateStatusPoin', id: $report->id,field:'status', value: $harians['status']);
+                $this->updateCell( $report->id,'status', $harians['status']);
             }
 
             $this->listReportHarian = [];
@@ -137,6 +159,7 @@ class FormTambahReport extends Component
 
 
         }
+
         $this->resetAll();
 
     }
@@ -305,6 +328,7 @@ class FormTambahReport extends Component
             $file->storeAs('public/it/foto_before/', $nama_file);
 
             $this->updateCellMaster($id, 'foto_before', $nama_file);
+            $this->fotoBefore = [];
             // unset($this->fotoBefore[$id]);
         }
 
@@ -319,6 +343,7 @@ class FormTambahReport extends Component
             $file->storeAs('public/it/foto_after/', $nama_file);
 
             $this->updateCellMaster($id, 'foto_after', $nama_file);
+            $this->fotoAfter = [];
         }
 
         $report->save();

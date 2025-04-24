@@ -37,7 +37,7 @@
             </li>
             <li class="sidebar-menu-group-title">Eksekutor</li>
             <li>
-                <a href="{{ route('reportEksekutor') }}" class="{{ Route::is('reportEksekutor') ? 'active-page' : '' }}" >
+                <a href="{{ route('reportEksekutorService') }}" class="{{ Route::is('reportEksekutorService') ? 'active-page' : '' }}" >
                     <iconify-icon icon="lsicon:report-outline" class="menu-icon"></iconify-icon>
                     <span>Report Eksekutor</span>
                 </a>

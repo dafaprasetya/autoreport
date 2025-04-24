@@ -4,7 +4,7 @@
     </button>
     <div>
         <a href="{{ route('home') }}" class="sidebar-logo">
-            SERVICES
+            IT
         </a>
     </div>
     <div class="sidebar-menu-area">
@@ -33,6 +33,13 @@
                 <a href="{{ route('tambahReportIT') }}" class="{{ Route::is('tambahReportIT') ? 'active-page' : '' }}">
                     <iconify-icon icon="solar:add-folder-broken" class="menu-icon"></iconify-icon>
                     <span>Buat Report</span>
+                </a>
+            </li>
+            <li class="sidebar-menu-group-title">Eksekutor</li>
+            <li>
+                <a href="{{ route('reportEksekutorIT') }}" class="{{ Route::is('reportEksekutorIT') ? 'active-page' : '' }}" >
+                    <iconify-icon icon="lsicon:report-outline" class="menu-icon"></iconify-icon>
+                    <span>Report Eksekutor</span>
                 </a>
             </li>
         </ul>

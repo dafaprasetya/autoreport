@@ -1,6 +1,9 @@
 <div class="row">
     <div class="col-lg-12">
         <div class="row">
+            @if ($eksekutors)
+
+            @else
             <div class="col-md-12 mt-2">
                 <div class="form-group">
                     <label class="form-label" for="agenda">Agenda</label>
@@ -115,6 +118,47 @@
                     </div>
                 </div>
             </div>
+            @if ($eksekutors)
+
+            <div class="col-md-6 mt-2">
+                <div class="form-group">
+                    <label class="form-label" for="foto_before">Foto Before</label>
+                    @if ($foto_before)
+                        <input type="file" accept="image/*" src="{{ asset('storage/reporteksekutor/foto_before'.$foto_before) }}" id="foto_beforepre" class="form-control d-none" wire:model="foto_before">
+                        <div class="d-flex justify-content-center" style="cursor: pointer; font-size: 2rem;" onclick="document.getElementById('foto_beforepre').click()">
+                            <img src="{{ asset('storage/reporteksekutor/foto_before/'. $foto_before) }}" alt="Preview" style="max-width: 200px; margin-top: 10px;">
+                        </div>
+                    @else
+                        <input type="file" accept="image/*" id="foto_before" class="form-control d-none" wire:model="foto_before">
+                        <div class="d-flex justify-content-center" style="cursor: pointer; font-size: 2rem;" onclick="document.getElementById('foto_before').click()">
+                            <iconify-icon icon="akar-icons:circle-plus" class="text-primary-600 text-5xl"></iconify-icon>
+                        </div>
+                    @endif
+                    <div>
+                        @error('foto_before') <span class="error text-danger">{{ $message }}</span> @enderror
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mt-2">
+                <div class="form-group">
+                    <label class="form-label" for="foto_before">Foto After</label>
+                    @if ($foto_after)
+                        <input type="file" accept="image/*" id="foto_afterpre" class="form-control d-none" wire:model="foto_after">
+                        <div class="d-flex justify-content-center" style="cursor: pointer; font-size: 2rem;" onclick="document.getElementById('foto_afterpre').click()">
+                            <img src="{{ asset('storage/reporteksekutor/foto_after/'. $foto_after) }}" alt="Preview" style="max-width: 200px; margin-top: 10px;">
+                        </div>
+                    @else
+                        <input type="file" accept="image/*" id="foto_after" class="form-control d-none" wire:model="foto_after">
+                        <div class="d-flex justify-content-center" style="cursor: pointer; font-size: 2rem;" onclick="document.getElementById('foto_after').click()">
+                            <iconify-icon icon="akar-icons:circle-plus" class="text-primary-600 text-5xl"></iconify-icon>
+                        </div>
+                    @endif
+                    <div>
+                        @error('foto_after') <span class="error text-danger">{{ $message }}</span> @enderror
+                    </div>
+                </div>
+            </div>
+            @else
             <div class="col-md-6 mt-2">
                 <div class="form-group">
                     <label class="form-label" for="foto_before">Foto Before</label>
@@ -153,6 +197,8 @@
                     </div>
                 </div>
             </div>
+            @endif
+            @endif
             <div class="col-md-12 mt-2">
                 <div class="form-group">
                     <div class="form-label">Status</div>

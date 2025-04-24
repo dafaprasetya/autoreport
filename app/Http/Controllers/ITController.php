@@ -89,4 +89,11 @@ class ITController extends Controller
         ];
         return view('admin.IT.report.tambah', $data);
     }
+    public function reportEksekutor(Request $request) {
+        $data = [
+            'title'=> 'Admin Report Eksekutor',
+        ];
+        return view('admin.IT.eksekutor.index', $data);
+
+    }
 }
