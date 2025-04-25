@@ -41,6 +41,7 @@ Route::middleware(['auth', 'bagian:Service,Manager'])->group(function(){
         Route::get('/service/report/harian/{tanggal}', [ServiceController::class, 'reportHarianDetail'])->name('reportHarianServiceDetail');
         Route::get('/service/report/tambah', [ServiceController::class, 'tambahReport'])->name('tambahReportService');
         Route::get('/service/report/eksekutor', [ServiceController::class, 'reportEksekutor'])->name('reportEksekutorService');
+        Route::get('/service/waitinglist', [ServiceController::class, 'waitingListService'])->name('waitingListService');
     });
     // EKSEKUTOR
     Route::middleware(['jabatan:Eksekutor,Manager'])->group(function(){
@@ -55,6 +56,7 @@ Route::middleware(['auth', 'bagian:IT,Manager'])->group(function(){
         Route::get('/it/report/harian', [ITController::class, 'reportHarian'])->name('reportHarianIT');
         Route::get('/it/report/tambah', [ITController::class, 'tambahReport'])->name('tambahReportIT');
         Route::get('/it/report/eksekutor', [ITController::class, 'reportEksekutor'])->name('reportEksekutorIT');
+        Route::get('/it/waitinglist', [ITController::class, 'waitingListIt'])->name('waitingListIt');
     });
     // EKSEKUTOR
     Route::middleware(['jabatan:Eksekutor,Manager'])->group(function(){

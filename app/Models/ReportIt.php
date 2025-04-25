@@ -20,6 +20,7 @@ class ReportIt extends Model
         'foto_after',
         'tanggal_selesai',
         'lead_time',
+        'dibuatOleh',
     ];
     public function lokasi() {
         return $this->belongsTo(Lokasi::class, 'lokasi_id');
@@ -32,5 +33,8 @@ class ReportIt extends Model
     }
     public function user() {
         return $this->belongsTo(User::class, 'user_id');
+    }
+    public function dibuat_oleh() {
+        return $this->belongsTo(User::class, 'dibuatOleh');
     }
 }

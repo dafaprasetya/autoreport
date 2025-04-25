@@ -86,6 +86,11 @@
                         <button wire:click="deleteReport({{ $reports->id }})" onclick="confirm('Yakin hapus data ini?') || event.stopImmediatePropagation()" class="w-32-px h-32-px bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center">
                             <iconify-icon icon="mingcute:delete-2-line"></iconify-icon>
                         </button>
+                        @if ($reports->dibuatOleh)
+                        <button onclick="alert('Dibuat oleh {{ $reports->dibuat_oleh->name }} pada tanggal {{ \Carbon\Carbon::parse($reports->created_at)->format('d F Y') }}')" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="tooltip-primary" data-bs-title="" class="w-32-px h-32-px bg-info-focus text-info-main rounded-circle d-inline-flex align-items-center justify-content-center">
+                            <iconify-icon icon="material-symbols:info-rounded"></iconify-icon>
+                        </button>
+                        @endif
                     </td>
                 </tr>
                 @endforeach
@@ -94,6 +99,4 @@
 
     </div>
 </div>
-@push('script')
 
-@endpush

@@ -12,6 +12,80 @@ use GuzzleHttp\Client;
 
 class ReportEksekutorController extends Controller
 {
+
+    private function kirimkeVenom($file, $report, $status){
+        $client = new Client();
+        // Mengirim gambar dengan data multipart
+        if ($status == 'Foto Before') {
+            $response = $client->post('http://localhost:3000/api/kirim-report', [
+                'multipart' => [
+                    [
+                        'name'     => 'nomor',
+                        'contents' => '120363418444786688@g.us',  // Group ID tujuan
+                    ],
+                    [
+                        'name'     => 'pesan',
+                        'contents' => $report->deskripsi_pekerjaan,
+                    ],
+                    [
+                        'name'     => 'user',
+                        'contents' => $report->user->name,
+                    ],
+                    [
+                        'name'     => 'note',
+                        'contents' => $status,
+                    ],
+                    [
+                        'name'     => 'gambar',
+                        'contents' => fopen($file->getRealPath(), 'r'),
+                        'filename' => $file->getClientOriginalName(),
+                    ]
+                ]
+            ]);
+        }else if ($status == 'Foto After') {
+            $formatted = "pada tanggal " . Carbon::parse($report->created_at)->locale('id')->translatedFormat('d F') . ", jam " . Carbon::parse($report->created_at)->format('H:i');
+
+            $response = $client->post('http://localhost:3000/api/kirim-report', [
+                'multipart' => [
+                    [
+                        'name'     => 'nomor',
+                        'contents' => '120363418444786688@g.us',  // Group ID tujuan
+                    ],
+                    [
+                        'name'     => 'pesan',
+                        'contents' => "Foto After dari pekerjaan yang dikerjakan {$formatted} \ndengan deskripsi pekerjaan:\n{$report->deskripsi_pekerjaan}",
+                    ],
+                    [
+                        'name'     => 'user',
+                        'contents' => $report->user->name,
+                    ],
+                    [
+                        'name'     => 'note',
+                        'contents' => $status,
+                    ],
+                    [
+                        'name'     => 'gambar',
+                        'contents' => fopen($file->getRealPath(), 'r'),
+                        'filename' => $file->getClientOriginalName(),
+                    ]
+                ]
+            ]);
+        }
+
+        // Mengecek status response
+        if ($response->getStatusCode() == 200) {
+            return response()->json([
+                'success' => true,
+                'message' => 'Report berhasil dibuat dan gambar berhasil dikirim',
+            ]);
+        } else {
+            return response()->json([
+                'success' => false,
+                'message' => 'Gagal mengirim gambar ke WhatsApp',
+            ], 500);
+        }
+    }
+
     public function buatReport(Request $request) {
         if ($request->foto_after) {
             $report = ReportEksekutor::find($request->id);
@@ -20,6 +94,9 @@ class ReportEksekutorController extends Controller
             $fotoAf->storeAs('public/reporteksekutor/foto_after/', $nama_file);
             $report->foto_after = $nama_file;
             $report->save();
+            if ($fotoAf && $fotoAf->isValid()) {
+                $this->kirimkeVenom($fotoAf, $report, 'Foto After');
+            }
             return response()->json([
                 'success' => true,
                 'message' => 'report berhasil diedit',
@@ -45,44 +122,9 @@ class ReportEksekutorController extends Controller
         $fotoB->storeAs('public/reporteksekutor/foto_before/', $nama_file);
         $report->foto_before = $nama_file;
         $report->save();
-        // if ($fotoB && $fotoB->isValid()) {
-
-        //     // Kirim foto ke server Node.js (venom-bot)
-        //     // Menginisialisasi Guzzle HTTP Client
-        //     $client = new Client();
-
-        //     // Mengirim gambar dengan data multipart
-        //     $response = $client->post('http://localhost:3000/send-image', [
-        //         'multipart' => [
-        //             [
-        //                 'name'     => 'to',
-        //                 'contents' => '120363418444786688@g.us',  // Group ID tujuan
-        //             ],
-        //             [
-        //                 'name'     => 'caption',
-        //                 'contents' => $report->deskripsi_pekerjaan,
-        //             ],
-        //             [
-        //                 'name'     => 'image',
-        //                 'contents' => fopen($fotoB->getRealPath(), 'r'),
-        //                 'filename' => $fotoB->getClientOriginalName(),
-        //             ]
-        //         ]
-        //     ]);
-
-        //     // Mengecek status response
-        //     if ($response->getStatusCode() == 200) {
-        //         return response()->json([
-        //             'success' => true,
-        //             'message' => 'Report berhasil dibuat dan gambar berhasil dikirim',
-        //         ]);
-        //     } else {
-        //         return response()->json([
-        //             'success' => false,
-        //             'message' => 'Gagal mengirim gambar ke WhatsApp',
-        //         ], 500);
-        //     }
-        // }
+        if ($fotoB && $fotoB->isValid()) {
+            $this->kirimkeVenom($fotoB, $report, 'Foto Before');
+        }
         return response()->json([
             'success' => true,
             'message' => 'report berhasil dibuat',
@@ -91,6 +133,11 @@ class ReportEksekutorController extends Controller
     public function buatTimeOff() {
         return response()->json([
             'message' => 'under develop',
+        ]);
+    }
+    public function tesLogin(){
+        return response()->json([
+            'success' => true,
         ]);
     }
 }

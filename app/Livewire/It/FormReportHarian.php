@@ -1,17 +1,16 @@
 <?php
 
-namespace App\Livewire;
+namespace App\Livewire\It;
 
 use App\Models\KategoriHarian;
 use Livewire\Component;
-use App\Models\ReportHarianService as HarianModel;
+use App\Models\ReportHarianIt as HarianModel;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Livewire\Attributes\Validate;
 
-class FormReportHarianService extends Component
+class FormReportHarian extends Component
 {
-
     public $tanggal;
     #[Validate('required')]
     public $agenda;
@@ -60,11 +59,11 @@ class FormReportHarianService extends Component
     public function render()
     {
         $kategori = KategoriHarian::all();
-        $user = User::where('bagian', 'Service')->get();
+        $user = User::where('bagian', 'IT')->get();
         $data = [
             'kategori' => $kategori,
             'userlist' => $user,
         ];
-        return view('livewire.form-report-harian-service', $data);
+        return view('livewire.it.form-report-harian', $data);
     }
 }

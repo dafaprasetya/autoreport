@@ -8,6 +8,7 @@ use App\Models\Lokasi;
 use App\Models\ReportIt;
 use Livewire\Component;
 use App\Models\ReportHarianIt as HarianModel;
+use App\Models\WaitingList;
 use Carbon\Carbon;
 
 
@@ -76,12 +77,14 @@ class DashboardComponent extends Component
                         ->groupBy('user_id')
                         ->orderByDesc('total_poin')
                         ->paginate(5);
+        $waiting = WaitingList::{$this->waktu}('tanggal', $this->waktu2)->where('kategori', 'IT')->where('status', 'Belum Selesai')->count();
 
         $data = [
             'selesai' => $selesai,
             'belumselesai' => $belumselesai,
             'totalkerjaan' => $totalkerjaan,
             'leaderboard' => $leaderboard,
+            'waiting' => $waiting,
             'lokasi' => $lokasi,
             'internal' => $internal,
             'eksternal' => $eksternal,

@@ -8,6 +8,7 @@ use App\Models\Lokasi;
 use App\Models\ReportService;
 use App\Models\User;
 use Illuminate\Support\Carbon;
+use Illuminate\Support\Facades\Auth;
 use Livewire\Attributes\Validate;
 use Livewire\Component;
 use Livewire\WithFileUploads;
@@ -49,6 +50,7 @@ class FormMasterGa extends Component
         $this->validate();
 
         $report = new ReportService();
+        $report->dibuatOleh = Auth::user()->id;
         $report->tanggal = $this->tanggal;
         $report->keterangan = $this->keterangan;
         $report->user_id = $this->user_id;

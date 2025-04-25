@@ -96,4 +96,10 @@ class ITController extends Controller
         return view('admin.IT.eksekutor.index', $data);
 
     }
+    public function waitingListIt(Request $request) {
+        $data = [
+            'title' => 'Admin Waiting List IT'
+        ];
+        return view('admin.IT.waitinglist.index', $data);
+    }
 }

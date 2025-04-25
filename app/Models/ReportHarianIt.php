@@ -16,6 +16,7 @@ class ReportHarianIt extends Model
         'status',
         'detail_kerja',
         'poin',
+        'dibuatOleh',
     ];
     public function kategoriHarian()
     {
@@ -25,5 +26,8 @@ class ReportHarianIt extends Model
     public function user()
     {
         return $this->belongsTo(User::class);
+    }
+    public function dibuat_oleh() {
+        return $this->belongsTo(User::class, 'dibuatOleh');
     }
 }

@@ -8,6 +8,7 @@ use App\Models\Lokasi;
 use App\Models\ReportService;
 use Livewire\Component;
 use App\Models\ReportHarianService as HarianModel;
+use App\Models\WaitingList;
 use Carbon\Carbon;
 
 class DashboardComponent extends Component
@@ -75,6 +76,7 @@ class DashboardComponent extends Component
                         ->groupBy('user_id')
                         ->orderByDesc('total_poin')
                         ->paginate(5);
+        $waiting = WaitingList::{$this->waktu}('tanggal', $this->waktu2)->where('kategori', 'Service')->where('status', 'Belum Selesai')->count();
 
         $data = [
             'selesai' => $selesai,
@@ -82,6 +84,7 @@ class DashboardComponent extends Component
             'totalkerjaan' => $totalkerjaan,
             'leaderboard' => $leaderboard,
             'lokasi' => $lokasi,
+            'waiting' => $waiting,
             'internal' => $internal,
             'eksternal' => $eksternal,
             'tanggal' => $this->waktu2,

@@ -98,4 +98,10 @@ class ServiceController extends Controller
         return view('admin.service.eksekutor.index', $data);
 
     }
+    public function waitingListService(Request $request) {
+        $data = [
+            'title' => 'Admin Waiting List Service'
+        ];
+        return view('admin.service.waitinglist.index', $data);
+    }
 }

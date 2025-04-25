@@ -42,9 +42,10 @@ class SeederPenting extends Seeder
             DB::table('users')->insert([
                 'nik' => $row[0],
                 'jabatan' => $row[1],
-                'name' => $row[2],
-                'email' => $row[3],
-                'password' => Hash::make($row[4]),
+                'bagian' => $row[2],
+                'name' => $row[3],
+                'email' => $row[4],
+                'password' => Hash::make($row[5]),
                 'created_at' => now(),
                 'updated_at' => now(),
             ]);

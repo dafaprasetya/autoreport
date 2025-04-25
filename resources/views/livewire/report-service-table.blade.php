@@ -196,9 +196,14 @@
                     </td>
                     <td>{{ $reports->lead_time }}</td>
                     <td>
-                    <button wire:click="deleteReport({{ $reports->id }})" onclick="confirm('Yakin hapus data ini?') || event.stopImmediatePropagation()" class="w-32-px h-32-px bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center">
+                    <button  wire:click="deleteReport({{ $reports->id }})" onclick="confirm('Yakin hapus data ini?') || event.stopImmediatePropagation()" class="w-32-px h-32-px bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center">
                         <iconify-icon icon="mingcute:delete-2-line"></iconify-icon>
                     </button>
+                    @if ($reports->dibuatOleh)
+                    <button data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="tooltip-primary" data-bs-title="Dibuat oleh {{ $reports->dibuat_oleh->name }} pada tanggal {{ \Carbon\Carbon::parse($reports->created_at)->format('d F Y') }}" class="w-32-px h-32-px bg-info-focus text-info-main rounded-circle d-inline-flex align-items-center justify-content-center">
+                        <iconify-icon icon="material-symbols:info-rounded"></iconify-icon>
+                    </button>
+                    @endif
                     </td>
                 </tr>
                 @endforeach
@@ -209,5 +214,32 @@
     </div>
 </div>
 @push('script')
+<script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
 
+    // Boxed Tooltip
+    $(document).ready(function() {
+        $('.tooltip-button').each(function () {
+            var tooltipButton = $(this);
+            var tooltipContent = $(this).siblings('.my-tooltip').html();
+
+            // Initialize the tooltip
+            tooltipButton.tooltip({
+                title: tooltipContent,
+                trigger: 'hover',
+                html: true
+            });
+
+            // Optionally, reinitialize the tooltip if the content might change dynamically
+            tooltipButton.on('mouseenter', function() {
+                tooltipButton.tooltip('dispose').tooltip({
+                    title: tooltipContent,
+                    trigger: 'hover',
+                    html: true
+                }).tooltip('show');
+            });
+        });
+    });
+</script>
 @endpush

@@ -53,6 +53,24 @@
           </div>
         </div><!-- card end -->
     </div>
+    <div class="col-md-12">
+        <div class="card shadow-none border bg-gradient-start-2 h-100">
+          <div class="card-body p-20">
+            <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
+              <div>
+                <p class="fw-medium text-primary-light mb-1">Waiting List</p>
+                <h6 class="mb-0">{{ $waiting }}</h6>
+              </div>
+              <div class="w-50-px h-50-px bg-warning rounded-circle d-flex justify-content-center align-items-center">
+                <iconify-icon icon="medical-icon:i-waiting-area" class="text-white text-2xl mb-0"></iconify-icon>
+              </div>
+            </div>
+            <p class="fw-medium text-sm text-primary-light mt-12 mb-0 d-flex align-items-center gap-2">
+                {{ \Carbon\Carbon::parse($tanggal)->format('F Y') }}
+            </p>
+          </div>
+        </div><!-- card end -->
+    </div>
     <div class="col-xxl-8 col-xl-8">
         <div class="card h-100 radius-8 border">
             <div class="card-header">
@@ -201,6 +219,10 @@
             ];
         }
         $dataLokasi = [];
+        $namaLokasi = [];
+        foreach ($namaLokasi as $index => $item) {
+            $namaLokasi[] = $item->nama;
+        }
         foreach ($lokasi as $item) {
             $dataLokasi[] = [
                 'x' => $item->nama,
@@ -362,12 +384,9 @@ var options = {
       },
       xaxis: {
           type: 'category',
-          categories: [
-            // 'Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'
-            @foreach($lokasi as $item)
-                '{{ $item->nama }}',
-            @endforeach
-        ]
+          categories:
+            @json($namaLokasi)
+
       },
       yaxis: {
         show: false,

@@ -11,6 +11,7 @@ use App\Models\ReportHarianService as HarianModel;
 use App\Models\ReportService;
 use App\Models\User;
 use Illuminate\Support\Carbon;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
 use Livewire\Attributes\Validate;
 use Livewire\Component;
@@ -89,6 +90,7 @@ class FormTambahReport extends Component
     public function saves() {
         foreach ($this->listMasterGa as $data) {
             $master = new ReportService();
+            $master->dibuatOleh = Auth::user()->id;
             $master->tanggal = $data['tanggal'];
             $master->keterangan = $data['keterangan'];
             $master->user_id = $data['user_id'];
@@ -141,6 +143,7 @@ class FormTambahReport extends Component
         }
         foreach ($this->listReportHarian as $harians) {
             $report = new HarianModel();
+            $report->dibuatOleh = Auth::user()->id;
             $report->date = $harians['date'];
             $report->agenda = $harians['agenda'];
             // dd($this->kategori_harian_id, $this->user_id, $this->status);

@@ -51,8 +51,11 @@
             var selectedValue = $(this).val();
             // alert(selectedValue);
             // window.Livewire.find(componentId).call('setWaktu', selectedValue);
-            window.location.href = '?waktu=' + selectedValue;
-
+            if (selectedValue == 'whereDay') {
+                window.location.href = '?tanggal=' + '{{ now()->format('Y-m-d') }}' + '&waktu=' + selectedValue;
+            }else{
+                window.location.href = '?waktu=' + selectedValue;
+            }
         });
     });
 </script>

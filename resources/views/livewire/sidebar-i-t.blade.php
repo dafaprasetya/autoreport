@@ -35,6 +35,13 @@
                     <span>Buat Report</span>
                 </a>
             </li>
+            <li class="sidebar-menu-group-title">Waiting List</li>
+            <li>
+                <a href="{{ route('waitingListIt') }}" class="{{ Route::is('waitingListIt') ? 'active-page' : '' }}" >
+                    <iconify-icon icon="medical-icon:i-waiting-area" class="menu-icon"></iconify-icon>
+                    <span>Waiting List</span>
+                </a>
+            </li>
             <li class="sidebar-menu-group-title">Eksekutor</li>
             <li>
                 <a href="{{ route('reportEksekutorIT') }}" class="{{ Route::is('reportEksekutorIT') ? 'active-page' : '' }}" >
