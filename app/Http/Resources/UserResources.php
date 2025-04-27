@@ -30,6 +30,7 @@ class UserResources extends JsonResource
             'poinbulan'=>$poinbulan,
             'id'=>$this->id,
             'email'=>$this->email,
+            'picture'=>$this->picture,
             'jabatan'=>$this->jabatan,
             'bagian'=>$this->bagian,
         ];

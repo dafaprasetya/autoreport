@@ -33,9 +33,6 @@ class LoginController extends Controller
     }
     public function user(Request $request)
     {
-        return response()->json([
-            'success' => true,
-            $request->user()
-        ]);
+        return new UserResources($request->user());
     }
 }

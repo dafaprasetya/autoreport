@@ -27,7 +27,7 @@ class UserManagementController extends Controller
         $user->email = $validatedData['email'];
         $pp = $request->file('picture');
         if($pp){
-            if($user->picture != 'user.png'){
+            if($user->picture != 'default/user.png'){
                 Storage::delete('public/profile_picture/' . $user->picture);
             }
             $nama_file = str_replace(" ", "_", $validatedData['name']).time().'.'.$pp->extension();
