@@ -20,7 +20,7 @@ class UserManagementController extends Controller
         $validatedData = $request->validate([
             'name' => 'required|max:255',
             'email' => 'required|email',
-            'picture' => 'nullable|file|image|mimes:jpeg,png,jpg|max:6148',
+            'picture' => 'nullable|file|image|mimes:jpeg,png,jpg|max:2148',
         ]);
         // dd($validatedData);
         $user->name = $validatedData['name'];

@@ -76,6 +76,7 @@
                                     @csrf
                                     <div class="mb-24 mt-16">
                                         <div class="avatar-upload">
+
                                             <div class="avatar-edit position-absolute bottom-0 end-0 me-24 mt-16 z-1 cursor-pointer">
                                                 <input type='file' id="imageUpload" name="picture" accept=".png, .jpg, .jpeg" hidden>
                                                 <label for="imageUpload" class="w-32-px h-32-px d-flex justify-content-center align-items-center bg-primary-50 text-primary-600 border border-primary-600 bg-hover-primary-100 text-lg rounded-circle">
@@ -102,6 +103,8 @@
                                                 });
                                             </script>
                                         </div>
+                                        <small>MAX 2MB</small>
+
                                     </div>
                                     <!-- Upload Image End -->
                                     <div class="row">
