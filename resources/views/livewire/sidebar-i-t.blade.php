@@ -49,6 +49,13 @@
                     <span>Report Eksekutor</span>
                 </a>
             </li>
+            <li class="sidebar-menu-group-title">User</li>
+            <li>
+                <a href="{{ route('itUserManage') }}" class="{{ Route::is('itUserManage') ? 'active-page' : '' }}" >
+                    <iconify-icon icon="mdi:users" class="menu-icon"></iconify-icon>
+                    <span>Manage User</span>
+                </a>
+            </li>
         </ul>
     </div>
   </aside>

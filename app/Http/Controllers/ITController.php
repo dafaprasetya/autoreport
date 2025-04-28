@@ -102,4 +102,11 @@ class ITController extends Controller
         ];
         return view('admin.IT.waitinglist.index', $data);
     }
+
+    public function manageUser(Request $request){
+        $data = [
+            'title'=>'Admin Manage User'
+        ];
+        return view('admin.IT.manageuser.index', $data);
+    }
 }

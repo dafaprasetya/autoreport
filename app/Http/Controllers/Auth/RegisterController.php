@@ -7,6 +7,10 @@ use App\Models\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Auth\Events\Registered;
+use Illuminate\Http\JsonResponse;
+use Illuminate\Http\Request;
+
 
 class RegisterController extends Controller
 {
@@ -35,9 +39,24 @@ class RegisterController extends Controller
      *
      * @return void
      */
+
     public function __construct()
     {
-        $this->middleware('guest');
+        $this->middleware('bagian:IT,Manager');
+    }
+    public function register(Request $request)
+    {
+        $this->validator($request->all())->validate();
+
+        event(new Registered($user = $this->create($request->all())));
+
+        // $this->guard()->login($user);
+
+        if ($response = $this->registered($request, $user)) {
+            return $response;
+        }
+
+        return redirect()->back()->with('success', 'User berhasil ditambahkan!');
     }
 
     /**

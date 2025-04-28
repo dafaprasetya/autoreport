@@ -22,7 +22,7 @@
                 <select wire:model='waktu' class="form-select" id="tahun" aria-label="Pilih Opsi">
                     <option value="whereMonth" selected>Perbulan</option>
                     <option value="whereYear">Pertahun</option>
-                    <option value="whereDay">Hari Ini</option>
+                    <option value="whereDate">Hari Ini</option>
                 </select>
             </div>
 

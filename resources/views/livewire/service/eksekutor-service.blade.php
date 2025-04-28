@@ -41,8 +41,8 @@
                     <th scope="col">Divisi</th>
                     <th scope="col">Kategori Harian</th>
                     <th scope="col">Jenis Pekerjaan</th>
-                    <th scope="col">Foto Before</th>
-                    <th scope="col">Foto After</th>
+                    <th scope="col">Foto</th>
+                    {{-- <th scope="col">Foto After</th> --}}
                     <th scope="col">Action</th>
                 </tr>
             </thead>
@@ -176,7 +176,7 @@
                             </div>
                         @endif
                     </td>
-                    <td>
+                    {{-- <td>
                         @if ($reports->foto_after == '')
                         <input type="file" accept="image/*"
                                id="fotoAfter{{ $reports->id }}"
@@ -209,8 +209,8 @@
                             @endif
                         </div>
                     @endif
-                    </td>
-                    <td wire:ignore>
+                    </td> --}}
+                    <td>
                         <button wire:click="deleteReport({{ $reports->id }})" onclick="confirm('Yakin hapus data ini?') || event.stopImmediatePropagation()" class="w-32-px h-32-px bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center">
                             <iconify-icon icon="mingcute:delete-2-line"></iconify-icon>
                         </button>
@@ -218,7 +218,7 @@
                         <button data-bs-toggle="modal" data-bs-target="#tambahReport{{ $reports->id }}" class="w-32-px h-32-px bg-info-focus text-info-main rounded-circle d-inline-flex align-items-center justify-content-center">
                             <iconify-icon icon="gridicons:add"></iconify-icon>
                         </button>
-                        <div class="modal fade" id="tambahReport{{ $reports->id }}" tabindex="-1" aria-labelledby="tambahReport{{ $reports->id }}" aria-hidden="true">
+                        <div wire:ignore class="modal fade" id="tambahReport{{ $reports->id }}" tabindex="-1" aria-labelledby="tambahReport{{ $reports->id }}" aria-hidden="true">
                             <div class="modal-dialog modal-xl" >
                               <div class="modal-content">
                                 <div class="modal-header">

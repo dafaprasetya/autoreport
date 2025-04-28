@@ -57,6 +57,7 @@ Route::middleware(['auth', 'bagian:IT,Manager'])->group(function(){
         Route::get('/it/report/tambah', [ITController::class, 'tambahReport'])->name('tambahReportIT');
         Route::get('/it/report/eksekutor', [ITController::class, 'reportEksekutor'])->name('reportEksekutorIT');
         Route::get('/it/waitinglist', [ITController::class, 'waitingListIt'])->name('waitingListIt');
+        Route::get('/it/user', [ITController::class, 'manageUser'])->name('itUserManage');
     });
     // EKSEKUTOR
     Route::middleware(['jabatan:Eksekutor,Manager'])->group(function(){
