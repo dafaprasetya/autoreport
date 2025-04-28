@@ -35,4 +35,5 @@ class LoginController extends Controller
     {
         return new UserResources($request->user());
     }
+
 }

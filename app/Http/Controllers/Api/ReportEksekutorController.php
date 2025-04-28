@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Resources\ReportTeknisiResource;
 use App\Models\ReportEksekutor;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
@@ -95,7 +96,14 @@ class ReportEksekutorController extends Controller
             $report->foto_after = $nama_file;
             $report->save();
             if ($fotoAf && $fotoAf->isValid()) {
-                $this->kirimkeVenom($fotoAf, $report, 'Foto After');
+                try {
+                    $this->kirimkeVenom($fotoAf, $report, 'Foto After');
+                } catch (\Throwable $th) {
+                    return response()->json([
+                        'success' => True,
+                        'message' => 'data berhasil dibuat tetapi tidak dikirim ke wangsaf',
+                    ]);
+                }
             }
             return response()->json([
                 'success' => true,
@@ -123,7 +131,16 @@ class ReportEksekutorController extends Controller
         $report->foto_before = $nama_file;
         $report->save();
         if ($fotoB && $fotoB->isValid()) {
-            $this->kirimkeVenom($fotoB, $report, 'Foto Before');
+            try {
+                //code...
+                $this->kirimkeVenom($fotoB, $report, 'Foto Before');
+            } catch (\Throwable $th) {
+                //throw $th;
+                return response()->json([
+                    'success' => True,
+                    'message' => 'data berhasil dibuat tetapi tidak dikirim ke wangsaf',
+                ]);
+            }
         }
         return response()->json([
             'success' => true,
@@ -139,5 +156,8 @@ class ReportEksekutorController extends Controller
         return response()->json([
             'success' => true,
         ]);
+    }
+    public function getReport(Request $request) {
+        return new ReportTeknisiResource($request->user());
     }
 }

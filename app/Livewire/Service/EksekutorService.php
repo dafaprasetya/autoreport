@@ -25,9 +25,14 @@ class EksekutorService extends Component
     public function deleteReport($id)
     {
         $report = ReportEksekutor::find($id);
-        $report->delete();
+        if ($report) {
+            $report->delete();
+            session()->flash('success', 'Data berhasil dihapus.');
+        }else {
+            session()->flash('success', 'Data berhasil gagal dihapus silahkan refresh halaman.');
 
-        session()->flash('success', 'Data berhasil dihapus.');
+        }
+
     }
 
     public function updatedFotoBefore($value, $key)
@@ -77,11 +82,16 @@ class EksekutorService extends Component
         }else {
             # code...
             $report = ReportEksekutor::find($id);
-            $report->$field = $value;
-            $report->save();
-            $this->loadReports();
-            session()->flash('message', 'Data berhasil diupdate.');
-            $this->dispatch('notifikasi', ['message' => 'Data berhasil diupdate!']);
+            if ($report) {
+                $report->$field = $value;
+                $report->save();
+                $this->loadReports();
+                session()->flash('message', 'Data berhasil diupdate.');
+                $this->dispatch('notifikasi', ['message' => 'Data berhasil diupdate!']);
+            }else{
+                session()->flash('success', 'Update gagal silahkan refresh halaman.');
+
+            }
         }
     }
 

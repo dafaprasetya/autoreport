@@ -24,6 +24,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::post('v1/login',[ApiLogin::class, 'login'])->name('loginApi');
 Route::middleware(['auth:sanctum'])->group(function(){
     Route::get('v1/user',[ApiLogin::class, 'user'])->name('userApi');
+    Route::post('v1/report/get',[ReportEksekutorController::class, 'getReport'])->name('getReport');
     Route::post('v1/tambah/report',[ReportEksekutorController::class, 'buatReport'])->name('buatReport');
     Route::post('v1/tambah/timeoff',[ReportEksekutorController::class, 'buatTimeOff'])->name('buatTimeOff');
 });

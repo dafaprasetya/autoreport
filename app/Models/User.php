@@ -58,4 +58,8 @@ class User extends Authenticatable
     {
         return $this->hasMany(KategoriHarian::class, 'kategori_harian_id');
     }
+    public function reportEksekutor()
+    {
+        return $this->hasMany(ReportEksekutor::class, 'user_id');
+    }
 }
