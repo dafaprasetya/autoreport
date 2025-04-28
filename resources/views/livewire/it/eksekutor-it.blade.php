@@ -62,9 +62,6 @@
                         <img src="{{ asset('storage/reporteksekutor/foto_before/'.$reports->foto_before) }}" alt="Uploaded" class="img-thumbnail" style="max-height: 100px;">
                     </td>
                     <td>
-                        <img src="{{ asset('storage/reporteksekutor/foto_after/'.$reports->foto_after) }}" alt="Uploaded" class="img-thumbnail" style="max-height: 100px;">
-                    </td>
-                    <td>
                         <button wire:click="deleteReport({{ $reports->id }})" onclick="confirm('Yakin hapus data ini?') || event.stopImmediatePropagation()" class="w-32-px h-32-px bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center">
                             <iconify-icon icon="mingcute:delete-2-line"></iconify-icon>
                         </button>
@@ -218,51 +215,9 @@
                         <button data-bs-toggle="modal" data-bs-target="#tambahReport{{ $reports->id }}" class="w-32-px h-32-px bg-info-focus text-info-main rounded-circle d-inline-flex align-items-center justify-content-center">
                             <iconify-icon icon="gridicons:add"></iconify-icon>
                         </button>
-                        <div wire:ignore class="modal fade" id="tambahReport{{ $reports->id }}" tabindex="-1" aria-labelledby="tambahReport{{ $reports->id }}" aria-hidden="true">
-                            <div class="modal-dialog modal-xl" >
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <h5 class="modal-title" id="exampleModalLabel">Tambah Data Ke Report Harian Dan Master GA</h5>
-                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body" wire:ignore>
-                                    @php
-                                        $requiredFields = [
-                                            $reports->deskripsi_pekerjaan,
-                                            $reports->kategori_harian_id,
-                                            $reports->tanggal,
-                                            $reports->user_id,
-                                            $reports->divisi_id,
-                                            $reports->jenis_pekerjaan_id,
-                                            $reports->lokasi_id,
-                                        ];
-                                    @endphp
-
-                                    @if(collect($requiredFields)->every(fn($field) => !is_null($field) && $field !== ''))
-                                        @livewire('It.FormTambahReport', [
-                                            'agenda' => $reports->deskripsi_pekerjaan,
-                                            'kategori_harian_id' => $reports->kategori_harian_id,
-                                            'tanggal' => $reports->tanggal,
-                                            'keterangan' => 'Internal',
-                                            'user_id' => $reports->user_id,
-                                            'detail_kerja' => $reports->deskripsi_pekerjaan,
-                                            'divisi_id' => $reports->divisi_id,
-                                            'jenis_pekerjaan_id' => $reports->jenis_pekerjaan_id,
-                                            'lokasi_id' => $reports->lokasi_id,
-                                            'eksekutors' => true,
-                                            'foto_before' => $reports->foto_before,
-                                            'foto_after' => $reports->foto_after,
-                                            'report_eksekutor_id' => $reports->id,
-                                        ])
-                                    @else
-                                    data tidak lengkap
-                                    @endif
-                                </div>
-                              </div>
-                            </div>
-                        </div>
                         @endif
                     </td>
+
                 </tr>
                 @endif
                 @endforeach

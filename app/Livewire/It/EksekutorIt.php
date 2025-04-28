@@ -22,12 +22,33 @@ class EksekutorIt extends Component
     public $fotoBefore = [];
     public $fotoAfter = [];
 
+    function tambahreport($data) {
+        $report = ReportEksekutor::find($data);
+        $requiredFields = [
+            $report->deskripsi_pekerjaan,
+            $report->kategori_harian_id,
+            $report->tanggal,
+            $report->user_id,
+            $report->divisi_id,
+            $report->jenis_pekerjaan_id,
+            $report->lokasi_id,
+        ];
+        if(collect($requiredFields)->every(fn($field) => !is_null($field) && $field !== '')){
 
+            // dd($data);
+            dd('berhasil');
+        }else {
+            dd('gagal');
+        }
+
+        // session()->flash('success', 'gagal coeg');
+
+    }
     public function deleteReport($id)
     {
         $report = ReportEksekutor::find($id);
         $report->delete();
-
+        $this->loadReports();
         session()->flash('success', 'Data berhasil dihapus.');
     }
 

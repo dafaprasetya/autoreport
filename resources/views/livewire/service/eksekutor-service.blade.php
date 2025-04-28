@@ -61,9 +61,9 @@
                     <td>
                         <img src="{{ asset('storage/reporteksekutor/foto_before/'.$reports->foto_before) }}" alt="Uploaded" class="img-thumbnail" style="max-height: 100px;">
                     </td>
-                    <td>
+                    {{-- <td>
                         <img src="{{ asset('storage/reporteksekutor/foto_after/'.$reports->foto_after) }}" alt="Uploaded" class="img-thumbnail" style="max-height: 100px;">
-                    </td>
+                    </td> --}}
                     <td>
                         <button wire:click="deleteReport({{ $reports->id }})" onclick="confirm('Yakin hapus data ini?') || event.stopImmediatePropagation()" class="w-32-px h-32-px bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center">
                             <iconify-icon icon="mingcute:delete-2-line"></iconify-icon>
