@@ -117,7 +117,7 @@
             </div>
         </div>
     </div>
-    <div class="col-xxl-3 col-xl-12">
+    {{-- <div class="col-xxl-3 col-xl-12">
         <div class="card header">
             <div class="card-header">
                 <div class="d-flex align-items-center flex-wrap gap-2 justify-content-between">
@@ -141,7 +141,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <div class="col-xxl-8">
         <div class="card h-100 radius-8 border-0">
             <div class="card-body p-24">

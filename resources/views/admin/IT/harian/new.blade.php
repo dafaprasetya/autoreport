@@ -14,7 +14,7 @@
             <div class="card-body">
                 {{-- @livewire('ReportServiceTable') --}}
                 <div class="row">
-                    @livewire('it.harian-page-it')
+                    @livewire('it.harian-page-it-new')
                 </div>
             </div>
 

@@ -40,6 +40,9 @@
   <!-- main css -->
   <link rel="stylesheet" href="{{ asset('wowdash/assets/css/style.css') }}">
 
+  <link href="https://cdn.jsdelivr.net/npm/tom-select@2.4.3/dist/css/tom-select.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/tom-select@2.4.3/dist/js/tom-select.complete.min.js"></script>
+
   {{-- SELECT2 --}}
 </head>
 <body>
@@ -75,6 +78,10 @@
 
   <!-- main js -->
   <script src="{{ asset('wowdash/assets/js/app.js') }}"></script>
+  {{-- <link href="{{ asset('select2-4.0.13/dist/css/select2.min.css') }}" rel="stylesheet" /> --}}
+  <script src="{{ asset('select2-4.0.13/dist/js/select2.min.js') }}"></script>
+
+
 
   @yield('script')
     @stack('script')

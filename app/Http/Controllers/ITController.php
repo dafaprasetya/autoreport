@@ -89,6 +89,13 @@ class ITController extends Controller
         ];
         return view('admin.IT.report.tambah', $data);
     }
+    public function tambahReportNew(Request $requestl) {
+
+        $data = [
+            'title'=> 'Admin Tambah Report',
+        ];
+        return view('admin.IT.report.tambahnew', $data);
+    }
     public function reportEksekutor(Request $request) {
         $data = [
             'title'=> 'Admin Report Eksekutor',
@@ -108,5 +115,11 @@ class ITController extends Controller
             'title'=>'Admin Manage User'
         ];
         return view('admin.IT.manageuser.index', $data);
+    }
+    public function reportHarianNew(Request $request){
+        $data = [
+            'title' => 'Admin Report Harian New'
+        ];
+        return view('admin.IT.harian.new', $data);
     }
 }

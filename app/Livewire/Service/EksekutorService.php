@@ -21,6 +21,33 @@ class EksekutorService extends Component
     public $reports;
     public $fotoBefore = [];
     public $fotoAfter = [];
+    public $modalTambah = false;
+    public $modalId = null;
+    public $selectedReport = null;
+
+    function closeModalTambah() {
+        $this->modalTambah = false;
+        $this->selectedReport = null;
+    }
+    function tambahreport($data) {
+        $report = ReportEksekutor::find($data);
+        $requiredFields = [
+            $report->deskripsi_pekerjaan,
+            $report->kategori_harian_id,
+            $report->tanggal,
+            $report->user_id,
+            $report->divisi_id,
+            $report->jenis_pekerjaan_id,
+            $report->lokasi_id,
+        ];
+        if(collect($requiredFields)->every(fn($field) => !is_null($field) && $field !== '')){
+            $this->modalTambah = true;
+            $this->selectedReport = $report;
+            // $this->dispatchBrowserEvent('show-tambah-report-modal');
+        }else {
+            session()->flash('success', 'gagal coeg');
+        }
+    }
 
     public function deleteReport($id)
     {

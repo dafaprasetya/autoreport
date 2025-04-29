@@ -28,7 +28,36 @@
 
         </div>
     </div>
-
+    @if ($modalTambah)
+    <div class="modal fade show" class="modal fade" id="tambahReportModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true" style="display: block;">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Tambah Report</h5>
+                    <button type="button" class="btn-close" wire:click="closeModalTambah" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    @livewire('It.FormTambahReport', [
+                        'agenda' => $selectedReport->deskripsi_pekerjaan,
+                        'kategori_harian_id' => $selectedReport->kategori_harian_id,
+                        'tanggal' => $selectedReport->tanggal,
+                        'keterangan' => 'Internal',
+                        'user_id' => $selectedReport->user_id,
+                        'detail_kerja' => $selectedReport->deskripsi_pekerjaan,
+                        'divisi_id' => $selectedReport->divisi_id,
+                        'jenis_pekerjaan_id' => $selectedReport->jenis_pekerjaan_id,
+                        'lokasi_id' => $selectedReport->lokasi_id,
+                        'eksekutors' => true,
+                        'foto_before' => $selectedReport->foto_before,
+                        'foto_after' => $selectedReport->foto_after,
+                        'report_eksekutor_id' => $selectedReport->id,
+                    ], key('form-' . $selectedReport->id))
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-backdrop fade show"></div>
+    @endif
     <div class="table-responsive">
         <table class="table bordered-table mb-0">
             <thead>
@@ -212,20 +241,22 @@
                             <iconify-icon icon="mingcute:delete-2-line"></iconify-icon>
                         </button>
                         @if ($reports->status == 'Belum Ditambahkan')
-                        <button data-bs-toggle="modal" data-bs-target="#tambahReport{{ $reports->id }}" class="w-32-px h-32-px bg-info-focus text-info-main rounded-circle d-inline-flex align-items-center justify-content-center">
-                            <iconify-icon icon="gridicons:add"></iconify-icon>
-                        </button>
+                            <button wire:click="tambahreport({{ $reports->id }})" class="w-32-px h-32-px bg-info-focus text-info-main rounded-circle d-inline-flex align-items-center justify-content-center">
+                                <iconify-icon icon="gridicons:add"></iconify-icon>
+                            </button>
                         @endif
                     </td>
 
                 </tr>
                 @endif
                 @endforeach
+
             </tbody>
         </table>
-
     </div>
+
 </div>
+
 @push('script')
 
 @endpush

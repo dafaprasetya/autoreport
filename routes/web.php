@@ -54,7 +54,9 @@ Route::middleware(['auth', 'bagian:IT,Manager'])->group(function(){
         Route::get('/it', [ITController::class, 'index'])->name('dashboardIT');
         Route::get('/it/masterga', [ITController::class, 'masterGa'])->name('mastergaIT');
         Route::get('/it/report/harian', [ITController::class, 'reportHarian'])->name('reportHarianIT');
+        Route::get('/it/report/harian/new', [ITController::class, 'reportHarianNew'])->name('reportHarianITNew');
         Route::get('/it/report/tambah', [ITController::class, 'tambahReport'])->name('tambahReportIT');
+        Route::get('/it/report/tambah/new', [ITController::class, 'tambahReportNew'])->name('tambahReportITNew');
         Route::get('/it/report/eksekutor', [ITController::class, 'reportEksekutor'])->name('reportEksekutorIT');
         Route::get('/it/waitinglist', [ITController::class, 'waitingListIt'])->name('waitingListIt');
         Route::get('/it/user', [ITController::class, 'manageUser'])->name('itUserManage');

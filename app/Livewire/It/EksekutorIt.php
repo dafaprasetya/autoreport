@@ -21,7 +21,15 @@ class EksekutorIt extends Component
     public $reports;
     public $fotoBefore = [];
     public $fotoAfter = [];
+    public $modalTambah = false;
+    public $modalId = null;
+    public $selectedReport = null;
 
+
+    function closeModalTambah() {
+        $this->modalTambah = false;
+        $this->selectedReport = null;
+    }
     function tambahreport($data) {
         $report = ReportEksekutor::find($data);
         $requiredFields = [
@@ -34,15 +42,12 @@ class EksekutorIt extends Component
             $report->lokasi_id,
         ];
         if(collect($requiredFields)->every(fn($field) => !is_null($field) && $field !== '')){
-
-            // dd($data);
-            dd('berhasil');
+            $this->modalTambah = true;
+            $this->selectedReport = $report;
+            // $this->dispatchBrowserEvent('show-tambah-report-modal');
         }else {
-            dd('gagal');
+            session()->flash('success', 'gagal coeg');
         }
-
-        // session()->flash('success', 'gagal coeg');
-
     }
     public function deleteReport($id)
     {

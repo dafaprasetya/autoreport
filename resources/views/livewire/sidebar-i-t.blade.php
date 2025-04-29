@@ -24,13 +24,13 @@
                 </a>
             </li>
             <li>
-                <a href="{{ route('reportHarianIT') }}" class="{{ Route::is('reportHarianIT') ? 'active-page' : '' }}">
+                <a href="{{ route('reportHarianITNew') }}" class="{{ Route::is('reportHarianITNew') ? 'active-page' : '' }}">
                     <iconify-icon icon="mingcute:sale-line" class="menu-icon"></iconify-icon>
                     <span>Harian</span>
                 </a>
             </li>
             <li>
-                <a href="{{ route('tambahReportIT') }}" class="{{ Route::is('tambahReportIT') ? 'active-page' : '' }}">
+                <a href="{{ route('tambahReportITNew') }}" class="{{ Route::is('tambahReportITNew') ? 'active-page' : '' }}">
                     <iconify-icon icon="solar:add-folder-broken" class="menu-icon"></iconify-icon>
                     <span>Buat Report</span>
                 </a>
