@@ -5,6 +5,7 @@ namespace App\Livewire\It;
 use App\Models\Divisi;
 use App\Models\JenisPekerjaan;
 use App\Models\KategoriHarian;
+use App\Models\KategoriHarianNew;
 use App\Models\Lokasi;
 use App\Models\ReportEksekutor;
 use App\Models\User;
@@ -138,7 +139,7 @@ class EksekutorIt extends Component
         $jenispekerjaan = JenisPekerjaan::all();
         $lokasi = Lokasi::all();
         $user = User::where('bagian', 'IT')->get();
-        $kategori_harian = KategoriHarian::all();
+        $kategori_harian = KategoriHarianNew::all();
 
         $data = [
             'title'=> 'Admin Report Harian IT tanggal '.$this->tanggal,

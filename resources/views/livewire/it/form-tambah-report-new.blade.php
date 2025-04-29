@@ -1,9 +1,6 @@
 <div class="row">
     <div class="col-lg-12">
         <div class="row">
-            @if ($eksekutors)
-
-            @else
             <div class="col-md-12 mt-2">
                 <div class="form-group">
                     <label class="form-label" for="agenda">Agenda</label>
@@ -208,7 +205,6 @@
                     </div>
                 </div>
             </div>
-            @endif
             @endif
             <div class="col-md-12 mt-2">
                 <div class="form-group" wire:ignore>

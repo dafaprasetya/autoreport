@@ -37,7 +37,7 @@
                     <button type="button" class="btn-close" wire:click="closeModalTambah" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    @livewire('It.FormTambahReport', [
+                    @livewire('It.FormTambahReportNew', [
                         'agenda' => $selectedReport->deskripsi_pekerjaan,
                         'kategori_harian_id' => $selectedReport->kategori_harian_id,
                         'tanggal' => $selectedReport->tanggal,
@@ -52,6 +52,7 @@
                         'foto_after' => $selectedReport->foto_after,
                         'report_eksekutor_id' => $selectedReport->id,
                     ], key('form-' . $selectedReport->id))
+
                 </div>
             </div>
         </div>
