@@ -2,6 +2,7 @@
 
 namespace App\Livewire\Service;
 
+use App\Models\Divisi;
 use App\Models\WaitingList as WaitModel;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Storage;
@@ -74,21 +75,24 @@ class WaitingList extends Component
 
         $query = WaitModel::query()
             ->leftJoin('users', 'waiting_lists.dibuatOleh', '=', 'users.id')
+            ->leftJoin('divisis', 'waiting_lists.divisi_id', '=', 'divisis.id')
             ->select('waiting_lists.*');
 
         if (!empty($this->search)) {
             $query->where(function ($q) {
                 $q->where('waiting_lists.keluhan', 'LIKE', "%{$this->search}%")
-                ->orWhere('waiting_lists.divisi', 'LIKE', "%{$this->search}%")
+                ->orWhere('divisis.nama', 'LIKE', "%{$this->search}%")
                 ->orWhere('waiting_lists.status', 'LIKE', "%{$this->search}%")
                 ->orWhere('waiting_lists.tanggal', 'LIKE', "%{$this->search}%");
             });
         }
 
         $waiting = $query->orderBy('waiting_lists.id', 'desc')->where('kategori', 'Service')->paginate(20);
+        $divisi = Divisi::all();
         $data = [
             'total' => $total,
             'waiting' => $waiting,
+            'divisi' => $divisi,
         ];
         return view('livewire.service.waiting-list', $data);
     }

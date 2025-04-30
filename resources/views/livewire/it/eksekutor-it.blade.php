@@ -58,6 +58,7 @@
         </div>
     </div>
     <div class="modal-backdrop fade show"></div>
+
     @endif
     <div class="table-responsive">
         <table class="table bordered-table mb-0">

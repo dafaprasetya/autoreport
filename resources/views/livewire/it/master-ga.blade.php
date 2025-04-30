@@ -85,6 +85,15 @@
                                 <option value="{{ $users->id }}">{{ $users->name }}</option>
                             @endforeach
                         </select>
+                        <script>
+                            new TomSelect("#user{{ $reports->id }}",{
+                                create: false,
+                                sortField: {
+                                    field: "text",
+                                    direction: "asc"
+                                }
+                            });
+                        </script>
                     </td>
                     <td>
                         <textarea wire:blur="updateCell({{ $reports->id }}, 'deskripsi_pekerjaan', $event.target.value)" class="form-control" id="deskripsi_pekerjaan{{ $reports->id }}" cols="30" rows="3">{{ $reports->deskripsi_pekerjaan }}</textarea>

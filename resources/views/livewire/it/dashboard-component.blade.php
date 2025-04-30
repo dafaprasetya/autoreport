@@ -171,7 +171,7 @@
             </div>
         </div>
     </div>
-    <div class="col-xxl-8">
+    <div class="col-xxl-8 col-xl-8">
         <div class="card h-100 radius-8 border-0">
             <div class="card-body p-24">
                 <div class="d-flex align-items-center flex-wrap gap-2 justify-content-between">
@@ -193,6 +193,28 @@
                     @endforeach
                 </div>
                 <div wire:ignore id="jenisPekerjaanChart"></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xxl-4 col-xl-4">
+        <div class="card h-100 radius-8 border-0 overflow-hidden">
+            <div class="card-header">
+                <div class="d-flex align-items-center flex-wrap gap-2 justify-content-between">
+                    <h6 class="fw-bold text-lg">Kategori Harian</h6>
+                </div>
+            </div>
+            <div class="card-body p-24">
+                <ul class="d-flex flex-wrap align-items-center justify-content-between mt-3 gap-3">
+                    @foreach ($katharian as $index => $item)
+                        <li class="d-flex align-items-center gap-2" wire:ignore>
+                            <span class="w-12-px h-12-px radius-2" style="background-color: {{ $warnaKat[$index] }}"></span>
+                            <span class="text-secondary-light text-sm fw-normal">{{ $item->nama }} : {{ $item->jumlah }}
+                            </span>
+                        </li>
+                    @endforeach
+                    <div class="mt-20 d-flex justify-content-center flex-wrap gap-3" wire:ignore>
+                        <div wire:ignore id="katharianChart" class="apexcharts-tooltip-z-none"></div>
+                    </div>
             </div>
         </div>
     </div>
@@ -228,6 +250,14 @@
                 'x' => $item->nama,
                 'y' => (int)$item->jumlah
             ];
+        }
+        $namakat = [];
+        $jumlahkat = [];
+        $warnakat = [];
+        foreach ($katharian as $index => $item) {
+            $namakat[] = $item->nama;
+            $jumlahkat[] = $item->jumlah;
+            $warnakat[] = $warnaKat[$index];
         }
     @endphp
      var options = {
@@ -447,6 +477,53 @@ var options = {
     };
 
 var chart = new ApexCharts(document.querySelector("#keteranganChart"), options);
+chart.render();
+var options = {
+        series: @json($jumlahkat),
+        colors: @json($warnaKat),
+        labels: @json($namakat),
+        legend: {
+            show: false
+        },
+        chart: {
+            type: 'donut',
+            height: 270,
+            sparkline: {
+            enabled: true // Remove whitespace
+            },
+            margin: {
+                top: 0,
+                right: 0,
+                bottom: 0,
+                left: 0
+            },
+            padding: {
+            top: 0,
+            right: 0,
+            bottom: 0,
+            left: 0
+            }
+        },
+        stroke: {
+            width: 0,
+        },
+        dataLabels: {
+            enabled: false
+        },
+        responsive: [{
+            breakpoint: 480,
+            options: {
+            chart: {
+                width: 200
+            },
+            legend: {
+                position: 'bottom'
+            }
+            }
+        }],
+    };
+
+var chart = new ApexCharts(document.querySelector("#katharianChart"), options);
 chart.render();
 </script>
 @endpush

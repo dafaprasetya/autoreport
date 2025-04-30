@@ -14,7 +14,7 @@
             <div class="card-body">
                 {{-- @livewire('ReportServiceTable') --}}
                 <div class="row">
-                    @livewire('HarianPage')
+                    @livewire('Service.HarianPageServiceNew')
                 </div>
             </div>
 

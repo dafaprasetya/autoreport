@@ -72,7 +72,12 @@
                     </td>
 
                     <td>
-                        <textarea wire:blur="updateCell({{ $waitings->id }}, 'divisi', $event.target.value)" class="form-control" id="divisi{{ $waitings->id }}" cols="30" rows="1">{{ $waitings->divisi }}</textarea>
+                        <select id="divisi" class="form-select" wire:blur="updateCell({{ $waitings->id }}, 'divisi_id', $event.target.value)">
+                            <option value="{{ $waitings->divisi->id }}" selected>{{ $waitings->divisi->nama }}</option>
+                            @foreach ($divisi as $divisis)
+                                <option value="{{ $divisis->id }}">{{ $divisis->nama }}</option>
+                            @endforeach
+                        </select>
                     </td>
 
                     <td class="text-center">

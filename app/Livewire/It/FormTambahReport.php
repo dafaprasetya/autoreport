@@ -112,7 +112,9 @@ class FormTambahReport extends Component
                 if (is_string($data['foto_before_url'])) {
                     $ext = pathinfo($data['foto_before_url'], PATHINFO_EXTENSION);
                     Storage::copy('public/reporteksekutor/foto_before/'.$data['foto_before_url'],'public/it/foto_before/'.'before_'.$master->id.'.'.$ext);
+                    Storage::copy('public/reporteksekutor/foto_before/'.$data['foto_before_url'],'public/it/foto_after/'.'after_'.$master->id.'.'.$ext);
                     $master->foto_before = 'before_'.$master->id.'.'.$ext;
+                    $master->foto_before = 'after_'.$master->id.'.'.$ext;
                     $master->save();
                 }else{
                     $nama_file = 'before_'.$master->id.'.'.$foto_before->extension();

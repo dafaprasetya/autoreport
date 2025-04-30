@@ -37,7 +37,7 @@
                     <button type="button" class="btn-close" wire:click="closeModalTambah" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    @livewire('It.FormTambahReport', [
+                    @livewire('Service.FormTambahReportNew', [
                         'agenda' => $selectedReport->deskripsi_pekerjaan,
                         'kategori_harian_id' => $selectedReport->kategori_harian_id,
                         'tanggal' => $selectedReport->tanggal,
@@ -52,11 +52,13 @@
                         'foto_after' => $selectedReport->foto_after,
                         'report_eksekutor_id' => $selectedReport->id,
                     ], key('form-' . $selectedReport->id))
+
                 </div>
             </div>
         </div>
     </div>
     <div class="modal-backdrop fade show"></div>
+
     @endif
     <div class="table-responsive">
         <table class="table bordered-table mb-0">
@@ -90,9 +92,6 @@
                     <td>
                         <img src="{{ asset('storage/reporteksekutor/foto_before/'.$reports->foto_before) }}" alt="Uploaded" class="img-thumbnail" style="max-height: 100px;">
                     </td>
-                    {{-- <td>
-                        <img src="{{ asset('storage/reporteksekutor/foto_after/'.$reports->foto_after) }}" alt="Uploaded" class="img-thumbnail" style="max-height: 100px;">
-                    </td> --}}
                     <td>
                         <button wire:click="deleteReport({{ $reports->id }})" onclick="confirm('Yakin hapus data ini?') || event.stopImmediatePropagation()" class="w-32-px h-32-px bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center">
                             <iconify-icon icon="mingcute:delete-2-line"></iconify-icon>
@@ -249,14 +248,17 @@
                             </button>
                         @endif
                     </td>
+
                 </tr>
                 @endif
                 @endforeach
+
             </tbody>
         </table>
-
     </div>
+
 </div>
+
 @push('script')
 
 @endpush

@@ -5,6 +5,7 @@ namespace App\Livewire\Service;
 use App\Models\Divisi;
 use App\Models\JenisPekerjaan;
 use App\Models\KategoriHarian;
+use App\Models\KategoriHarianNew;
 use App\Models\Lokasi;
 use App\Models\ReportEksekutor;
 use App\Models\User;
@@ -24,6 +25,7 @@ class EksekutorService extends Component
     public $modalTambah = false;
     public $modalId = null;
     public $selectedReport = null;
+
 
     function closeModalTambah() {
         $this->modalTambah = false;
@@ -48,18 +50,12 @@ class EksekutorService extends Component
             session()->flash('success', 'gagal coeg');
         }
     }
-
     public function deleteReport($id)
     {
         $report = ReportEksekutor::find($id);
-        if ($report) {
-            $report->delete();
-            session()->flash('success', 'Data berhasil dihapus.');
-        }else {
-            session()->flash('success', 'Data berhasil gagal dihapus silahkan refresh halaman.');
-
-        }
-
+        $report->delete();
+        $this->loadReports();
+        session()->flash('success', 'Data berhasil dihapus.');
     }
 
     public function updatedFotoBefore($value, $key)
@@ -109,16 +105,11 @@ class EksekutorService extends Component
         }else {
             # code...
             $report = ReportEksekutor::find($id);
-            if ($report) {
-                $report->$field = $value;
-                $report->save();
-                $this->loadReports();
-                session()->flash('message', 'Data berhasil diupdate.');
-                $this->dispatch('notifikasi', ['message' => 'Data berhasil diupdate!']);
-            }else{
-                session()->flash('success', 'Update gagal silahkan refresh halaman.');
-
-            }
+            $report->$field = $value;
+            $report->save();
+            $this->loadReports();
+            session()->flash('message', 'Data berhasil diupdate.');
+            $this->dispatch('notifikasi', ['message' => 'Data berhasil diupdate!']);
         }
     }
 
@@ -148,7 +139,7 @@ class EksekutorService extends Component
         $jenispekerjaan = JenisPekerjaan::all();
         $lokasi = Lokasi::all();
         $user = User::where('bagian', 'Service')->get();
-        $kategori_harian = KategoriHarian::all();
+        $kategori_harian = KategoriHarianNew::all();
 
         $data = [
             'title'=> 'Admin Report Harian Service tanggal '.$this->tanggal,

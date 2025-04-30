@@ -398,6 +398,7 @@
         </div>
     </div>
     <div class="col-lg-12 mt-3" wire:poll>
+        <div class="text-center">REPORT HARIAN</div>
         <div class="table-responsive">
             <table class="table bordered-table mb-0">
                 <thead>

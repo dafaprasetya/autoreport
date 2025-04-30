@@ -2,6 +2,7 @@
 
 namespace App\Livewire\It;
 
+use App\Models\Divisi;
 use App\Models\WaitingList;
 use Illuminate\Support\Facades\Auth;
 use Livewire\Attributes\Validate;
@@ -12,7 +13,7 @@ class FormWaitingList extends Component
 {
     use WithFileUploads;
     #[Validate('required')]
-    public $tanggal, $keluhan, $status, $divisi;
+    public $tanggal, $keluhan, $status, $divisi_id;
 
 
     public $foto_keluhans;
@@ -22,7 +23,7 @@ class FormWaitingList extends Component
         $wait = new WaitingList();
         $wait->tanggal = $this->tanggal;
         $wait->keluhan = $this->keluhan;
-        $wait->divisi = $this->divisi;
+        $wait->divisi_id = $this->divisi_id;
         $wait->status = $this->status;
         $wait->kategori = 'IT';
         $wait->dibuatOleh = Auth::user()->id;
@@ -36,12 +37,16 @@ class FormWaitingList extends Component
             $wait->save();
         }
         $this->dispatch('notip');
-        $this->reset(['tanggal', 'keluhan', 'status', 'divisi', 'foto_keluhans']);
+        $this->reset(['tanggal', 'keluhan', 'status', 'divisi_id', 'foto_keluhans']);
     }
 
 
     public function render()
     {
-        return view('livewire.it.form-waiting-list');
+        $divisi = Divisi::all();
+        $data = [
+            'divisi' => $divisi
+        ];
+        return view('livewire.it.form-waiting-list', $data);
     }
 }

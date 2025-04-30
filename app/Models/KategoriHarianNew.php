@@ -11,7 +11,10 @@ class KategoriHarianNew extends Model
     protected $fillable = [
         'nama', 'deskripsi', 'poin',
     ];
-    public function reportHarian(){
-        return $this->hasMany(ReportHarianService::class, 'kategori_harian_id');
+    public function reportHarianService(){
+        return $this->hasMany(ReportHarianServiceNew::class, 'kategori_harian_id');
+    }
+    public function reportHarianIt(){
+        return $this->hasMany(ReportHarianItNew::class, 'kategori_harian_id');
     }
 }

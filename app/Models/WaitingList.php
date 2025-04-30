@@ -19,4 +19,7 @@ class WaitingList extends Model
     function dibuat_oleh() {
         return $this->belongsTo(User::class, 'dibuatOleh');
     }
+    function divisi() {
+        return $this->belongsTo(Divisi::class, 'divisi_id');
+    }
 }

@@ -35,6 +35,6 @@ class ReportEksekutor extends Model
     }
     public function kategoriHarian()
     {
-        return $this->belongsTo(KategoriHarian::class);
+        return $this->belongsTo(KategoriHarianNew::class);
     }
 }

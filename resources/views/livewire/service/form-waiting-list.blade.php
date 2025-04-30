@@ -8,8 +8,24 @@
         <textarea wire:model="keluhan" class="form-control" cols="30" rows="1" placeholder="tambah"></textarea>
     </td>
 
-    <td>
-        <textarea wire:model="divisi" class="form-control"  cols="30" rows="1"  placeholder="tambah"></textarea>
+    <td wire:ignore>
+        <select id="divisi" class="divisi" wire:model="divisi_id">
+            <option value="" selected>--PILIH DIVISI--</option>
+            @foreach ($divisi as $divisis)
+                <option value="{{ $divisis->id }}">{{ $divisis->nama }}</option>
+            @endforeach
+        </select>
+        @push('script')
+        <script>
+            new TomSelect(".divisi",{
+                create: false,
+                sortField: {
+                    field: "text",
+                    direction: "asc"
+                }
+            });
+        </script>
+        @endpush
     </td>
 
     <td class="text-center">

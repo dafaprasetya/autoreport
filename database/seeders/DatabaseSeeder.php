@@ -18,6 +18,7 @@ class DatabaseSeeder extends Seeder
             SeederService::class,
             SeederIT::class,
             KategoriHarianSeeders::class,
+            KategoriHarianNew::class,
             ReportHarianServiceSeeder::class,
         ]);
         // \App\Models\User::factory(10)->create();

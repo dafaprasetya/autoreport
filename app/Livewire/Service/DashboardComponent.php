@@ -4,6 +4,7 @@ namespace App\Livewire\Service;
 
 use App\Models\Divisi;
 use App\Models\JenisPekerjaan;
+use App\Models\KategoriHarianNew;
 use App\Models\Lokasi;
 use App\Models\ReportService;
 use Livewire\Component;
@@ -59,6 +60,9 @@ class DashboardComponent extends Component
         $lokasi = Lokasi::withCount(['reportservice as jumlah' => function ($query) {
             $query->{$this->waktu}('tanggal', $this->waktu2);
         }])->having('jumlah', '>', 0)->get();
+        $katharian = KategoriHarianNew::withCount(['reportHarianIt as jumlah' => function ($query) {
+            $query->{$this->waktu}('date', $this->waktu2);
+        }])->having('jumlah', '>', 0)->get();
         $divisi = Divisi::withCount(['reportservice as jumlah' => function ($query) {
             $query->{$this->waktu}('tanggal', $this->waktu2);
         }])->having('jumlah', '>', 0)
@@ -83,14 +87,16 @@ class DashboardComponent extends Component
             'belumselesai' => $belumselesai,
             'totalkerjaan' => $totalkerjaan,
             'leaderboard' => $leaderboard,
-            'lokasi' => $lokasi,
             'waiting' => $waiting,
+            'lokasi' => $lokasi,
             'internal' => $internal,
             'eksternal' => $eksternal,
             'tanggal' => $this->waktu2,
             'divisi' => $divisi,
+            'katharian' => $katharian,
             'jenis_pekerjaan' => $jenis_pekerjaan,
-            'warnaPekerjaan' => $this->getRandomHex($jenis_pekerjaan)
+            'warnaPekerjaan' => $this->getRandomHex($jenis_pekerjaan),
+            'warnaKat' => $this->getRandomHex($katharian),
         ];
         return view('livewire.service.dashboard-component', $data);
     }

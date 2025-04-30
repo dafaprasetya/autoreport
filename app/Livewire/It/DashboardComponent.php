@@ -4,6 +4,7 @@ namespace App\Livewire\It;
 
 use App\Models\Divisi;
 use App\Models\JenisPekerjaan;
+use App\Models\KategoriHarianNew;
 use App\Models\Lokasi;
 use App\Models\ReportIt;
 use Livewire\Component;
@@ -62,12 +63,15 @@ class DashboardComponent extends Component
         }])->having('jumlah', '>', 0)->get();
         $divisi = Divisi::withCount(['Reportit as jumlah' => function ($query) {
             $query->{$this->waktu}('tanggal', $this->waktu2);
-        }])->having('jumlah', '>', 0)
-        ->get();
+        }])->having('jumlah', '>', 0) ->get();
+
+        $katharian = KategoriHarianNew::withCount(['reportHarianIt as jumlah' => function ($query) {
+            $query->{$this->waktu}('date', $this->waktu2);
+        }])->having('jumlah', '>', 0)->get();
+
         $jenis_pekerjaan = JenisPekerjaan::withCount(['Reportit as jumlah' => function ($query) {
             $query->{$this->waktu}('tanggal', $this->waktu2);
-        }])->having('jumlah', '>', 0)
-        ->get();
+        }])->having('jumlah', '>', 0)->get();
         $internal = ReportIt::where('keterangan', 'Internal')->{$this->waktu}('tanggal', $this->waktu2)->count();
         $eksternal = ReportIt::where('keterangan', 'External')->{$this->waktu}('tanggal', $this->waktu2)->count();
         $leaderboard = HarianModel::select('user_id')
@@ -90,8 +94,10 @@ class DashboardComponent extends Component
             'eksternal' => $eksternal,
             'tanggal' => $this->waktu2,
             'divisi' => $divisi,
+            'katharian' => $katharian,
             'jenis_pekerjaan' => $jenis_pekerjaan,
-            'warnaPekerjaan' => $this->getRandomHex($jenis_pekerjaan)
+            'warnaPekerjaan' => $this->getRandomHex($jenis_pekerjaan),
+            'warnaKat' => $this->getRandomHex($katharian),
         ];
         return view('livewire.it.dashboard-component', $data);
     }

@@ -1,6 +1,33 @@
 <div class="row mt-3">
     {{-- <form wire:submit='postForm'> --}}
         <div class="row">
+            @if (session()->has('message'))
+            <div class="col-md-6">
+
+            </div>
+            <div class="col-md-6">
+                <div class="d-flex align-items-center">
+                        <div id="liveToast" class="toast align-items-center text-bg-success border-0 show" role="alert" aria-live="assertive" aria-atomic="true">
+                            <div class="d-flex">
+                                <div class="toast-body">
+                                    {{ session('message') }}
+                                </div>
+                                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                            </div>
+                        </div>
+                        <script>
+                            $(document).ready(function () {
+                                var toastEl = document.getElementById('liveToast');
+                                if (toastEl) {
+                                    var toast = new bootstrap.Toast(toastEl, { delay: 3000 });
+                                    toast.show();
+                                }
+                            });
+                        </script>
+                </div>
+            </div>
+            @endif
+
             <div class="col-md-12 mt-2">
                 <div class="form-group">
                     <label class="form-label" for="tanggal">Tanggal keluhan</label>
@@ -23,16 +50,27 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 mt-2">
+            <div class="col-md-6 mt-2" wire:ignore>
                 <div class="form-group">
                     <label class="form-label" for="user_id">User</label>
-                    <select class="form-select" wire:model="user_id">
-                        <option selected>-- Pilih User --</option>
+                    <select class="user" wire:model="user_id">
+                        <option value="" selected>-- Pilih User --</option>
                         @foreach ($user as $users)
 
                         <option value="{{ $users->id }}">{{ $users->name }}</option>
                         @endforeach
                     </select>
+                    @push('script')
+                    <script>
+                        new TomSelect(".user",{
+                            create: false,
+                            sortField: {
+                                field: "text",
+                                direction: "asc"
+                            }
+                        });
+                    </script>
+                    @endpush
                     <div>
                         @error('user_id') <span class="error text-danger">{{ $message }}</span> @enderror
                     </div>
@@ -47,46 +85,79 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 mt-2">
+            <div class="col-md-6 mt-2" wire:ignore>
                 <div class="form-group">
                     <label class="form-label" for="divisi_id">Divisi</label>
-                    <select class="form-select" wire:model="divisi_id">
-                        <option selected>-- Pilih Divisi --</option>
+                    <select class="divisi" wire:model="divisi_id">
+                        <option value="" selected>-- Pilih Divisi --</option>
                         @foreach ($divisi as $divisis)
 
                         <option value="{{ $divisis->id }}">{{ $divisis->nama }}</option>
                         @endforeach
                     </select>
+                    @push('script')
+                    <script>
+                        new TomSelect(".divisi",{
+                            create: false,
+                            sortField: {
+                                field: "text",
+                                direction: "asc"
+                            }
+                        });
+                    </script>
+                    @endpush
                     <div>
                         @error('divisi_id') <span class="error text-danger">{{ $message }}</span> @enderror
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 mt-2">
+            <div class="col-md-6 mt-2" wire:ignore>
                 <div class="form-group">
                     <label class="form-label" for="jenis_pekerjaan_id">Jenis Pekerjaan</label>
-                    <select class="form-select" wire:model="jenis_pekerjaan_id">
-                        <option selected>-- Pilih Jenis Pekerjaan --</option>
+                    <select class="jenisP" wire:model="jenis_pekerjaan_id">
+                        <option value="" selected>-- Pilih Jenis Pekerjaan --</option>
                         @foreach ($jenispekerjaan as $jenis_pekerjaans)
 
                         <option value="{{ $jenis_pekerjaans->id }}">{{ $jenis_pekerjaans->nama }}</option>
                         @endforeach
                     </select>
+                    @push('script')
+                    <script>
+                        new TomSelect(".jenisP",{
+                            create: false,
+                            sortField: {
+                                field: "text",
+                                direction: "asc"
+                            }
+                        });
+                    </script>
+                    @endpush
                     <div>
                         @error('jenis_pekerjaan_id') <span class="error text-danger">{{ $message }}</span> @enderror
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 mt-2">
+            <div class="col-md-6 mt-2" wire:ignore>
                 <div class="form-group">
                     <label class="form-label" for="jenis_pekerjaan_id">Lokasi</label>
-                    <select class="form-select" wire:model="lokasi_id">
-                        <option selected>-- Pilih Lokasi --</option>
+                    <select class="lokasi" wire:model="lokasi_id">
+                        <option value="" selected>-- Pilih Lokasi --</option>
                         @foreach ($lokasi as $lokasis)
 
                         <option value="{{ $lokasis->id }}">{{ $lokasis->nama }}</option>
                         @endforeach
                     </select>
+                    @push('script')
+                    <script>
+                        new TomSelect(".lokasi",{
+                            create: false,
+                            sortField: {
+                                field: "text",
+                                direction: "asc"
+                            }
+                        });
+                    </script>
+                    @endpush
                     <div>
                         @error('lokasi_id') <span class="error text-danger">{{ $message }}</span> @enderror
                     </div>

@@ -11,7 +11,7 @@
               <h5 class="card-title mb-0">Tambah Report Tim Service</h5>
             </div>
             <div class="card-body">
-                @livewire('FormTambahReport')
+                @livewire('Service.FormTambahReportNew')
             </div>
 
         </div>

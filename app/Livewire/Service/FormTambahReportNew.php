@@ -1,22 +1,22 @@
 <?php
 
-namespace App\Livewire\It;
+namespace App\Livewire\Service;
 
-use Livewire\Component;
 use App\Models\Divisi;
 use App\Models\JenisPekerjaan;
 use App\Models\KategoriHarianNew;
 use App\Models\Lokasi;
 use App\Models\ReportEksekutor;
-use App\Models\ReportHarianItNew as HarianModel;
-use App\Models\ReportIt;
+use App\Models\ReportService;
 use App\Models\User;
-use Illuminate\Support\Carbon;
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
-use Livewire\Attributes\On;
 use Livewire\Attributes\Validate;
-use Livewire\WithFileUploads;
+use Livewire\Component;
+use Livewire\Features\SupportFileUploads\WithFileUploads;
+use App\Models\ReportHarianServiceNew as HarianModel;
+use Carbon\Carbon;
+use Illuminate\Support\Facades\Auth;
+use Livewire\Attributes\On;
 
 class FormTambahReportNew extends Component
 {
@@ -43,7 +43,7 @@ class FormTambahReportNew extends Component
 
     public function loadReportsMaster()
     {
-        $this->reportsmaster = ReportIt::with(['user', 'divisi', 'jenis_pekerjaan', 'lokasi'])
+        $this->reportsmaster = ReportService::with(['user', 'divisi', 'jenis_pekerjaan', 'lokasi'])
             ->orderBy('id', 'desc')
             ->get();
     }
@@ -93,7 +93,7 @@ class FormTambahReportNew extends Component
 
     public function saves() {
         foreach ($this->listMasterGa as $data) {
-            $master = new ReportIt();
+            $master = new ReportService();
             $master->dibuatOleh = Auth::user()->id;
             $master->tanggal = $data['tanggal'];
             $master->keterangan = $data['keterangan'];
@@ -114,14 +114,14 @@ class FormTambahReportNew extends Component
                 $foto_before = $data['foto_before_url'];
                 if (is_string($data['foto_before_url'])) {
                     $ext = pathinfo($data['foto_before_url'], PATHINFO_EXTENSION);
-                    Storage::copy('public/reporteksekutor/foto_before/'.$data['foto_before_url'],'public/it/foto_before/'.'before_'.$master->id.'.'.$ext);
-                    Storage::copy('public/reporteksekutor/foto_before/'.$data['foto_before_url'],'public/it/foto_after/'.'after_'.$master->id.'.'.$ext);
+                    Storage::copy('public/reporteksekutor/foto_before/'.$data['foto_before_url'],'public/service/foto_before/'.'before_'.$master->id.'.'.$ext);
+                    Storage::copy('public/reporteksekutor/foto_before/'.$data['foto_before_url'],'public/service/foto_after/'.'after_'.$master->id.'.'.$ext);
                     $master->foto_before = 'before_'.$master->id.'.'.$ext;
                     $master->foto_after = 'after_'.$master->id.'.'.$ext;
                     $master->save();
                 }else{
                     $nama_file = 'before_'.$master->id.'.'.$foto_before->extension();
-                    $foto_before->storeAs('public/it/foto_before/', $nama_file);
+                    $foto_before->storeAs('public/service/foto_before/', $nama_file);
                     $master->foto_before = $nama_file;
                     $master->save();
                 }
@@ -131,12 +131,12 @@ class FormTambahReportNew extends Component
                 $foto_after = $data['foto_after_url'];
                 if (is_string($data['foto_after_url'])) {
                     $ext = pathinfo($data['foto_after_url'], PATHINFO_EXTENSION);
-                    Storage::copy('public/reporteksekutor/foto_after/'.$data['foto_after_url'],'public/it/foto_after/'.'after_'.$master->id.'.'.$ext);
+                    Storage::copy('public/reporteksekutor/foto_after/'.$data['foto_after_url'],'public/service/foto_after/'.'after_'.$master->id.'.'.$ext);
                     $master->foto_after = 'after_'.$master->id.'.'.$ext;
                     $master->save();
                 }else{
                     $nama_file = 'after_'.$master->id.'.'.$foto_after->extension();
-                    $foto_after->storeAs('public/it/foto_after/', $nama_file);
+                    $foto_after->storeAs('public/service/foto_after/', $nama_file);
                     $master->foto_after = $nama_file;
                     $master->save();
                 }
@@ -184,7 +184,7 @@ class FormTambahReportNew extends Component
     }
     public function updateCellMaster($id, $field, $value)
     {
-        $report = ReportIt::find($id);
+        $report = ReportService::find($id);
         if ($field == 'tanggal_selesai') {
             $tanggal_keluhan =Carbon::parse($report->tanggal);
             $report->tanggal_selesai = $value;
@@ -210,7 +210,7 @@ class FormTambahReportNew extends Component
     }
     public function uploadFoto($id, $tipe)
     {
-        $report = ReportIt::find($id);
+        $report = ReportService::find($id);
 
         if ($tipe === 'before') {
             $this->validate([
@@ -220,8 +220,8 @@ class FormTambahReportNew extends Component
             $file = $this->fotoBefore[$id];
 
             $nama_file = 'before_'.$id.'.'.$file->extension();
-            Storage::delete('public/it/foto_before/'.$report->foto_before);
-            $file->storeAs('public/it/foto_before/', $nama_file);
+            Storage::delete('public/service/foto_before/'.$report->foto_before);
+            $file->storeAs('public/service/foto_before/', $nama_file);
 
             $this->updateCellMaster($id, 'foto_before', $nama_file);
             $this->fotoBefore = [];
@@ -235,8 +235,8 @@ class FormTambahReportNew extends Component
 
             $file = $this->fotoAfter[$id];
             $nama_file = 'after_'.$id.'.'.$file->extension();
-            Storage::delete('public/it/foto_after/'.$report->foto_after);
-            $file->storeAs('public/it/foto_after/', $nama_file);
+            Storage::delete('public/service/foto_after/'.$report->foto_after);
+            $file->storeAs('public/service/foto_after/', $nama_file);
 
             $this->updateCellMaster($id, 'foto_after', $nama_file);
             $this->fotoAfter = [];
@@ -256,18 +256,18 @@ class FormTambahReportNew extends Component
     }
     public function deleteReportMaster($id, $index)
     {
-        $report = ReportIt::find($id);
+        $report = ReportService::find($id);
 
         if (!$report) {
             session()->flash('error', 'Data tidak ditemukan.');
             return;
         }
 
-        if ($report->foto_before && Storage::exists('public/it/foto_before/' . $report->foto_before)) {
-            Storage::delete('public/it/foto_before/' . $report->foto_before);
+        if ($report->foto_before && Storage::exists('public/service/foto_before/' . $report->foto_before)) {
+            Storage::delete('public/service/foto_before/' . $report->foto_before);
         }
-        if ($report->foto_after && Storage::exists('public/it/foto_after/' . $report->foto_after)) {
-            Storage::delete('public/it/foto_after/' . $report->foto_after);
+        if ($report->foto_after && Storage::exists('public/service/foto_after/' . $report->foto_after)) {
+            Storage::delete('public/service/foto_after/' . $report->foto_after);
         }
 
         $report->delete();
@@ -279,11 +279,11 @@ class FormTambahReportNew extends Component
 
     public function render()
     {
-        $total = ReportIt::count();
+        $total = ReportService::count();
         $divisi = Divisi::all();
         $jenispekerjaan = JenisPekerjaan::all();
         $lokasi = Lokasi::all();
-        $user = User::where('bagian', 'IT')->get();
+        $user = User::where('bagian', 'Service')->get();
         $kategori_harian = KategoriHarianNew::all();
 
 
@@ -297,7 +297,7 @@ class FormTambahReportNew extends Component
             'reportMBaru' => $this->reportMBaru,
             'reportHBaru' => $this->reportHBaru,
         ];
-        return view('livewire.it.form-tambah-report-new', $data);
+        return view('livewire.service.form-tambah-report-new', $data);
     }
     #[On('updateModel')]
     public function updateModel($model, $value)

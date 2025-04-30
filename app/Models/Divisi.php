@@ -17,4 +17,7 @@ class Divisi extends Model
     public function reportit() {
         return $this->hasMany(ReportIt::class, 'divisi_id');
     }
+    public function waitinglist() {
+        return $this->hasMany(WaitingList::class, 'divisi_id');
+    }
 }
