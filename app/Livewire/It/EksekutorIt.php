@@ -102,6 +102,8 @@ class EksekutorIt extends Component
     public function updateCell($id, $field, $value){
         if ($value == 0) {
             session()->flash('message', 'Data Gagal diupdate.');
+            $this->dispatch('jsload');
+
         }else {
             # code...
             $report = ReportEksekutor::find($id);
@@ -110,7 +112,13 @@ class EksekutorIt extends Component
             $this->loadReports();
             session()->flash('message', 'Data berhasil diupdate.');
             $this->dispatch('notifikasi', ['message' => 'Data berhasil diupdate!']);
+            $this->dispatch('jsload');
+
         }
+    }
+    public function updateCoy(){
+        // dd('tester');
+        $this->dispatch("jsload");
     }
 
     public function loadReports()
@@ -118,6 +126,11 @@ class EksekutorIt extends Component
         $this->reports = ReportEksekutor::with(['user'])
             ->orderBy('id', 'desc')
             ->get();
+    }
+    public function mount()
+    {
+
+        $this->dispatch('jsload');
     }
 
     public function render()

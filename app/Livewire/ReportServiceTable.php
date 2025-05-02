@@ -27,11 +27,18 @@ class ReportServiceTable extends Component
 
     public function updateCell($id, $field, $value){
         $report = ReportService::find($id);
+        $tanggal_keluhan =Carbon::parse($report->tanggal);
         if ($field == 'tanggal_selesai') {
-            $tanggal_keluhan =Carbon::parse($report->tanggal);
             $report->tanggal_selesai = $value;
             $report->lead_time = $tanggal_keluhan->diffInDays($report->tanggal_selesai);
             $report->save();
+        }
+        if(!$report->tanggal_selesai){
+            if ($field == "status" && $value == "Selesai") {
+                $report->tanggal_selesai = Carbon::parse(now());
+                $report->lead_time = $tanggal_keluhan->diffInDays(Carbon::parse(now()));
+                $report->save();
+            }
         }
         $report->$field = $value;
 
@@ -39,7 +46,7 @@ class ReportServiceTable extends Component
 
         $this->loadReports();
         session()->flash('message', 'Data berhasil diupdate.');
-        $this->dispatch('notifikasi', ['message' => 'Data berhasil diupdate!']);
+        $this->dispatch('jsload');
     }
 
     public function updatedFotoBefore($value, $key)
@@ -81,6 +88,8 @@ class ReportServiceTable extends Component
         }
 
         $report->save();
+        $this->dispatch('jsload');
+
     }
     public function mount()
     {
@@ -88,6 +97,7 @@ class ReportServiceTable extends Component
         foreach ($reports as $report) {
             $this->fotoBefore[$report->id] = null;
         }
+        $this->dispatch('jsload');
     }
     public function loadReports()
     {

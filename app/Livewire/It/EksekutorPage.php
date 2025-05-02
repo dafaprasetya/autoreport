@@ -8,11 +8,17 @@ class EksekutorPage extends Component
 {
     public $tanggal = null;
 
-    protected $listeners = ['setTanggal'];
+    protected $listeners = ['setTanggal', "jsload"];
 
     public function setTanggal($tanggal)
     {
         $this->tanggal = $tanggal;
+        $this->dispatch('loadtom');
+    }
+    public function jsload()
+    {
+        // dd("gay");
+        $this->dispatch('jsload');
     }
     public function kembali(){
         $this->tanggal = null;

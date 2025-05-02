@@ -132,7 +132,7 @@
                 </div>
                 <div class="col-md-6 mt-2">
                     <div class="form-group" wire:ignore>
-                        <label class="form-label" for="divisi_id">Divisi</label>
+                        <label class="form-label" for="divisi_id">Divisi Terkait</label>
                         <select class="divisi" wire:model="divisi_id">
                             <option value="" selected>-- Pilih Divisi --</option>
                             @foreach ($divisi as $divisis)
@@ -309,7 +309,7 @@
                         <th scope="col">Keterangan</th>
                         <th scope="col">User</th>
                         <th scope="col">Deskripsi Pekerjaan</th>
-                        <th scope="col">Divisi</th>
+                        <th scope="col">Divisi Terkait</th>
                         <th scope="col">Jenis Pekerjaan</th>
                         <th scope="col">Lokasi</th>
                         <th scope="col">Foto Before</th>

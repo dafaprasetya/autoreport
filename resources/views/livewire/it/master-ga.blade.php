@@ -50,11 +50,12 @@
                     <th scope="col">Keterangan</th>
                     <th scope="col">User</th>
                     <th scope="col">Deskripsi Pekerjaan</th>
-                    <th scope="col">Divisi</th>
+                    <th scope="col">Divisi Terkait</th>
                     <th scope="col">Jenis Pekerjaan</th>
                     <th scope="col">Lokasi</th>
                     <th scope="col">Foto Before</th>
                     <th scope="col">Foto After</th>
+                    <th scope="col">Status</th>
                     <th scope="col">Tanggal Selesai</th>
                     <th scope="col">Lead Time</th>
                     <th scope="col">Action</th>
@@ -200,6 +201,14 @@
 
 
                     {{-- <td>{{ $reports->foto_after }}</td> --}}
+                    <td>
+                        <select wire:blur="updateCell({{ $reports->id }}, 'status', $event.target.value)" class="form-select" id="kategori{{ $reports->id }}">
+                            <option value="{{ $reports->status }}" selected>{{ $reports->status }}</option>
+                            <option value="Selesai">Selesai</option>
+                            <option value="Belum Selesai">Belum Selesai</option>
+                            <option value="Progres">Progres</option>
+                        </select>
+                    </td>
                     <td>
                         <input class="form-control" type="date" value="{{ $reports->tanggal_selesai }}" wire:blur="updateCell({{ $reports->id }}, 'tanggal_selesai', $event.target.value)">
                     </td>

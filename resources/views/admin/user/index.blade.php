@@ -1,8 +1,10 @@
 @extends('admin.layouts.core')
 @section('body')
-{{-- @include('admin.service.snippets.sidebar') --}}
+@if (Auth::user()->bagian == 'Service')
 @livewire('SidebarService')
-{{-- @include('admin.alert.aler') --}}
+@elseif (Auth::user()->bagian == 'IT')
+@livewire('SidebarIT')
+@endif
 <main class="dashboard-main">
     @include('admin.layouts.topbar')
     <div class="dashboard-main-body">

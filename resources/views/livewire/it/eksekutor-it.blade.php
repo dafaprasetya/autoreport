@@ -60,7 +60,7 @@
     <div class="modal-backdrop fade show"></div>
 
     @endif
-    <div class="table-responsive">
+    <div class="table-responsive" wire:poll.15000ms="updateCoy">
         <table class="table bordered-table mb-0">
             <thead>
                 <tr>
@@ -69,7 +69,7 @@
                     <th scope="col">Tanggal</th>
                     <th scope="col">Deskripsi Pekerjaan</th>
                     <th scope="col">Lokasi</th>
-                    <th scope="col">Divisi</th>
+                    <th scope="col">Divisi Terkait</th>
                     <th scope="col">Kategori Harian</th>
                     <th scope="col">Jenis Pekerjaan</th>
                     <th scope="col">Foto</th>
@@ -131,7 +131,7 @@
                         </select>
                     </td>
                     <td>
-                        <select wire:blur="updateCell({{ $reports->id }}, 'divisi_id', $event.target.value)" class="form-select">
+                        <select wire:blur="updateCell({{ $reports->id }}, 'divisi_id', $event.target.value)" class="divisi">
                             @if ($reports->divisi_id)
                             <option value="{{ $reports->divisi_id }}" selected>{{ $reports->divisi->nama }}</option>
                             @else
@@ -259,6 +259,3 @@
 
 </div>
 
-@push('script')
-
-@endpush

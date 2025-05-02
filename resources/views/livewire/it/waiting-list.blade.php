@@ -48,7 +48,7 @@
                     <th scope="col">No.</th>
                     <th scope="col">Tanggal Keluhan</th>
                     <th scope="col">Keluhan</th>
-                    <th scope="col">Divisi</th>
+                    <th scope="col">Divisi Terkait</th>
                     <th scope="col">Foto Keluhan</th>
                     <th scope="col">Status</th>
                     <th scope="col">Action</th>

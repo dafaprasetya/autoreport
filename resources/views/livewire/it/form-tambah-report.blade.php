@@ -75,7 +75,7 @@
             </div>
             <div class="col-md-6 mt-2">
                 <div class="form-group">
-                    <label class="form-label" for="divisi_id">Divisi</label>
+                    <label class="form-label" for="divisi_id">Divisi Terkait</label>
                     <select class="form-select" wire:model="divisi_id">
                         <option selected>-- Pilih Divisi --</option>
                         @foreach ($divisi as $divisis)

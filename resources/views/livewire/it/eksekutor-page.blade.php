@@ -8,3 +8,51 @@
     @livewire('CalendarHarian')
     @endif
 </div>
+
+@push('script')
+<script>
+
+    $(document).ready(function () {
+        console.log('hai');
+
+    });
+    window.addEventListener('refresh', () => {
+        $(document).ready(function() {
+            console.log('hai berhasil coy');
+
+        });
+    });
+    Livewire.on('loadtom', () => {
+        // alert("berhasil masuk")
+        document.querySelectorAll('.divisi').forEach(select => {
+            if (select.tomselect) {
+                select.tomselect.destroy();
+            }
+
+            new TomSelect(select, {
+                create: false,
+                sortField: {
+                    field: "text",
+                    direction: "asc"
+                }
+            });
+        });
+    });
+    Livewire.on('jsload', () => {
+        console.log('hai berhasil pooling');
+        document.querySelectorAll('.divisi').forEach(select => {
+            if (select.tomselect) {
+                select.tomselect.destroy();
+            }
+
+            new TomSelect(select, {
+                create: false,
+                sortField: {
+                    field: "text",
+                    direction: "asc"
+                }
+            });
+        });
+    });
+</script>
+@endpush

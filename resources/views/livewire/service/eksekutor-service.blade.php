@@ -69,7 +69,7 @@
                     <th scope="col">Tanggal</th>
                     <th scope="col">Deskripsi Pekerjaan</th>
                     <th scope="col">Lokasi</th>
-                    <th scope="col">Divisi</th>
+                    <th scope="col">Divisi Terkait</th>
                     <th scope="col">Kategori Harian</th>
                     <th scope="col">Jenis Pekerjaan</th>
                     <th scope="col">Foto</th>
@@ -260,5 +260,14 @@
 </div>
 
 @push('script')
-
+<script>
+    $(document).ready(function () {
+        alert('hai')
+    });
+    window.addEventListener('jsload', () => {
+        $(document).ready(function() {
+            alert('hai')
+        });
+    });
+</script>
 @endpush

@@ -50,7 +50,7 @@
                     <th scope="col">Keterangan</th>
                     <th scope="col">User</th>
                     <th scope="col">Deskripsi Pekerjaan</th>
-                    <th scope="col">Divisi</th>
+                    <th scope="col">Divisi Terkait</th>
                     <th scope="col">Jenis Pekerjaan</th>
                     <th scope="col">Lokasi</th>
                     <th scope="col">Foto Before</th>
