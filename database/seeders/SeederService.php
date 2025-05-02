@@ -50,6 +50,7 @@ class SeederService extends Seeder
                 'foto_before' => $row[7] ?? null,
                 'foto_after' => $row[8] ?? null,
                 'tanggal_selesai' => date('Y-m-d', strtotime($row[9])) ?? null,
+                'status' => "Selesai",
                 'lead_time' => intval($row[10]) ?? null,
                 'created_at' => now(),
                 'updated_at' => now(),
