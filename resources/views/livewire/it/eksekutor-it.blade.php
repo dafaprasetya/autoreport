@@ -60,7 +60,7 @@
     <div class="modal-backdrop fade show"></div>
 
     @endif
-    <div class="table-responsive" wire:poll.15000ms="updateCoy">
+    <div class="table-responsive" wire:poll>
         <table class="table bordered-table mb-0">
             <thead>
                 <tr>

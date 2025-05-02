@@ -23,36 +23,38 @@
         });
     });
     Livewire.on('loadtom', () => {
-        // alert("berhasil masuk")
         document.querySelectorAll('.divisi').forEach(select => {
-            if (select.tomselect) {
-                select.tomselect.destroy();
+            if (!select.classList.contains('ts-initialized')) {
+                new TomSelect(select, {});
+                select.classList.add('ts-initialized');
             }
+        })
 
-            new TomSelect(select, {
-                create: false,
-                sortField: {
-                    field: "text",
-                    direction: "asc"
-                }
-            });
-        });
     });
     Livewire.on('jsload', () => {
         console.log('hai berhasil pooling');
         document.querySelectorAll('.divisi').forEach(select => {
-            if (select.tomselect) {
-                select.tomselect.destroy();
-            }
-
-            new TomSelect(select, {
-                create: false,
-                sortField: {
-                    field: "text",
-                    direction: "asc"
+            setTimeout(() => {
+                if (!select.classList.contains('ts-initialized')) {
+                    new TomSelect(select, {});
+                    select.classList.add('ts-initialized');
                 }
-            });
-        });
+            }, 3000);
+        })
     });
+    // document.addEventListener('livewire:init', ()=>(
+    //     Livewire.hook('message.processed', ({message, component}) => {
+    //         // console.log(el);
+    //         component.el.querySelectorAll('.divisi').forEach(select => {
+    //             if (!select.classList.contains('ts-initialized')) {
+    //                 new TomSelect(select, {});
+    //                 select.classList.add('ts-initialized');
+    //             }
+    //         })
+    //         // new TomSelect(".divisi"{})
+    //         // $(".divisi").classList.add('ts-initialized')
+
+    //     })
+    // ))
 </script>
 @endpush
