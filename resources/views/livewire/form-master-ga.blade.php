@@ -69,6 +69,11 @@
                                 direction: "asc"
                             }
                         });
+                        window.addEventListener("badak", ()=>{
+                            console.log('badak');
+                            $(".user").val("")
+
+                        })
                     </script>
                     @endpush
                     <div>

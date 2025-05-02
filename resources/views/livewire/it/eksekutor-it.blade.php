@@ -105,7 +105,7 @@
                         {{ $loop->iteration }}
                     </td>
                     <td>
-                        <select wire:blur="updateCell({{ $reports->id }}, 'user_id', $event.target.value)" class="form-select">
+                        <select wire:change="updateCell({{ $reports->id }}, 'user_id', $event.target.value)" class="form-select">
                             <option value="{{ $reports->user_id }}" selected>{{ $reports->user->name }} - {{ $reports->user->jabatan }}</option>
                             @foreach ($user as $users)
                                 <option value="{{ $users->id }}">{{ $users->name }} - {{ $users->jabatan }}</option>
@@ -113,13 +113,13 @@
                         </select>
                     </td>
                     <td>
-                        <input class="form-control" type="date" value="{{ $reports->tanggal }}" wire:blur="updateCell({{ $reports->id }}, 'tanggal', $event.target.value)">
+                        <input class="form-control" type="date" value="{{ $reports->tanggal }}" wire:change="updateCell({{ $reports->id }}, 'tanggal', $event.target.value)">
                     </td>
                     <td>
-                        <textarea wire:blur="updateCell({{ $reports->id }}, 'deskripsi_pekerjaan', $event.target.value)" cols="30" class="form-control" rows="2">{{ $reports->deskripsi_pekerjaan }}</textarea>
+                        <textarea wire:change="updateCell({{ $reports->id }}, 'deskripsi_pekerjaan', $event.target.value)" cols="30" class="form-control" rows="2">{{ $reports->deskripsi_pekerjaan }}</textarea>
                     </td>
                     <td>
-                        <select wire:blur="updateCell({{ $reports->id }}, 'lokasi_id', $event.target.value)" class="form-select">
+                        <select wire:change="updateCell({{ $reports->id }}, 'lokasi_id', $event.target.value)" class="form-select">
                             @if ($reports->lokasi_id)
                             <option value="{{ $reports->lokasi_id }}" selected>{{ $reports->lokasi->nama }}</option>
                             @else
@@ -131,7 +131,7 @@
                         </select>
                     </td>
                     <td>
-                        <select wire:blur="updateCell({{ $reports->id }}, 'divisi_id', $event.target.value)" class="divisi">
+                        <select wire:change="updateCell({{ $reports->id }}, 'divisi_id', $event.target.value)" wire:ignore class="form-select divisi" id="divisi-select">
                             @if ($reports->divisi_id)
                             <option value="{{ $reports->divisi_id }}" selected>{{ $reports->divisi->nama }}</option>
                             @else
@@ -143,7 +143,7 @@
                         </select>
                     </td>
                     <td>
-                        <select wire:blur="updateCell({{ $reports->id }}, 'kategori_harian_id', $event.target.value)" class="form-select">
+                        <select wire:change="updateCell({{ $reports->id }}, 'kategori_harian_id', $event.target.value)" class="form-select">
                             @if ($reports->kategori_harian_id)
                             <option value="{{ $reports->kategori_harian_id }}" selected>{{ $reports->kategoriHarian->nama }}</option>
                             @else
@@ -155,7 +155,7 @@
                         </select>
                     </td>
                     <td>
-                        <select wire:blur="updateCell({{ $reports->id }}, 'jenis_pekerjaan_id', $event.target.value)" class="form-select">
+                        <select wire:change="updateCell({{ $reports->id }}, 'jenis_pekerjaan_id', $event.target.value)" class="form-select">
                             @if ($reports->jenis_pekerjaan_id)
                             <option value="{{ $reports->jenis_pekerjaan_id }}" selected>{{ $reports->jenis_pekerjaan->nama }}</option>
                             @else
@@ -258,4 +258,3 @@
     </div>
 
 </div>
-

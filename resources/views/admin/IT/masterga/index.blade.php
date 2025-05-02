@@ -43,6 +43,18 @@
 </main>
 
 @endsection
-@section('script')
+@push('script')
+<script>
+     window.addEventListener('badak', () => {
+        // Mendapatkan elemen modal
+        // var modal = new bootstrap.Modal(document.getElementById('tambahReportHarianModal'));
+        // // Menutup modal
+        // modal.hide();
+        $('#tambahReportHarianModal').modal('hide');
+        // console.log("badak");
 
-@endsection
+
+     })
+
+</script>
+@endpush

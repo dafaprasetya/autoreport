@@ -55,6 +55,7 @@
                     <th scope="col">Lokasi</th>
                     <th scope="col">Foto Before</th>
                     <th scope="col">Foto After</th>
+                    <th scope="col">Status</th>
                     <th scope="col">Tanggal Selesai</th>
                     <th scope="col">Lead Time</th>
                     <th scope="col">Action</th>
@@ -72,14 +73,14 @@
                     </td>
                     <td><a href="#{{ $reports->tanggal }}" class="text-primary-600">{{ $reports->tanggal }}</a></td>
                     <td>
-                        <select wire:blur="updateCell({{ $reports->id }}, 'keterangan', $event.target.value)" class="form-select" id="kategori{{ $reports->id }}">
+                        <select wire:change="updateCell({{ $reports->id }}, 'keterangan', $event.target.value)" class="form-select" id="kategori{{ $reports->id }}">
                             <option value="{{ $reports->keterangan }}" selected>{{ $reports->keterangan }}</option>
                             <option value="Internal">Internal</option>
                             <option value="External">External</option>
                         </select>
                     </td>
                     <td>
-                        <select wire:blur="updateCell({{ $reports->id }}, 'user_id', $event.target.value)" class="form-select" id="user{{ $reports->id }}">
+                        <select wire:change="updateCell({{ $reports->id }}, 'user_id', $event.target.value)" class="form-select" id="user{{ $reports->id }}">
                             <option value="{{ $reports->user_id }}" selected>{{ $reports->user->name }}</option>
                             @foreach ($user as $users)
                                 <option value="{{ $users->id }}">{{ $users->name }}</option>
@@ -87,7 +88,7 @@
                         </select>
                     </td>
                     <td>
-                        <textarea wire:blur="updateCell({{ $reports->id }}, 'deskripsi_pekerjaan', $event.target.value)" class="form-control" id="deskripsi_pekerjaan{{ $reports->id }}" cols="30" rows="3">{{ $reports->deskripsi_pekerjaan }}</textarea>
+                        <textarea wire:change="updateCell({{ $reports->id }}, 'deskripsi_pekerjaan', $event.target.value)" class="form-control" id="deskripsi_pekerjaan{{ $reports->id }}" cols="30" rows="3">{{ $reports->deskripsi_pekerjaan }}</textarea>
                     </td>
                     <td>
                         <select class="form-select" id="jenis_pekerjaan{{ $reports->id }}" class="divisi">
@@ -98,7 +99,7 @@
                         </select>
                     </td>
                     <td>
-                        <select wire:blur="updateCell({{ $reports->id }}, 'jenis_pekerjaan_id', $event.target.value)" class="form-select" id="divisi{{ $reports->id }}" class="divisi">
+                        <select wire:change="updateCell({{ $reports->id }}, 'jenis_pekerjaan_id', $event.target.value)" class="form-select" id="divisi{{ $reports->id }}" class="divisi">
                             <option value="{{ $reports->jenis_pekerjaan_id }}" selected>{{ $reports->jenis_pekerjaan->nama }}</option>
                             @foreach ($jenispekerjaan as $jenispekerjaans)
                                 <option value="{{ $jenispekerjaans->id }}">{{ $jenispekerjaans->nama }}</option>
@@ -106,7 +107,7 @@
                         </select>
                     </td>
                     <td>
-                        <select wire:blur="updateCell({{ $reports->id }}, 'lokasi_id', $event.target.value)" class="form-select" id="lokasi{{ $reports->id }}" class="divisi">
+                        <select wire:change="updateCell({{ $reports->id }}, 'lokasi_id', $event.target.value)" class="form-select" id="lokasi{{ $reports->id }}" class="divisi">
                             <option value="{{ $reports->lokasi_id }}" selected>{{ $reports->lokasi->nama }}</option>
                             @foreach ($lokasi as $lokasis)
                                 <option value="{{ $lokasis->id }}">{{ $lokasis->nama }}</option>
@@ -192,8 +193,17 @@
 
                     {{-- <td>{{ $reports->foto_after }}</td> --}}
                     <td>
-                        <input class="form-control" type="date" value="{{ $reports->tanggal_selesai }}" wire:blur="updateCell({{ $reports->id }}, 'tanggal_selesai', $event.target.value)">
+                        <select wire:change="updateCell({{ $reports->id }}, 'status', $event.target.value)" class="form-select" id="kategori{{ $reports->id }}">
+                            <option value="{{ $reports->status }}" selected>{{ $reports->status }}</option>
+                            <option value="Selesai">Selesai</option>
+                            <option value="Belum Selesai">Belum Selesai</option>
+                            <option value="Progres">Progres</option>
+                        </select>
                     </td>
+                    <td>
+                        <input class="form-control" type="date" value="{{ $reports->tanggal_selesai }}" wire:change="updateCell({{ $reports->id }}, 'tanggal_selesai', $event.target.value)">
+                    </td>
+
                     <td>{{ $reports->lead_time }}</td>
                     <td>
                     <button  wire:click="deleteReport({{ $reports->id }})" onclick="confirm('Yakin hapus data ini?') || event.stopImmediatePropagation()" class="w-32-px h-32-px bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center">

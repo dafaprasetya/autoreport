@@ -40,8 +40,8 @@
   <!-- main css -->
   <link rel="stylesheet" href="{{ asset('wowdash/assets/css/style.css') }}">
 
-  <link href="https://cdn.jsdelivr.net/npm/tom-select@2.4.3/dist/css/tom-select.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/tom-select@2.4.3/dist/js/tom-select.complete.min.js"></script>
+  <link href="{{ asset('tomselect/tom-select.css') }}" rel="stylesheet">
+  <script src="{{ asset('tomselect/tom-select.js') }}"></script>
 
   {{-- SELECT2 --}}
 </head>

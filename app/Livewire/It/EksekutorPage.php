@@ -20,6 +20,11 @@ class EksekutorPage extends Component
         // dd("gay");
         $this->dispatch('jsload');
     }
+    public function updated($name, $value)
+    {
+        // Ini adalah tempat untuk men-trigger event dengan Livewire 3
+        $this->dispatchBrowserEvent('pollFinished');
+    }
     public function kembali(){
         $this->tanggal = null;
         $this->dispatch('reset-calendar');

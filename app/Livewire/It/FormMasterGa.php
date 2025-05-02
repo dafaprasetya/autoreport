@@ -93,10 +93,10 @@ class FormMasterGa extends Component
             'foto_before',
             'foto_after',
         ]);
+        $this->dispatch("badak");
         session()->flash('message', 'Data berhasil ditambahkan.');
+
     }
-
-
     public function render()
     {
         $total = ReportIt::count();

@@ -25,7 +25,13 @@ class EksekutorIt extends Component
     public $modalTambah = false;
     public $modalId = null;
     public $selectedReport = null;
+    public $selectedDivisi; // Properti untuk menyimpan divisi yang dipilih
 
+public function mount()
+{
+    // Inisialisasi nilai divisi saat komponen dimuat
+    $this->selectedDivisi = $this->reports->divisi_id ?? 0;
+}
 
     function closeModalTambah() {
         $this->modalTambah = false;
@@ -102,7 +108,7 @@ class EksekutorIt extends Component
     public function updateCell($id, $field, $value){
         if ($value == 0) {
             session()->flash('message', 'Data Gagal diupdate.');
-            $this->dispatch('jsload');
+            // $this->dispatch('jsload');
 
         }else {
             # code...
@@ -112,25 +118,18 @@ class EksekutorIt extends Component
             $this->loadReports();
             session()->flash('message', 'Data berhasil diupdate.');
             $this->dispatch('notifikasi', ['message' => 'Data berhasil diupdate!']);
-            $this->dispatch('jsload');
+            $this->selectedDivisi = $value;
+            // $this->dispatch('jsload');
 
         }
     }
-    public function updateCoy(){
-        // dd('tester');
-        $this->dispatch("jsload");
-    }
+
 
     public function loadReports()
     {
         $this->reports = ReportEksekutor::with(['user'])
             ->orderBy('id', 'desc')
             ->get();
-    }
-    public function mount()
-    {
-
-        $this->dispatch('jsload');
     }
 
     public function render()

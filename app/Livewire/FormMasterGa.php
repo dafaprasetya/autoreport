@@ -81,6 +81,7 @@ class FormMasterGa extends Component
             $report->foto_after = $nama_file;
             $report->save();
         }
+
         // $this->loadReports();
         $this->reset([
             'tanggal',
@@ -93,9 +94,10 @@ class FormMasterGa extends Component
             'foto_before',
             'foto_after',
         ]);
+        $this->dispatch("badak");
+
         session()->flash('message', 'Data berhasil ditambahkan.');
     }
-
 
     public function render()
     {
