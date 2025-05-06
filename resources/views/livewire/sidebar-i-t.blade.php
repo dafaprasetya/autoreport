@@ -56,6 +56,13 @@
                     <span>Manage User</span>
                 </a>
             </li>
+            <li class="sidebar-menu-group-title">Addon</li>
+            <li>
+                <a href="{{ route('manageLokasi') }}" class="{{ Route::is('manageLokasi') ? 'active-page' : '' }}" >
+                    <iconify-icon icon="mdi:users" class="menu-icon"></iconify-icon>
+                    <span>Manage Lokasi</span>
+                </a>
+            </li>
         </ul>
     </div>
   </aside>

@@ -122,4 +122,10 @@ class ITController extends Controller
         ];
         return view('admin.IT.harian.new', $data);
     }
+    public function manageLokasi(Request $request){
+        $data = [
+            'title'=>'Admin Lokais',
+        ];
+        return view('admin.IT.lokasi.index', $data);
+    }
 }
