@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Api\LoginController as ApiLogin;
 use App\Http\Controllers\ITController;
+use App\Http\Controllers\ManagerController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\UserManagementController;
 use App\Livewire\Counter;
@@ -66,6 +67,10 @@ Route::middleware(['auth', 'bagian:IT,Manager'])->group(function(){
     Route::middleware(['jabatan:Eksekutor,Manager'])->group(function(){
 
     });
+});
+
+Route::middleware(['auth', 'bagian:Manager'])->group(function(){
+    Route::get('/manager', [ManagerController::class, 'index'])->name('managerIndex');
 });
 
 

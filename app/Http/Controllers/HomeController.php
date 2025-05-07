@@ -32,6 +32,9 @@ class HomeController extends Controller
                 return redirect()->route('dashboardIT');
             }
         }
+        else if (Auth::user()->jabatan == 'Manager') {
+            return redirect()->route('managerIndex');
+        }
 
         return view('home');
     }
