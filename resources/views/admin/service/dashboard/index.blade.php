@@ -1,6 +1,10 @@
 @extends('admin.layouts.core')
 @section('body')
+@if (Auth::user()->bagian == "Manager")
+@livewire("Manager.SidebarManager")
+@else
 @livewire('SidebarService')
+@endif
 
 
 <main class="dashboard-main">

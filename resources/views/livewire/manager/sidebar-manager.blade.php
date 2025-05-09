@@ -11,56 +11,56 @@
         <ul class="sidebar-menu" id="sidebar-menu">
             <li class="sidebar-menu-group-title">Dashboard Service</li>
             <li>
-                <a onclick="dashboardService()" class="{{ $page=="dashboardService" ? 'active-page' : '' }}" >
+                <a href="{{ route('dashboardService') }}" class="{{ Route::is('dashboardService') ? 'active-page' : '' }}" >
                     <iconify-icon icon="material-symbols:dashboard" class="menu-icon"></iconify-icon>
-                    <span>Dashboard Service</span>
+                    <span>Dashboard</span>
                 </a>
             </li>
             <li class="sidebar-menu-group-title">Dashboard IT</li>
             <li>
-                <a onclick="dashboardIT()" class="{{ $page=="dashboardIT" ? 'active-page' : '' }}" >
+                <a href="{{ route('dashboardIT') }}" class="{{ Route::is('dashboardIT') ? 'active-page' : '' }}" >
                     <iconify-icon icon="material-symbols:dashboard" class="menu-icon"></iconify-icon>
-                    <span>Dashboard IT</span>
+                    <span>Dashboard</span>
                 </a>
             </li>
             <li class="sidebar-menu-group-title">Report IT</li>
             <li>
                 <a href="{{ route('mastergaIT') }}" class="{{ Route::is('mastergaIT') ? 'active-page' : '' }}" >
                     <iconify-icon icon="mage:box-3d-fill" class="menu-icon"></iconify-icon>
-                    <span>Master GA IT</span>
+                    <span>Master GA</span>
                 </a>
             </li>
             <li>
                 <a href="{{ route('reportHarianITNew') }}" class="{{ Route::is('reportHarianITNew') ? 'active-page' : '' }}">
                     <iconify-icon icon="mingcute:sale-line" class="menu-icon"></iconify-icon>
-                    <span>Harian IT</span>
+                    <span>Harian</span>
                 </a>
             </li>
             <li class="sidebar-menu-group-title">Report Service</li>
             <li>
-                <a href="{{ route('mastergaIT') }}" class="{{ Route::is('mastergaIT') ? 'active-page' : '' }}" >
+                <a href="{{ route('mastergaservice') }}" class="{{ Route::is('mastergaservice') ? 'active-page' : '' }}" >
                     <iconify-icon icon="mage:box-3d-fill" class="menu-icon"></iconify-icon>
-                    <span>Master GA Service</span>
+                    <span>Master GA</span>
                 </a>
             </li>
             <li>
-                <a href="{{ route('reportHarianITNew') }}" class="{{ Route::is('reportHarianITNew') ? 'active-page' : '' }}">
+                <a href="{{ route('reportHarianService') }}" class="{{ Route::is('reportHarianService') | Route::is('reportHarianServiceDetail') ? 'active-page' : '' }}">
                     <iconify-icon icon="mingcute:sale-line" class="menu-icon"></iconify-icon>
-                    <span>Harian Service</span>
+                    <span>Harian</span>
                 </a>
             </li>
             <li class="sidebar-menu-group-title">Waiting List IT</li>
             <li>
                 <a href="{{ route('waitingListIt') }}" class="{{ Route::is('waitingListIt') ? 'active-page' : '' }}" >
                     <iconify-icon icon="medical-icon:i-waiting-area" class="menu-icon"></iconify-icon>
-                    <span>Waiting List IT</span>
+                    <span>Waiting List</span>
                 </a>
             </li>
             <li class="sidebar-menu-group-title">Waiting List Service</li>
             <li>
-                <a href="{{ route('waitingListIt') }}" class="{{ Route::is('waitingListIt') ? 'active-page' : '' }}" >
+                <a href="{{ route('waitingListService') }}" class="{{ Route::is('waitingListService') ? 'active-page' : '' }}" >
                     <iconify-icon icon="medical-icon:i-waiting-area" class="menu-icon"></iconify-icon>
-                    <span>Waiting List Service</span>
+                    <span>Waiting List</span>
                 </a>
             </li>
             <li class="sidebar-menu-group-title">Eksekutor IT</li>
@@ -72,9 +72,9 @@
             </li>
             <li class="sidebar-menu-group-title">Eksekutor Service</li>
             <li>
-                <a href="{{ route('reportEksekutorIT') }}" class="{{ Route::is('reportEksekutorIT') ? 'active-page' : '' }}" >
+                <a href="{{ route('reportEksekutorService') }}" class="{{ Route::is('reportEksekutorService') ? 'active-page' : '' }}" >
                     <iconify-icon icon="lsicon:report-outline" class="menu-icon"></iconify-icon>
-                    <span>Report Eksekutor Service</span>
+                    <span>Report Eksekutor</span>
                 </a>
             </li>
             <li class="sidebar-menu-group-title">User</li>
@@ -84,13 +84,13 @@
                     <span>Manage User</span>
                 </a>
             </li>
-            <li class="sidebar-menu-group-title">Addon</li>
+            {{-- <li class="sidebar-menu-group-title">Addon</li>
             <li>
                 <a href="{{ route('manageLokasi') }}" class="{{ Route::is('manageLokasi') ? 'active-page' : '' }}" >
                     <iconify-icon icon="mdi:users" class="menu-icon"></iconify-icon>
                     <span>Manage Lokasi</span>
                 </a>
-            </li>
+            </li> --}}
         </ul>
     </div>
   </aside>

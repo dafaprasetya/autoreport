@@ -14,6 +14,7 @@ class ManagerController extends Controller
             'tanggal' => $tanggal,
             'waktu' => $waktu ? $waktu : 'whereMonth',
         ];
-        return view('admin.manager.index', $data);
+        return redirect()->route('dashboardService');
     }
+
 }

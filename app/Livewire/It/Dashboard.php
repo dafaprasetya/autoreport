@@ -47,7 +47,7 @@ class Dashboard extends Component
     {
 
         // Emit event untuk memberi tahu JS tentang data baru
-        $this->dispatch('updateWaktu2');
+        $this->dispatch('loadChartData');
     }
 
     public function render()

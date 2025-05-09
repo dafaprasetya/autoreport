@@ -23,7 +23,7 @@ class DashboardComponent extends Component
     public function setWaktu($waktu)
     {
         $this->waktu2 = Carbon::parse($waktu);
-        // $this->waktu2 = $waktu;
+        $this->dispatch("contol");
     }
 
     public function getRandomHex($data) {
